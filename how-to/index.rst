@@ -9,13 +9,9 @@ Guide 1
 .. toctree::
    :maxdepth: 1
 
-   guide_1
-
 Guide 2
 -------------
 
 .. toctree::
    :maxdepth: 1
-
-   guide_2
 

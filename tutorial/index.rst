@@ -24,8 +24,9 @@ expand how to integrate with MAAS.
 
 .. toctree::
    :maxdepth: 1
-   standalone
-   maas
+
+   Standalone installation <standalone-install>
+   MAAS installation <maas-install>
 
 Networking
 ----------
