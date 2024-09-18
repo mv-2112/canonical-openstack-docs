@@ -43,7 +43,7 @@ Learn about using automation to manage resources on your OpenStack cloud.
 * Ansible
 * Orchestration
 * CaaS
-* Customizing images
+* Customising images
 * Failure domains
 * Snapshots & backups
 * Quotas
