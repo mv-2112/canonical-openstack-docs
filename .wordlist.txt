@@ -3,11 +3,13 @@
 # Leave a blank line at the end to support concatenation. 
 
 addons
+Ansible
 API
 APIs
 balancer
 Charmhub
 CLI
+CaaS
 Diátaxis
 Dqlite
 dropdown
@@ -31,12 +33,15 @@ LTS
 Makefile
 Matrix
 Mattermost
+MicroStack
 MyST
+MAAS
 namespace
 namespaces
 NodePort
 Numbat
 observability
+OpenStack
 OEM
 OLM
 Permalink
@@ -49,6 +54,7 @@ RTD
 subdirectories
 subfolders
 subtree
+Terraform
 Ubuntu
 UI
 UUID

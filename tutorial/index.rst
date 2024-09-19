@@ -24,8 +24,9 @@ expand how to integrate with MAAS.
 
 .. toctree::
    :maxdepth: 1
-   standalone
-   maas
+
+   Standalone installation <standalone-install>
+   MAAS installation <maas-install>
 
 Networking
 ----------
@@ -42,7 +43,7 @@ Learn about using automation to manage resources on your OpenStack cloud.
 * Ansible
 * Orchestration
 * CaaS
-* Customizing images
+* Customising images
 * Failure domains
 * Snapshots & backups
 * Quotas
