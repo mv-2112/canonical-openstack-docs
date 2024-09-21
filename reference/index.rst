@@ -1,11 +1,6 @@
 Reference
 =========
 
-Reference model
----------------
-
-Coming soon
-
 Index
 -----
 
@@ -23,3 +18,4 @@ Index
    network-debugging
    proxy-acl-access
    underlying-projects-and-charms
+   example-physical-configuration
