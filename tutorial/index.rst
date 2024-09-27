@@ -5,6 +5,7 @@ Tutorials
    :maxdepth: 1
 
    get-started-with-openstack
+   get-familiar-with-openstack
 
 Canonical OpenStack is a complex piece of software.
 
