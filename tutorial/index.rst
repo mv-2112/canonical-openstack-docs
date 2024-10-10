@@ -7,6 +7,7 @@ Tutorials
    get-started-with-openstack
    get-familiar-with-openstack
    on-board-your-users
+   explore-full-potential-of-openstack
 
 Canonical OpenStack is a complex piece of software.
 
