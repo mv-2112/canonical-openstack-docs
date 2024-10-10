@@ -3,15 +3,61 @@ How-to Guides
 
 These how-to guides cover key operations and process in Canonical OpenStack.
 
-Guide 1
--------
+Installation
+------------
 
 .. toctree::
    :maxdepth: 1
 
-Guide 2
+   install/quickstart
+   install/multinode-install
+   install/maas-install
+
+Optional Features
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   features/caas
+   features/dns
+   features/images-sync
+   features/ldap
+   features/load-balancer
+   features/observability
+   features/orchestration
+   features/secrets
+   features/telemetry
+   features/tls-ca
+   features/ubuntu-pro
+   features/validation
+   features/vault
+
+Miscellaneous
 -------------
 
 .. toctree::
    :maxdepth: 1
 
+   misc/accessing-the-openstack-dashboard
+   misc/manage-external-juju-controllers
+   misc/manage-workloads-with-juju
+   misc/managing-deployment-manifests
+   misc/using-an-existing-juju-controller
+   misc/using-the-openstack-cli
+   misc/implement-tls-using-a-third-party-ca
+   misc/live-migration
+   misc/manage-a-proxied-environment
+   misc/object-storage
+   misc/reconfiguring-k8s-api-endpoint-juju
+   misc/removing-the-primary-node
+   misc/scaling-down-the-cluster
+   misc/scaling-up-the-cluster
+
+Troubleshooting
+---------------
+
+.. toctree::
+   :maxdepth: 1
+
+   troubleshooting/inspecting-the-cluster

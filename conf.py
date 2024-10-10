@@ -27,6 +27,8 @@ extensions = [
     'sphinx_design',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
+    'canonical.related-links',
+    'canonical.terminal-output',
 ]
 
 # Only add redirects extension if any redirects are specified.
