@@ -1,7 +1,7 @@
 Observability
 =============
 
-This feature integates MicroStack with (and optionally deploys) the
+This feature integrates MicroStack with (and optionally deploys) the
 `Canonical Observability Stack
 (COS) <https://charmhub.io/topics/canonical-observability-stack>`__.
 MicroStack will automatically propagate default metrics and dashboards,
@@ -148,7 +148,7 @@ Dashboard
 ---------
 
 [note type=“info”] **Note:** Dashboard is currently only supported in
-channel ``2023.2`` of the **openstack** snap. [/note]
+channel ``2023.2`` of the **:spelling:ignore:`openstack`** snap. [/note]
 
 OpenStack Service Overview dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +165,7 @@ OpenStack Cloud Usage dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a dashboard providing information on the usage of the OpenStack
-cloud (for example, projects and and vms), using metrics mostly from
+cloud (for example, projects and virtual machines), using metrics mostly from
 `openstack-exporter <https://github.com/openstack-exporter/openstack-exporter>`__.
 
 .. figure:: upload://qXotBvFlYbwssrcVTzH8EcvQYr7.png
@@ -177,7 +177,7 @@ OpenStack Compute Overview dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a dashboard more detailed information on the compute nodes,
-using metrics mostly from the libvirt exporter.
+using metrics mostly from the Libvirt exporter.
 
 .. figure:: upload://84ANGD2FYcEnmyli0ZU3PEBk53B.png
    :alt: 1713510810|800x337
@@ -188,8 +188,8 @@ Capacity Dashboard
 ~~~~~~~~~~~~~~~~~~
 
 **Capacity Dashboard** displays the overall capacity (storage, memory,
-and cpu) of the microstack cluster, as well as the capacity of
-individual microstack node.
+and CPU) of the MicroStack cluster, as well as the capacity of
+individual MicroStack node.
 
 .. figure:: upload://vLKlBFnI4L3Y8r4LKfLUIemnTYW.png
    :alt: capacity_dashboard-\|800x368
@@ -205,7 +205,7 @@ linear projection based on the average usage over the past 360 days. If
 the average usage is zero or negative, the panel will show “Stable”
 because it’s not possible to estimate when they will be depleted. For
 the overall capacity, this estimation is chosen to be the minimum value
-across all microstack nodes. For example, if the projected days it will
+across all MicroStack nodes. For example, if the projected days it will
 take for storage consumption to reach 90% is about 80 days for node 1,
 90 for node 2,, and “Stable” (i.e. not expected to run out given the
 current trend) for node 3, then the panel will show “80” since node 1
@@ -239,8 +239,8 @@ Memory usage
 ^^^^^^^^^^^^
 
 “Memory usage (total memory: …GB)” shows the total memory usage, memory
-assigned to hugepages, and used hugepages memory. For the overall
-capacity, “Memory usage” is summed over all microstack nodes. The
+assigned to huge pages, and used huge pages memory. For the overall
+capacity, “Memory usage” is summed over all MicroStack nodes. The
 individual memory capacity panel shows the memory usage of a particular
 node.
 

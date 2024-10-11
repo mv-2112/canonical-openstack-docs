@@ -35,7 +35,7 @@ Remove the Juju agent:
 
    sudo /sbin/remove-juju-services
 
-Remove the **juju** snap:
+Remove the Juju snap:
 
 ::
 
@@ -50,7 +50,7 @@ Remove Juju configuration:
    sudo rm -rf /var/lib/juju/system-identity
    sudo rm -rf /var/lib/juju/bootstrap-params
 
-Remove the **openstack-hypervisor** and **openstack** snaps:
+Remove the OpenStack hypervisor and OpenStack snaps:
 
 ::
 
@@ -63,7 +63,7 @@ Remove openstack snap configuration:
 
    rm -rf ~/.local/share/openstack
 
-Remove **microk8s** snap:
+Remove MicroK8s snap:
 
 ::
 
@@ -72,7 +72,7 @@ Remove **microk8s** snap:
 
 The above steps can take a few minutes to complete.
 
-Remove the **microceph** snap:
+Remove the MicroCeph snap:
 
 ::
 

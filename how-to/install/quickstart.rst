@@ -1,7 +1,7 @@
-Single-node quickstart
-======================
+Single-node quick start
+=======================
 
-This quickstart guide shows how to install OpenStack (based on project Sunbeam) in the simplest
+This quick start guide shows how to install OpenStack (based on project Sunbeam) in the simplest
 way possible. It will deploy an **OpenStack 2024.1** (Caracal) cloud.
 
 Requirements
@@ -24,7 +24,7 @@ You will need a single machine whose requirements are:
 .. note::
   If you are using a virtual machine with `Multipass <https://multipass.run>`__, you will
   need to ensure it has a fully qualified domain name set in the `/etc/hosts` file.
-  See bug `GH #3277 <https://github.com/canonical/multipass/issues/3277>`__ for more details.
+  See bug `Github #3277 <https://github.com/canonical/multipass/issues/3277>`__ for more details.
 
 Deploy the cloud
 ----------------
@@ -60,7 +60,7 @@ or the script can be directly executed in this way:
 The script will ensure some software requirements are satisfied on the host. In particular, it will:
 
 * install `openssh-server` if it is not found
-* configure passwordless sudo for all commands for the current user (`NOPASSWD:ALL`)
+* configure password-less sudo for all commands for the current user (`NOPASSWD:ALL`)
 
 Bootstrap the cloud
 ~~~~~~~~~~~~~~~~~~~
@@ -100,8 +100,8 @@ Sample output:
 
 Connect to the VM over SSH using the provided command.
 
-Related how-tos
----------------
+Related how-to guides
+---------------------
 
 Now that OpenStack is set up, be sure to check out the following how-to guides:
 

@@ -1,8 +1,8 @@
 Images Sync
 ===========
 
-This feature deploys Openstack Images Sync, a tool for synchronizing
-images from a SimpleStreams source to Sunbeam.
+This feature deploys OpenStack Images Sync, a tool for importing
+images from a SimpleStreams source to the OpenStack Glance image service.
 
 [note type=“info”] **Note:** This feature is currently only supported in
 channel ``2024.1/edge`` of the **openstack** snap. [/note]
@@ -26,8 +26,8 @@ To disable Images Sync, run the following command:
    sunbeam disable images-sync
 
 [note type=“caution”] **Caution**: Disabling Images Sync will **not**
-remove synchronized images from Glance (the underlying OpenStack image
-service). [/note]
+remove images that have been previously imported from the Glance image
+service. [/note]
 
 Usage
 -----

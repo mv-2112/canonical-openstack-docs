@@ -13,7 +13,7 @@ Single-node
 
 In a single-node deployment, all of the components of the deployed
 OpenStack Cloud reside on the same node; networking is typically
-configured so that access to the OpenStack API’s, Dashboard and
+configured so that access to the OpenStack APIs, Dashboard and
 Instances is local and can only be access directly from the node being
 used.
 
@@ -29,7 +29,7 @@ requires pristine, un-partitioned block devices on the node being used.
 It is possible to deploy a single-node cloud with remote access to
 control plane services and instances - this is the ‘remote’ option for
 instance networking and requires a range of IP addresses for K8s
-loadbalancer use on the network upon which the node being used resides -
+load-balancer use on the network upon which the node being used resides -
 see the guided deployment tutorial for examples on how to do this.
 
 Multi-node

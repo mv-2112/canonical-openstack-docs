@@ -3,7 +3,7 @@ of deploying a Juju controller within the MicroStack deployment.
 
 This allows operators to make use of an existing Juju controller that
 could be used to control many Juju deployments of different types of
-services - including multiple MicroStacks!
+services - including multiple MicroStack deployments!
 
 Register the Juju controller
 ----------------------------

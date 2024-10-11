@@ -88,10 +88,11 @@ Request TLS certificates
 Request one TLS certificate for each generated CSR.
 
 You’ll need to supply the Certificate Authority (identified in the
-``enable`` command) with the CSRs. Do this via the CA’s web site.
+``enable`` command) with the CSRs. Do this via the certificate authority's
+web site.
 
 [note type=“info”] **Note:** Ensure the TLS certificate from CA has
-Subject Alternative Name with IP Address of the service if dns names are
+Subject Alternative Name with IP Address of the service if DNS names are
 not used. [/note]
 
 Input TLS certificates

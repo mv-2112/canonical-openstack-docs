@@ -126,7 +126,7 @@ Ensure you have a subnet connected to the primary interface.
 Secondary interface
 ~~~~~~~~~~~~~~~~~~~
 
-The secondary network interface must be set as ‘Unconfigured’ in MAAS
+The secondary network interface must be set as :code:`Unconfigured` in MAAS
 and be connected to a subnet that has unused (available) IP addresses.
 This requirement permits the VMs to be contacted by remote hosts and
 comprises the “external networking” of the cloud. This interface must be
@@ -200,7 +200,7 @@ In this tutorial, a single space is used, called ``myspace``.
 The space will be mapped to cloud networks in a later step.
 
 .. note::
-   While MAAS supports `_` in space names, sunbeam and juju do not.
+   While MAAS supports `_` in space names, Sunbeam and Juju do not.
    Avoid using `_` in space names.
 
 Choosing the MAAS resource tag
@@ -564,8 +564,8 @@ Sample output:
 
 Connect to the VM over SSH using the provided command.
 
-Related how-tos
----------------
+Related how-to guides
+---------------------
 
 Now that OpenStack is set up, be sure to check out the following how-to
 guides:

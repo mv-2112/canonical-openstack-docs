@@ -44,7 +44,7 @@ following command:
    sunbeam validation run [profile]
 
 If no profile is specified, the validation test defaults to running the
-appropriate refstack profile for the OpenStack version deployed. You can
+appropriate RefStack profile for the OpenStack version deployed. You can
 check the list of available profiles provided by running:
 
 ::

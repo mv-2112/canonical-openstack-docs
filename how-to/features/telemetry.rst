@@ -2,7 +2,7 @@ Telemetry
 =========
 
 This feature deploys the OpenStack Telemetry services Ceilometer, Aodh,
-Gnocchi, and Openstack Exporter.
+Gnocchi, and OpenStack Exporter.
 
 Enabling Telemetry
 ------------------
@@ -157,7 +157,7 @@ OpenStack Exporter
 ~~~~~~~~~~~~~~~~~~
 
 When the `Observability </t/39859>`__ feature is enabled, you’ll have
-access to the Grafana Openstack dashboards, providing insights about the
+access to the Grafana OpenStack dashboards, providing insights about the
 cloud usage.
 
 -  OpenStack Dashboard: an overview of the various OpenStack components

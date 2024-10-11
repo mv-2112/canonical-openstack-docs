@@ -122,7 +122,7 @@ The script will ensure some software requirements are satisfied on the
 host. In particular, it will:
 
 -  install ``openssh-server`` if it is not found
--  configure passwordless sudo for all commands for the current user
+-  configure password-less sudo for all commands for the current user
    (``NOPASSWD:ALL``)
 
 Bootstrap the cloud
@@ -239,7 +239,7 @@ The script will ensure some software requirements are satisfied on the
 host. In particular, it will:
 
 -  install ``openssh-server`` if it is not found
--  configure passwordless sudo for all commands for the current user
+-  configure password-less sudo for all commands for the current user
    (``NOPASSWD:ALL``)
 
 Add the new node
@@ -429,10 +429,10 @@ Sample output:
    the VM will not be ready instantaneously; waiting time is mostly determined by the cloud’s
    available resources.
 
-Related how-tos
----------------
+Related how-to guides
+---------------------
 
-Now that OpenStack is set up, be sure to check out the following howto
+Now that OpenStack is set up, be sure to check out the following how-to
 guides:
 
 -  :ref:`Accessing the OpenStack dashboard`

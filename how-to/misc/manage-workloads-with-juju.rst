@@ -186,12 +186,12 @@ Log out of the bastion in preparation for the next section:
 
    exit
 
-Verify the OpenStack VMs
-------------------------
+Verify the OpenStack server instances
+-------------------------------------
 
 On the client host, via the ``openstack`` CLI, you can see the OpenStack
-VMs that correspond to the workload machine, the Juju controller, and
-the bastion (respectively, from top to bottom, in the output below):
+server instances that correspond to the workload machine, the Juju controller,
+and the bastion (respectively, from top to bottom, in the output below):
 
 ::
 

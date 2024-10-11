@@ -29,7 +29,7 @@ Points of interest for this design:
 
 -  Enabling the feature will deploy charm `manual-tls-certificates
    operator <https://charmhub.io/manual-tls-certificates>`__. It will
-   integrate the ``manual-tls-certificates`` application with the
+   integrate the `manual-tls-certificates` application with the
    Traefik application. This step requires a third party CA certificate
    and a CA chain.
 

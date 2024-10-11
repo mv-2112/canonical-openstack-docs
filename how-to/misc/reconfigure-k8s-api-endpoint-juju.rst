@@ -1,5 +1,5 @@
-Reconfiguring the Kubernetes API endpoint in Juju
-=================================================
+Reconfigure the Kubernetes API endpoint in Juju
+===============================================
 
 Overview
 --------
@@ -18,8 +18,8 @@ address to provide more robust access to the Kubernetes API service from
 Juju in the future.
 
 If you need the Juju controller to communicate to an alternative
-kube-api server you can update the endpoint in the Juju controller to
-point to a different kube-api server.
+:code:`kube-api` server you can update the endpoint in the Juju controller to
+point to a different :code:`kube-api` server.
 
 In the following example the deployment name is ``sbcloud01`` -
 controller and cloud names are built from this name.

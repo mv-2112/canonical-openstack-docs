@@ -16,7 +16,7 @@ Enabling Ubuntu Pro
 -------------------
 
 To enable Ubuntu Pro support, run the following command with an
-attachement token associated with your subscription:
+attachment token associated with your subscription:
 
 ::
 

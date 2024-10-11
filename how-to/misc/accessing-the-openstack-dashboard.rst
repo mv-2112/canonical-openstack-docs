@@ -42,4 +42,4 @@ After a successful login, you should see the landing page:
    image|689x416
 
 You can now start managing your OpenStack cloud (e.g. create additional
-users, launch VMs, etc.).
+users, launch server instances, etc.).

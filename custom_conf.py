@@ -182,7 +182,8 @@ custom_extensions = [
 # sphinx-notfound-page, sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery,
 # sphinxext-opengraph
 custom_required_modules = [
-    'sphinxcontrib-svg2pdfconverter[CairoSVG]'
+    'sphinxcontrib-svg2pdfconverter[CairoSVG]',
+    'sphinxcontrib-spelling',
 ]
 
 # Add files or directories that should be excluded from processing.

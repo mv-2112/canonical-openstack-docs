@@ -1,8 +1,8 @@
 Deployment manifest
 ===================
 
-A deployment manifest allows a user to override MicroStack’s default
-configurations.
+A deployment manifest allows a user to override the default configuration
+settings for MicroStack.
 
 Manifests are supported by the following commands:
 
@@ -98,7 +98,7 @@ This section allows users to pass bootstrap arguments to Juju.
 +-----------------------------------+-----------------------------------+
 | Option                            | Description                       |
 +===================================+===================================+
-| **bootstrap_args**                | list of arguments that will be    |
+| :code:`bootstrap_args`            | list of arguments that will be    |
 |                                   | passed to the ``juju bootstrap``  |
 |                                   | command                           |
 +-----------------------------------+-----------------------------------+

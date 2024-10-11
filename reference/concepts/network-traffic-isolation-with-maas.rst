@@ -36,25 +36,24 @@ Cloud networks
 The cloud network names supported by MicroStack, their corresponding
 traffic types, and examples of such traffic is given here:
 
-+---------------+----------------------------+------------------------+
-| Cloud network | Traffic type               | Example traffic        |
-+===============+============================+========================+
-| data          | hypervisor-to-hypervisor   | intra-Project routing  |
-|               | (East-West)                | by OVN/OVS             |
-+---------------+----------------------------+------------------------+
-| internal      | control plane              | Nova to RabbitMQ       |
-|               |                            | queries                |
-+---------------+----------------------------+------------------------+
-| management    | cloud node management      | Juju                   |
-+---------------+----------------------------+------------------------+
-| public        | service API endpoints      | Identity service via   |
-|               |                            | Keystone               |
-+---------------+----------------------------+------------------------+
-| storage       | instance-to-storage        | Ceph-based volumes     |
-+---------------+----------------------------+------------------------+
-| st            | storage-to-storage         | Ceph data rebalancing  |
-| orage-cluster |                            |                        |
-+---------------+----------------------------+------------------------+
++-----------------+----------------------------+------------------------+
+| Cloud network   | Traffic type               | Example traffic        |
++=================+============================+========================+
+| data            | hypervisor-to-hypervisor   | intra-Project routing  |
+|                 | (East-West)                | by OVN/OVS             |
++-----------------+----------------------------+------------------------+
+| internal        | control plane              | Nova to RabbitMQ       |
+|                 |                            | queries                |
++-----------------+----------------------------+------------------------+
+| management      | cloud node management      | Juju                   |
++-----------------+----------------------------+------------------------+
+| public          | service API endpoints      | Identity service via   |
+|                 |                            | Keystone               |
++-----------------+----------------------------+------------------------+
+| storage         | instance-to-storage        | Ceph-based volumes     |
++-----------------+----------------------------+------------------------+
+| storage-cluster | storage-to-storage         | Ceph data rebalancing  |
++---------------+------------------------------+------------------------+
 
 There are other types of traffic that don’t necessarily map to the above
 cloud networks. They are described below:

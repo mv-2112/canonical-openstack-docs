@@ -48,11 +48,11 @@ Create a load balancer using the following command:
 
    openstack loadbalancer create --name <name> --vip-network-id <network>
 
-For example, create the load balancer ‘testlb’:
+For example, create the load balancer ‘test’:
 
 ::
 
-   openstack loadbalancer create --name testlb --vip-network-id demo-network --wait
+   openstack loadbalancer create --name test --vip-network-id demo-network --wait
 
 Sample output:
 
@@ -68,7 +68,7 @@ Sample output:
    | flavor_id           | None                                 |
    | id                  | 8bb11dba-113e-46df-b7bd-3e099669dcf4 |
    | listeners           |                                      |
-   | name                | testlb                               |
+   | name                | test                                 |
    | operating_status    | ONLINE                               |
    | pools               |                                      |
    | project_id          | cee090abc4d14819b9508e763e564984     |
@@ -93,11 +93,11 @@ Create a load balancer listener using the following command:
 
    openstack loadbalancer listener create --name <name> --protocol <protocol> --protocol-port <port> <LB name>
 
-For example, add a listener on port 5555 for the ‘testlb’ load balancer:
+For example, add a listener on port 5555 for the ‘test’ load balancer:
 
 ::
 
-   openstack loadbalancer listener create --name testlb-listener --protocol TCP --protocol-port 5555 testlb --wait
+   openstack loadbalancer listener create --name test-listener --protocol TCP --protocol-port 5555 test --wait
 
 Sample output:
 
@@ -116,7 +116,7 @@ Sample output:
    | insert_headers              | None                                 |
    | l7policies                  |                                      |
    | loadbalancers               | 8bb11dba-113e-46df-b7bd-3e099669dcf4 |
-   | name                        | testlb-listener                      |
+   | name                        | test-listener                        |
    | operating_status            | ONLINE                               |
    | project_id                  | cee090abc4d14819b9508e763e564984     |
    | protocol                    | TCP                                  |
@@ -147,12 +147,12 @@ Create a load balancer pool using the following command:
 
    openstack loadbalancer pool create --name <name> --protocol <protocol> --lb-algorithm <algorithm> --listener <LB listener name>
 
-For example, create the load balancer pool ‘testlb-pool’ for the
-‘testlb-listener’ listener:
+For example, create the load balancer pool ‘test-pool’ for the
+‘test-listener’ listener:
 
 ::
 
-   openstack loadbalancer pool create --name testlb-pool --protocol TCP --lb-algorithm SOURCE_IP_PORT --listener testlb-listener --wait
+   openstack loadbalancer pool create --name test-pool --protocol TCP --lb-algorithm SOURCE_IP_PORT --listener test-listener --wait
 
 Sample output:
 
@@ -170,7 +170,7 @@ Sample output:
    | listeners            | 2412a8fa-ce0a-430b-80bb-5f8c8ec6168f |
    | loadbalancers        | 8bb11dba-113e-46df-b7bd-3e099669dcf4 |
    | members              |                                      |
-   | name                 | testlb-pool                          |
+   | name                 | test-pool                            |
    | operating_status     | ONLINE                               |
    | project_id           | cee090abc4d14819b9508e763e564984     |
    | protocol             | TCP                                  |
@@ -199,12 +199,12 @@ Add members to the load balancer pool using the following command:
 Run the above command multiple times to add new members to the load
 balancer pool.
 
-For example, to add member ‘testlb-pool-member1’ to the ‘testlb-pool’
+For example, to add member ‘test-pool-member1’ to the ‘test-pool’
 pool, whose service is running on IP 192.168.122.183 and port 80:
 
 ::
 
-   openstack loadbalancer member create --name testlb-pool-member1 --address 192.168.122.183 --protocol-port 80 testlb-pool --wait
+   openstack loadbalancer member create --name test-pool-member1 --address 192.168.122.183 --protocol-port 80 test-pool --wait
 
 Sample output:
 
@@ -217,7 +217,7 @@ Sample output:
    | admin_state_up      | True                                 |
    | created_at          | 2023-10-11T09:23:23                  |
    | id                  | e386e580-8278-4253-8bbb-91f412d935e1 |
-   | name                | testlb-pool-member1                  |
+   | name                | test-pool-member1                    |
    | operating_status    | NO_MONITOR                           |
    | project_id          | cee090abc4d14819b9508e763e564984     |
    | protocol_port       | 80                                   |
@@ -241,12 +241,12 @@ command:
 
    openstack loadbalancer healthmonitor create --name <name> --delay <delay> --timeout <timeout> --max-retries <max retries> --type <protocol> <LB pool name>
 
-For example, to add health monitor ‘testlb-monitor’ to the ‘testlb-pool’
+For example, to add health monitor ‘test-monitor’ to the ‘test-pool’
 pool:
 
 ::
 
-   openstack loadbalancer healthmonitor create --name testlb-monitor --delay 7 --timeout 5 --max-retries 3 --type TCP testlb-pool --wait
+   openstack loadbalancer healthmonitor create --name test-monitor --delay 7 --timeout 5 --max-retries 3 --type TCP test-pool --wait
 
 Sample output:
 
@@ -256,7 +256,7 @@ Sample output:
    | Field               | Value                                |
    +---------------------+--------------------------------------+
    | project_id          | cee090abc4d14819b9508e763e564984     |
-   | name                | testlb-monitor                       |
+   | name                | test-monitor                         |
    | admin_state_up      | True                                 |
    | pools               | b7d9ac9f-5bfe-4786-a805-1a59fba98ee4 |
    | created_at          | 2023-10-11T09:33:33                  |
@@ -288,17 +288,17 @@ For example:
 
 ::
 
-   openstack loadbalancer member list testlb-pool
+   openstack loadbalancer member list test-pool
 
 Sample output:
 
 ::
 
-   +--------------------------------------+---------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
-   | id                                   | name                | project_id                       | provisioning_status | address         | protocol_port | operating_status | weight |
-   +--------------------------------------+---------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
-   | e386e580-8278-4253-8bbb-91f412d935e1 | testlb-pool-member1 | cee090abc4d14819b9508e763e564984 | ACTIVE              | 192.168.122.183 |            80 | ONLINE           |      1 |
-   +--------------------------------------+---------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
+   +--------------------------------------+-------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
+   | id                                   | name              | project_id                       | provisioning_status | address         | protocol_port | operating_status | weight |
+   +--------------------------------------+-------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
+   | e386e580-8278-4253-8bbb-91f412d935e1 | test-pool-member1 | cee090abc4d14819b9508e763e564984 | ACTIVE              | 192.168.122.183 |            80 | ONLINE           |      1 |
+   +--------------------------------------+-------------------+----------------------------------+---------------------+-----------------+---------------+------------------+--------+
 
 Verify the load balancer details
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -313,7 +313,7 @@ For example:
 
 ::
 
-   openstack loadbalancer status show testlb
+   openstack loadbalancer status show test
 
 Sample output:
 
@@ -322,24 +322,24 @@ Sample output:
    {
        "loadbalancer": {
            "id": "8bb11dba-113e-46df-b7bd-3e099669dcf4",
-           "name": "testlb",
+           "name": "test",
            "operating_status": "ONLINE",
            "provisioning_status": "ACTIVE",
            "listeners": [
                {
                    "id": "2412a8fa-ce0a-430b-80bb-5f8c8ec6168f",
-                   "name": "testlb-listener",
+                   "name": "test-listener",
                    "operating_status": "ONLINE",
                    "provisioning_status": "ACTIVE",
                    "pools": [
                        {
                            "id": "b7d9ac9f-5bfe-4786-a805-1a59fba98ee4",
-                           "name": "testlb-pool",
+                           "name": "test-pool",
                            "provisioning_status": "ACTIVE",
                            "operating_status": "ONLINE",
                            "health_monitor": {
                                "id": "7f2cbe52-b024-4ede-a24b-7fa3cc6aa606",
-                               "name": "testlb-monitor",
+                               "name": "test-monitor",
                                "type": "TCP",
                                "provisioning_status": "ACTIVE",
                                "operating_status": "ONLINE"
@@ -347,7 +347,7 @@ Sample output:
                            "members": [
                                {
                                    "id": "e386e580-8278-4253-8bbb-91f412d935e1",
-                                   "name": "testlb-pool-member1",
+                                   "name": "test-pool-member1",
                                    "operating_status": "ONLINE",
                                    "provisioning_status": "ACTIVE",
                                    "address": "192.168.122.183",
@@ -355,7 +355,7 @@ Sample output:
                                },
                                {
                                    "id": "856fb894-714a-4d1d-beda-8cd2bc77485a",
-                                   "name": "testlb-pool-member2",
+                                   "name": "test-pool-member2",
                                    "operating_status": "ONLINE",
                                    "provisioning_status": "ACTIVE",
                                    "address": "192.168.122.248",
@@ -377,7 +377,7 @@ port, use the below snippet:
 
 ::
 
-   vip_port=$(openstack loadbalancer show testlb -c vip_port_id -f value)
+   vip_port=$(openstack loadbalancer show test -c vip_port_id -f value)
    fip_id=$(openstack floating ip create external-network -c ID -f value)
    openstack floating ip set --port $vip_port $fip_id
    lb_fip=$(openstack floating ip list --port $vip_port -c 'Floating IP Address' -f value)

@@ -113,7 +113,7 @@ preceding question.
 +-----------------------------------+-----------------------------------+
 | **Populate OpenStack cloud with   | Whether the cloud is to be        |
 | demo user, default images,        | pre-populated with common         |
-| flavors, etc.**                   | OpenStack artifacts. In most      |
+| flavours, etc.**                  | OpenStack artefacts. In most      |
 |                                   | cases this is desirable.          |
 +-----------------------------------+-----------------------------------+
 | **Username to use for access to   | The username of the demo user.    |
@@ -125,9 +125,9 @@ preceding question.
 +-----------------------------------+-----------------------------------+
 | **Network range to use for        | CIDR of the private network for   |
 | project network**                 | the demo user’s project. This is  |
-|                                   | typically an unroutable (RFC      |
-|                                   | 1918) network like                |
-|                                   | 192.168.122.0/24.                 |
+|                                   | typically a network that is not   |
+|                                   | routable (e.g. RFC 1918) network  |
+|                                   | such as 192.168.122.0/24.         |
 +-----------------------------------+-----------------------------------+
 | **Enable ping and SSH access to   | Whether security group rules are  |
 | instances**                       | to be added that allow ICMP and   |

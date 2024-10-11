@@ -33,7 +33,7 @@ Provide the initial settings
 
 Set proxy values in the ``/etc/environment`` file via well-known
 environment variables. Ensure to set the management CIDR and
-metallb/loadbalancer CIDR in the NO_PROXY variable.
+MetalLB/load-balancer CIDR in the NO_PROXY variable.
 
 Below are example commands for providing these initial proxy settings:
 
@@ -41,7 +41,7 @@ Below are example commands for providing these initial proxy settings:
 
    echo "HTTP_PROXY=http://squid.proxy:3128" | sudo tee -a /etc/environment
    echo "HTTPS_PROXY=http://squid.proxy:3128" | sudo tee -a /etc/environment
-   echo "NO_PROXY=localhost,127.0.0.1,localhost,10.121.193.0/24,10.20.21.0/27" | sudo tee -a /etc/environment
+   echo "NO_PROXY=localhost,127.0.0.1,10.121.193.0/24,10.20.21.0/27" | sudo tee -a /etc/environment
 
 Restart snapd
 ~~~~~~~~~~~~~
@@ -66,18 +66,16 @@ Run the following command to view the proxy settings:
 
 Here is sample output from the above command:
 
-+------------+---------------------------------------------------------+
-| Proxy      | Value                                                   |
-| variable   |                                                         |
-+============+=========================================================+
-| HTTP_PROXY | http://10.121.193.112:3128                              |
-+------------+---------------------------------------------------------+
-| H          | http://10.121.193.112:3128                              |
-| TTPS_PROXY |                                                         |
-+------------+---------------------------------------------------------+
-| NO_PROXY   | loca                                                    |
-|            | lhost,127.0.0.1,localhost,10.121.193.0/24,10.20.21.0/27 |
-+------------+---------------------------------------------------------+
++-------------+---------------------------------------------------------+
+| Proxy       | Value                                                   |
+| variable    |                                                         |
++=============+=========================================================+
+| HTTP_PROXY  | http://10.121.193.112:3128                              |
++-------------+---------------------------------------------------------+
+| HTTPS_PROXY | http://10.121.193.112:3128                              |
++-------------+---------------------------------------------------------+
+| NO_PROXY    | localhost,127.0.0.1,10.121.193.0/24,10.20.21.0/27       |
++-------------+---------------------------------------------------------+
 
 Update proxy settings
 ---------------------
@@ -99,4 +97,4 @@ To clear the proxy settings, run the following command
    sunbeam proxy clear
 
 The above command will clear the proxy settings in /etc/environment and
-model-configs for sunbeam created models.
+model-configs for sunbeam created Juju models.

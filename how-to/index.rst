@@ -49,7 +49,7 @@ Miscellaneous
    misc/live-migration
    misc/manage-a-proxied-environment
    misc/object-storage
-   misc/reconfiguring-k8s-api-endpoint-juju
+   misc/reconfigure-k8s-api-endpoint-juju
    misc/removing-the-primary-node
    misc/scaling-down-the-cluster
    misc/scaling-up-the-cluster

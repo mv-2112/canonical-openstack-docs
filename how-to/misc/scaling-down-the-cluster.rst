@@ -71,7 +71,7 @@ Remove openstack snap configuration:
 
    rm -rf ~/.local/share/openstack
 
-Remove the **microk8s** snap:
+Remove the **MicroK8s** snap:
 
 ::
 
@@ -80,14 +80,14 @@ Remove the **microk8s** snap:
 
 The above steps can take a few minutes to complete.
 
-Remove the disk(s) used by **microceph** on this node:
+Remove the disk(s) used by **MicroCeph** on this node:
 
 ::
 
    sudo microceph disk list
    sudo microceph disk remove <OSD on this node>
 
-Remove the **microceph** snap:
+Remove the **MicroCeph** snap:
 
 ::
 
