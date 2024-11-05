@@ -8,7 +8,8 @@ services - including multiple MicroStack deployments!
 Register the Juju controller
 ----------------------------
 
-`Register an existing Juju controller </t/47397>`__ in MicroStack.
+:doc:`Register an existing Juju controller </how-to/misc/manage-external-juju-controllers>`
+in MicroStack.
 
 [note type=“note”] **Note:** Ensure the Juju user created in the
 external Juju controller has ``superuser`` permissions granted. [/note]

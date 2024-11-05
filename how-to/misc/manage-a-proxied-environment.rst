@@ -10,12 +10,8 @@ corporate proxy server that is separate from the MicroStack deployment.
 
 The proxy server itself must permit access to certain external
 (internet) resources in order for MicroStack to deploy (and operate)
-correctly. These resources are listed on the `Proxy ACL
-access </t/43948>`__ reference page.
-
-[note type=“note”] **Note:** A proxied environment is currently only
-supported in channel ``2023.2/candidate`` and later of the **openstack**
-snap. [/note]
+correctly. These resources are listed on the :doc:`Proxy ACL
+access </reference/proxy-acl-access>` reference page.
 
 Configure for the proxy at the OS level
 ---------------------------------------
@@ -23,10 +19,11 @@ Configure for the proxy at the OS level
 The steps given in the following two sub-sections will allow a network
 host to “talk” to your local proxy server.
 
-[note type=“note”] **Important:** Perform the instructions on all of
-your MicroStack nodes. Do this before installing your cluster (as
-described on either the `Multi-node </t/35727>`__ or `Single-node
-guided </t/35765>`__ pages). [/note]
+.. tip::
+
+   These instructions need to be run on all of the nodes prior to the
+   deploying the nodes in the cluster.
+
 
 Provide the initial settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -22,8 +22,9 @@ party CA for certificates.
 [note type=“caution”] **Note:** This feature is currently only supported
 in channel ``2023.2/edge`` of the **openstack** snap. [/note]
 
-[note type=“positive”] **Note:** For a how-to on using the TLS CA
-feature see `Implement TLS using a third-party CA </t/43099>`__. [/note]
+.. tip::
+   For a how-to on using the TLS CA feature see :doc:`Implement TLS using a third-party CA
+   </how-to/misc/implement-tls-using-a-third-party-ca>`.
 
 Points of interest for this design:
 

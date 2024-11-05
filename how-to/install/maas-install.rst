@@ -319,7 +319,7 @@ They are:
 
 -  ``name``: an arbitrary name (e.g. ``mycloud``)
 -  ``token``: a `MAAS API
-   key <https://maas.io/docs/how-to-manage-user-access#edit-sshapi-keys-ui-6>`__
+   key <https://maas.io/docs/how-to-manage-user-access>`__
    (e.g. ``z6sbVdQTuKWPFCFvPF:WkRdtsJnwXu38aRHUz:77SqG9DmaugFRHNT4SFtyGqubmLawNBJ``)
 -  ``url``: the MAAS URL (e.g. ``http://10.236.110.5:5240/MAAS``)
 
@@ -495,7 +495,7 @@ If ‘Yes’, several sub-questions will be asked.
    Enter value for no_proxy: ():
 
 Note that proxy settings can also be supplied by using a manifest (see
-`Deployment manifest </t/42672>`__).
+:doc:`Deployment manifest </reference/concepts/deployment-manifest>`).
 
 Deploy the cloud
 ----------------
@@ -542,8 +542,9 @@ The network range for the initial project defaults to
 ``192.168.122.0/24``. This is for OpenStack internal purposes (“private
 networking”) and should suffice for most clouds.
 
-These questions are explained in more detail on the `Interactive
-configuration prompts </t/36230>`__ page in the reference section.
+These questions are explained in more detail on the :doc:`Interactive
+configuration prompts </reference/interactive-configuration-prompts>` page in
+the reference section.
 
 Launch a VM
 -----------
@@ -570,8 +571,8 @@ Related how-to guides
 Now that OpenStack is set up, be sure to check out the following how-to
 guides:
 
--  `Accessing the OpenStack dashboard </t/36232>`__
--  `Using the OpenStack CLI </t/36231>`__
+-  :doc:`Accessing the OpenStack dashboard </how-to/misc/accessing-the-openstack-dashboard>`
+-  :doc:`Using the OpenStack CLI </how-to/misc/using-the-openstack-cli>`
 
 .. raw:: html
 

@@ -7,8 +7,9 @@ There is more than one way to proceed depending on your local networking
 but in this document a bastion (jump host) will first be created. Juju
 workloads will then be managed from that system.
 
-[note type=“note”] **Note**: The `Images Sync </t/44201>`__ plugin is a
-dependency of the Juju workload feature. Make sure to enable it. [/note]
+.. tip::
+   The :doc:`Images Sync </how-to/features/images-sync>` feature is a dependency of the Juju
+   workload feature. Make sure to enable it.
 
 Set up the bastion
 ------------------

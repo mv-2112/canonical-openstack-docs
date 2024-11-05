@@ -149,7 +149,7 @@ will be asked.
    Enter value for no_proxy: ():
 
 Note that proxy settings can also be supplied by using a manifest (see
-`Deployment manifest </t/42672>`__).
+:doc:`Deployment manifest </reference/concepts/deployment-manifest>`).
 
 When prompted, enter the CIDR and the address range for the control
 plane networking and the full path to the un-partitioned disk. Here we

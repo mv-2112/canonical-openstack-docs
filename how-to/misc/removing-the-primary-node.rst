@@ -8,8 +8,8 @@ Removing the primary node refers to the removal of the initial
 destroy the entire MicroStack deployment. [/note]
 
 If the deployment consists of multiple nodes then remove all non-primary
-nodes **before** removing the primary node. See page `Scaling down the
-cluster </t/38982>`__ for instructions on doing that.
+nodes **before** removing the primary node. See page :doc:`Scaling down the
+cluster </how-to/misc/scaling-down-the-cluster>` for instructions on doing that.
 
 Remove components from the node
 -------------------------------

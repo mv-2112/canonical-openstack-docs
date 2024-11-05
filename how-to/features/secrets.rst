@@ -1,8 +1,7 @@
 Secrets as a Service
 ====================
 
-This feature deploys `Barbican <https://docs.openstack.org/barbican>`__,
-the OpenStack Key Manager service.
+This feature deploys `Barbican`_, the OpenStack Key Manager service.
 
 Enabling Secrets
 ----------------
@@ -14,12 +13,12 @@ To enable Secrets, run the following command:
    sunbeam enable secrets
 
 The openstack CLI can now be used to manage Secrets. See the upstream
-`Built-in Barbican
-documentation <https://docs.openstack.org/python-barbicanclient/latest/cli/cli_usage.html#secret-create>`__
-for details.
+`Barbican CLI`_ documentation for details.
 
-[note type=“note”] **Note**: The `Vault </t/37158>`__ feature is a
-dependency of the Secrets feature. Make sure to enable it. [/note]
+.. note::
+
+   The :doc:`Vault </how-to/features/vault>` feature is a dependency of the
+   Secrets feature and should be enabled prior to enabling Barbican.
 
 Disabling Secrets
 -----------------

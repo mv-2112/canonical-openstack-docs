@@ -45,4 +45,5 @@ Use TLS CA
 ----------
 
 TLS certificates must now be provided to the Traefik units. This is
-covered on the `Implement TLS using a third-party CA </t/43099>`__ page.
+covered on the :doc:`Implement TLS using a third-party CA
+</how-to/misc/implement-tls-using-a-third-party-ca>` page.

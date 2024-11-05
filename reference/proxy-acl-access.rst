@@ -2,8 +2,8 @@ Proxy ACL access
 ================
 
 For a network that is constrained by a proxy server, efforts will be
-needed to ensure that MicroStack works as intended. See the `Manage a
-proxied environment </t/43946>`__ page for guidance.
+needed to ensure that MicroStack works as intended. See the :doc:`Manage a
+proxied environment </how-to/misc/manage-a-proxied-environment>` page for guidance.
 
 The proxy server itself must have ACL rules that permit all MicroStack
 nodes to access the resources listed below.

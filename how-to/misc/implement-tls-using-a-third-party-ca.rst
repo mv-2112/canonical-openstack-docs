@@ -4,9 +4,10 @@ Implementing TLS using a third-party CA
 This page shows how to implement TLS when using an external Certificate
 Authority for your certificates.
 
-[note type=“info”] **Note:** For conceptual background on TLS in
-MicroStack see the `Service endpoint encryption </t/43050>`__ page.
-[/note]
+.. tip::
+   For conceptual background on TLS in Canonical OpenStack see the
+   :doc:`Service endpoint encryption </reference/concepts/service-endpoint-encryption>`
+   page.
 
 [note type=“caution”] **Note:** This feature is currently only supported
 in channel ``2023.2/edge`` of the **openstack** snap. [/note]
@@ -14,7 +15,7 @@ in channel ``2023.2/edge`` of the **openstack** snap. [/note]
 Enable the TLS CA feature
 -------------------------
 
-This method relies on the TLS CA feature. See the `TLS CA </t/42574>`__
+This method relies on the TLS CA feature. See the :doc:`TLS CA </how-to/features/tls-ca>`
 feature page for how to enable it.
 
 If the feature is ever disabled (see the feature page), to re-enable,
@@ -117,7 +118,7 @@ This example’s final total output is:
    CA certs configured
 
 Alternatively to avoid prompt, update TLS certificates in manifest file,
-see certificates block in `manifest reference </t/45305>`__. Run the
+see certificates block in :doc:`manifest reference </reference/manifest-file-reference>`. Run the
 below command to inject TLS certificates into the cloud:
 
 ::

@@ -18,8 +18,8 @@ Connect to an existing COS
 Enabling Observability
 ~~~~~~~~~~~~~~~~~~~~~~
 
-`Register the external controller </t/47397/>`__ hosting COS in
-MicroStack.
+:doc:`Register the external controller </how-to/misc/manage-external-juju-controllers>`
+hosting COS in MicroStack.
 
 Ensure the Juju user has consume permissions granted on the
 observability related offers.

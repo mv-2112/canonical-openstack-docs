@@ -3,9 +3,7 @@
 Containers as a Service
 =======================
 
-This feature deploys
-`Magnum <https://docs.openstack.org/magnum/latest/index.html>`__, the
-OpenStack CaaS service.
+This feature deploys `Magnum`_, the OpenStack CaaS service.
 
 Enabling CaaS
 -------------
@@ -17,18 +15,15 @@ To enable CaaS, run the following command:
    sunbeam enable caas
 
 Use the OpenStack CLI to manage container infrastructures. See the
-upstream `Magnum
-documentation <https://docs.openstack.org/magnum/latest/user/index.html>`__
-for details.
+upstream `Magnum`_ documentation for details.
 
-[note type=“note”] **Note**: The `Secrets </t/39257>`__ and
-`Orchestration </t/37279>`__ features are dependencies of the CaaS
-feature. Make sure to enable them. [/note]
+.. note::
+   The :doc:`secrets` and :doc:`orchestration` features are dependencies of the CaaS
+   feature. Make sure to enable them.
 
-When using the CaaS feature in conjunction with the `Load
-Balancer </t/39329>`__ feature, you are subject to the same limitations
-as the latter feature. In particular, the OVN provider only supports the
-``SOURCE_IP_PORT`` load balancing algorithm.
+When using the CaaS feature in conjunction with the :doc:`load-balancer` feature, you
+are subject to the same limitations as the latter feature. In particular, the OVN provider
+only supports the ``SOURCE_IP_PORT`` load balancing algorithm.
 
 Configuring CaaS
 ----------------
@@ -70,7 +65,23 @@ Create a cluster template using the following command:
 
 Sample output:
 
-::
+.. terminal::
+   :user: ubuntu
+   :host: sunbeam01
+   :dir: ~
+   :input: openstack coe cluster template
+      create k8s-cluster-template-ovn
+      --image fedora-coreos-38
+      --keypair sunbeam
+      --external-network external-network
+      --flavor m1.small
+      --docker-volume-size 15
+      --master-lb-enabled
+      --labels octavia_provider=ovn
+      --labels octavia_lb_algorithm=SOURCE_IP_PORT
+      --network-driver flannel
+      --coe kubernetes
+
 
    Request to create cluster template k8s-cluster-template-ovn accepted
    +-----------------------+-----------------------------------------------------------------------+

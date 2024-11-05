@@ -93,10 +93,15 @@ Verify the cloud by launching a VM called 'test' based on the 'ubuntu' image (Ub
 
 Sample output:
 
-.. code:: bash
+.. terminal::
+   :user: ubuntu
+   :host: sunbeam01
+   :dir: /home/ubuntu/
+   :input: sunbeam launch ubuntu --name test
 
     Launching an OpenStack instance ...
     Access instance with `ssh -i /home/ubuntu/.config/openstack/sunbeam ubuntu@10.20.20.200`
+
 
 Connect to the VM over SSH using the provided command.
 

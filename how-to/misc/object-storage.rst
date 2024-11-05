@@ -5,7 +5,7 @@ The object storage service providing Swift and S3 endpoints is enabled
 automatically as soon as there are storage nodes in a cluster.
 
 The object storage endpoints can be retrieved using ``openstack``
-client. See `Using OpenStack CLI <t/36231>`__ on how to use OpenStack
+client. See :doc:`Using OpenStack CLI <using-the-openstack-cli>` on how to use OpenStack
 CLI.
 
 Run the below command to get s3 endpoint:

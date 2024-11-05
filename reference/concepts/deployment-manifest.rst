@@ -11,11 +11,8 @@ Manifests are supported by the following commands:
 -  ``sunbeam configure``
 -  ``sunbeam enable``
 
-[note type=“info”] **Note:** This feature is currently only supported in
-channel ``2023.2/edge`` of the **openstack** snap. [/note]
-
 [note type=“positive”] **Note:** For a how-to on using manifests see
-`Managing deployment manifests </t/42265>`__. [/note]
+:doc:`Managing deployment manifests </how-to/misc/managing-deployment-manifests>`. [/note]
 
 A manifest file
 ---------------
@@ -30,8 +27,8 @@ and ``software``. It has the following structure:
    software:
      <software configuration>
 
-See the `Manifest file reference </t/45305>`__ page for details on the
-structure and possible contents of this file.
+See the :doc:`Manifest file reference </reference/manifest-file-reference>`
+page for details on the structure and possible contents of this file.
 
 Deployment configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,8 +36,8 @@ Deployment configuration
 Any infrastructure related configuration like hardware and networking
 are specified in this section. If a key’s value is deemed necessary for
 your deployment and it has not been provided by means of a manifest
-file, you will be asked to enter it via an interactive prompt (see the
-`Interactive configuration prompts </t/36230>`__ page).
+file, you will be asked to enter it via an
+:doc:`interactive prompt </reference/interactive-configuration-prompts>`.
 
 Here is an example deployment configuration:
 
@@ -128,9 +125,10 @@ setting as per the local environment (e.g. Keystone LDAP URL).
 It is recommended to test any customisation in a staging environment
 before applying them in production.
 
-[note type=“note”] **Note:** Available charms and their configuration
-options are listed on the `Underlying projects and charms </t/37526>`__
-page. [/note]
+.. tip::
+   Available charms and their configuration options are listed on the
+   :doc:`Underlying projects and charms </reference/underlying-projects-and-charms>`
+   page.
 
 ``terraform`` section
 ^^^^^^^^^^^^^^^^^^^^^

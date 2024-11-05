@@ -7,8 +7,9 @@ manifest file will all its supported keys.
 [note type=“info”] **Note:** The manifest file is currently only
 supported in channel ``2023.2/edge`` of the **openstack** snap. [/note]
 
-[note type=“positive”] **Note:** For a conceptual overview of manifests
-see `Deployment manifest </t/42672>`__. [/note]
+.. tip::
+   For a conceptual overview of manifests, see the :doc:`Deployment manifest
+   <concepts/deployment-manifest>` page.
 
 .. code:: yaml
 

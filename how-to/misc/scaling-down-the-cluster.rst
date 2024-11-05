@@ -5,8 +5,9 @@ Scaling down the cluster refers to the removal of cluster members.
 
 These instructions show how to remove a node with the exception of the
 primary (bootstrap) node. For instructions on the latter, see page
-`Removing the primary node </t/39001>`__. Note that, in terms of
-removing nodes, the primary node is always the last to be removed.
+:doc:`Removing the primary node </how-to/misc/removing-the-primary-node>`.
+Note that, in terms of removing nodes, the primary node is always the last
+to be removed.
 
 Remove the node
 ---------------

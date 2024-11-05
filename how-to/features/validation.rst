@@ -95,8 +95,8 @@ The result of the most recent run can be retrieved with:
 Periodic validation
 ~~~~~~~~~~~~~~~~~~~
 
-If the `Observability </t/39859>`__ feature is also enabled, periodic
-validation tests will be performed using the ``quick`` profile.
+If the :doc:`Observability </how-to/features/observability>` feature is also enabled,
+periodic validation tests will be performed using the ``quick`` profile.
 
 By default, periodic checks are scheduled to execute on an hourly basis.
 You can configure this frequency to a 5-field
@@ -122,7 +122,7 @@ intervals under 15 minutes are not supported. [/note]
 Results will be displayed in a validation-specific Grafana dashboard and
 alerts will be fired when periodic checks fail. For more information on
 how to access Grafana dashboards and receive alerts, please refer to the
-`Observability </t/39859>`__ feature documentation.
+:doc:`Observability </how-to/features/observability>` feature documentation.
 
 .. figure:: validation_800x533.png
    :alt: Screenshot from 2024-03-06 20-13-37|800x533

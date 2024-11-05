@@ -9,10 +9,11 @@ allows the user to specify hardware and networking options particular to
 their environment. This reference page provides a detailed description
 of each prompt (question).
 
-[note type=“note”] **Note:** Some of these questions’ values can be
-provided by means of a manifest file passed to the
-``sunbeam cluster bootstrap`` and ``sunbeam configure`` commands. See
-the `Deployment manifest </t/42672>`__ page. [/note]
+.. tip::
+   Some of these questions’ values can be provided by means of a
+   :doc:`manifest file <concepts/deployment-manifest>`
+   file passed to the ``sunbeam cluster bootstrap`` and ``sunbeam configure``
+   commands.
 
 Below are all of the questions that can potentially be asked. What
 questions get asked are sometimes dependent upon the response given in a

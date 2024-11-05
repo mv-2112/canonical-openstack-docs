@@ -119,7 +119,7 @@ Charms
 Both Kubernetes charms and machine charms are available.
 
 Configuration options are useful when a deployment manifest is in use.
-See the `Deployment manifest </t/42672>`__ page.
+See the :doc:`Deployment manifest <concepts/deployment-manifest>` page.
 
 Kubernetes charms
 ~~~~~~~~~~~~~~~~~
@@ -130,75 +130,75 @@ Kubernetes charms
   * - Charm
     - Configuration options
   * - `Alert Manager <https://charmhub.io/alertmanager-k8s>`__
-    - `options <https://charmhub.io/alertmanager-k8s/configure>`__
+    - `options <https://charmhub.io/alertmanager-k8s/configurations>`__
   * - `Aodh <https://charmhub.io/aodh-k8s>`__
-    - `options <https://charmhub.io/aodh-k8s/configure>`__
+    - `options <https://charmhub.io/aodh-k8s/configurations>`__
   * - `Barbican <https://charmhub.io/barbican-k8s>`__
-    - `options <https://charmhub.io/barbican-k8s/configure>`__
+    - `options <https://charmhub.io/barbican-k8s/configurations>`__
   * - `Catalogue <https://charmhub.io/catalogue-k8s>`__
-    - `options <https://charmhub.io/catalogue-k8s/configure>`__
+    - `options <https://charmhub.io/catalogue-k8s/configurations>`__
   * - `Ceilometer <https://charmhub.io/ceilometer-k8s>`__
-    - `options <https://charmhub.io/ceilometer-k8s/configure>`__
+    - `options <https://charmhub.io/ceilometer-k8s/configurations>`__
   * - `Cinder <https://charmhub.io/cinder-k8s>`__
-    - `options <https://charmhub.io/cinder-k8s/configure>`__
-  * - `Cinder-Ceph <https//charmhub.io/cinder-ceph-k8s>`__
-    - `options <https://charmhub.io/cinder-ceph-k8s/configure>`__
+    - `options <https://charmhub.io/cinder-k8s/configurations>`__
+  * - `Cinder-Ceph <https://charmhub.io/cinder-ceph-k8s>`__
+    - `options <https://charmhub.io/cinder-ceph-k8s/configurations>`__
   * - `Designate <https://charmhub.io/designate-k8s>`__
-    - `options <https://charmhub.io/designate-k8s/configure>`__
+    - `options <https://charmhub.io/designate-k8s/configurations>`__
   * - `Designate-BIND <https://charmhub.io/designate-bind-k8s>`__
-    - `options <https://charmhub.io/designate-bind-k8s/configure>`__
+    - `options <https://charmhub.io/designate-bind-k8s/configurations>`__
   * - `Glance <https://charmhub.io/glance-k8s>`__
-    - `options <https://charmhub.io/glance-k8s/configure>`__
+    - `options <https://charmhub.io/glance-k8s/configurations>`__
   * - `Gnocchi <https://charmhub.io/gnocchi-k8s>`__
-    - `options <https://charmhub.io/gnocchi-k8s/configure>`__
-  * - `Grafana Agent <httpscharmhub.io/grafana-agent-k8s>`__
-    - `options <https://charmhub.io/grafana-agent-k8s/configure>`__
+    - `options <https://charmhub.io/gnocchi-k8s/configurations>`__
+  * - `Grafana Agent <https://charmhub.io/grafana-agent-k8s>`__
+    - `options <https://charmhub.io/grafana-agent-k8s/configurations>`__
   * - `Grafana <https://charmhub.io/grafana-k8s>`__
-    - `options <https://charmhub.io/grafana-k8s/configure>`__
+    - `options <https://charmhub.io/grafana-k8s/configurations>`__
   * - `Heat <https://charmhub.io/heat-k8s>`__
-    - `options <https://charmhub.io/heat-k8s/configure>`__
+    - `options <https://charmhub.io/heat-k8s/configurations>`__
   * - `Horizon <https://charmhub.io/horizon-k8s>`__
-    - `options <https://charmhub.io/horizon-k8s/configure>`__
+    - `options <https://charmhub.io/horizon-k8s/configurations>`__
   * - `Keystone <https://charmhub.io/keystone-k8s>`__
-    - `options <https://charmhub.io/keystone-k8s/configure>`__
+    - `options <https://charmhub.io/keystone-k8s/configurations>`__
   * - `Keystone LDAP <https://charmhub.io/keystone-ldap-k8s>`__
-    - `options <https://charmhub.io/keystone-ldap-k8s/configure>`__
+    - `options <https://charmhub.io/keystone-ldap-k8s/configurations>`__
   * - `Loki <https://charmhub.io/loki-k8s>`__
-    - `options <https://charmhub.io/loki-k8s/configure>`__
+    - `options <https://charmhub.io/loki-k8s/configurations>`__
   * - `Manual TLS Certificates <https://charmhub.io/manual-tls-certificates>`__
-    - `options <https://charmhub.io/manual-tls-certificates/configure>`__
+    - `options <https://charmhub.io/manual-tls-certificates/configurations>`__
   * - `Magnum <https://charmhub.io/magnum-k8s>`__
-    - `options <https://charmhub.io/magnum-k8s/configure>`__
+    - `options <https://charmhub.io/magnum-k8s/configurations>`__
   * - `MySQL <https://charmhub.io/mysql-k8s>`__
-    - `options <https://charmhub.io/mysql-k8s/configure>`__
-  * - `MySQL Router <https:///charmhub.io/mysql-router-k8s>`__
-    - `options <https://charmhub.io/mysql-router-k8s/configure>`__
+    - `options <https://charmhub.io/mysql-k8s/configurations>`__
+  * - `MySQL Router <https://charmhub.io/mysql-router-k8s>`__
+    - `options <https://charmhub.io/mysql-router-k8s/configurations>`__
   * - `Neutron <https://charmhub.io/neutron-k8s>`__
-    - `options <https://charmhub.io/neutron-k8s/configure>`__
+    - `options <https://charmhub.io/neutron-k8s/configurations>`__
   * - `Nova <https://charmhub.io/nova-k8s>`__
-    - `options <https://charmhub.io/nova-k8s/configure>`__
+    - `options <https://charmhub.io/nova-k8s/configurations>`__
   * - `Octavia <https://charmhub.io/octavia-k8s>`__
-    - `options <https://charmhub.io/octavia-k8s/configure>`__
+    - `options <https://charmhub.io/octavia-k8s/configurations>`__
   * - `OpenStack Exporter <https://charmhub.io/openstack-exporter-k8s>`__
-    - `options <https://charmhub.io/openstack-exporter-k8s/configure>`__
+    - `options <https://charmhub.io/openstack-exporter-k8s/configurations>`__
   * - `OVN Central <https://charmhub.io/ovn-central-k8s>`__
-    - `options <https://charmhub.io/ovn-central-k8s/configure>`__
+    - `options <https://charmhub.io/ovn-central-k8s/configurations>`__
   * - `OVN Relay <https://charmhub.io/ovn-relay-k8s>`__
-    - `options <https://charmhub.io/ovn-relay-k8s/configure>`__
+    - `options <https://charmhub.io/ovn-relay-k8s/configurations>`__
   * - `Placement <https://charmhub.io/placement-k8s>`__
-    - `options <https://charmhub.io/placement-k8s/configure>`__
+    - `options <https://charmhub.io/placement-k8s/configurations>`__
   * - `Prometheus <https://charmhub.io/prometheus-k8s>`__
-    - `options <https://charmhub.io/prometheus-k8s/configure>`__
+    - `options <https://charmhub.io/prometheus-k8s/configurations>`__
   * - `RabbitMQ <https://charmhub.io/rabbitmq-k8s>`__
-    - `options <https://charmhub.io/rabbitmq-k8s/configure>`__
+    - `options <https://charmhub.io/rabbitmq-k8s/configurations>`__
   * - `Self-signed Certificates <https://charmhub.io/self-signed-certificates>`__
-    - `options <https://charmhub.io/self-signed-certificates/configure>`__
+    - `options <https://charmhub.io/self-signed-certificates/configurations>`__
   * - `Tempest <https://charmhub.io/tempest-k8s>`__
-    - `options <https://charmhub.io/tempest-k8s/configure>`__
+    - `options <https://charmhub.io/tempest-k8s/configurations>`__
   * - `Traefik <https://charmhub.io/traefik-k8s>`__
-    - `options <https://charmhub.io/traefik-k8s/configure>`__
+    - `options <https://charmhub.io/traefik-k8s/configurations>`__
   * - `Vault <https://charmhub.io/vault-k8s>`__
-    - `options <https://charmhub.io/vault-k8s/configure>`__
+    - `options <https://charmhub.io/vault-k8s/configurations>`__
 
 Machine charms
 ~~~~~~~~~~~~~~
@@ -209,14 +209,14 @@ Machine charms
   * - Charm
     - Configuration options
   * - `Grafana Agent <https://charmhub.io/grafana-agent>`__
-    - `options <https://charmhub.io/grafana-agent/configure>`__
+    - `options <https://charmhub.io/grafana-agent/configurations>`__
   * - `MicroCeph <https://charmhub.io/microceph>`__
-    - `options <https://charmhub.io/microceph/configure>`__
+    - `options <https://charmhub.io/microceph/configurations>`__
   * - `MicroK8s <https://charmhub.io/microk8s>`__
-    - `options <https://charmhub.io/microk8s/configure>`__
+    - `options <https://charmhub.io/microk8s/configurations>`__
   * - `OpenStack Hypervisor <https://charmhub.io/openstack-hypervisor>`__
-    - `options <https://charmhub.io/openstack-hypervisor/configure>`__
+    - `options <https://charmhub.io/openstack-hypervisor>`__
   * - `Sunbeam Clusterd <https://charmhub.io/sunbeam-clusterd>`__
-    - `options <https://charmhub.io/sunbeam-clusterd/configure>`__
+    - `options <https://charmhub.io/sunbeam-clusterd>`__
   * - `Sunbeam Machine <https://charmhub.io/sunbeam-machine>`__
-    - `options <https://charmhub.io/sunbeam-machine/configure>`__
+    - `options <https://charmhub.io/sunbeam-machine/>`__

@@ -1,9 +1,7 @@
 DNS as a Service
 ================
 
-This feature deploys
-`Designate <https://docs.openstack.org/designate>`__, the OpenStack DNS
-service.
+This feature deploys `Designate`_, the OpenStack DNS service.
 
 Enabling DNS
 ------------
@@ -15,9 +13,7 @@ To enable DNS, run the following command:
    sunbeam enable dns --nameservers="<ns record>"
 
 The openstack CLI can now be used to manage DNS. See the upstream
-`Built-in Designate
-documentation <https://docs.openstack.org/python-designateclient/latest/user/shell-v2.html#working-with-zones>`__
-for details.
+`Designate command-line interface documentation`_ for details.
 
 Nameservers are specified with FQDNs separated by a space, each ending
 with a dot, whose records point to the DNS instance managed by the
@@ -131,3 +127,6 @@ returns the newly-created ``TXT`` record:
 
    dig @10.206.54.244 +short TXT note.sunbeam.tld
    "This is a record created in Sunbeam!"
+
+
+.. _Designate command-line interface documentation: https://docs.openstack.org/python-designateclient/latest/user/shell-v2.html

@@ -156,7 +156,7 @@ log events on ``aodh-evaluator``:
 OpenStack Exporter
 ~~~~~~~~~~~~~~~~~~
 
-When the `Observability </t/39859>`__ feature is enabled, you’ll have
+When the :doc:`Observability </how-to/features/observability>` feature is enabled, you’ll have
 access to the Grafana OpenStack dashboards, providing insights about the
 cloud usage.
 
