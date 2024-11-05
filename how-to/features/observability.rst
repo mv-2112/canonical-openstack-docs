@@ -125,24 +125,18 @@ following information:
 
 The login page looks like this:
 
-.. figure:: https://lh5.googleusercontent.com/O8QceGdUptYfyKOIk5oAUj4ElkpbC5BuXOVzgvd_G1DlNQnVuNT19H3Wm6g2eGdHudVOmUIa-6x30if4p1iUDB6bNmNcSkRRVX6VCf3rZv8yXmysteFwXNCVXIl3YRCfIynQOvpmubvaVgePC-fRzzo
-   :alt: \|624x335
-
-   \|624x335
+.. figure:: grafana-login.png
+   :alt: Grafana login screen
 
 After a successful login, you should see the landing page:
 
-.. figure:: https://lh6.googleusercontent.com/WL_kptpJHJm4DwOr7K_wuckTFOz761hdYfhHRPkfxE6wxehsjoGco1dC2t-DmsU_iLg9v6Pjrk51Gizv_NbmZsgCmbMwbOwuhbo10Rr23qhPJ3AURIc9UPQBlIZV5mzutB0Qr45ckA-xvg1kDEqizOQ
-   :alt: \|624x335
-
-   \|624x335
+.. figure:: grafana-landing.png
+   :alt: Grafana landing screen
 
 You can now look at the different dashboards configured.
 
-.. figure:: https://lh7-us.googleusercontent.com/RPatT1lEIZA9jEXk2wG9DvPLtYRGsZCXNXScmWmAAXSdLdgiVXxAf1NT8HJHms7LngYcNijAhcgZDvfOVYxPgJOBz9L4AVuqSo_DwHy_3EZiqUlOt-8M8X1nfZGKp3FCSVlEypiW09V6IoA8cMHhLlY
-   :alt: \|624x343
-
-   \|624x343
+.. figure:: grafana-dashboards.png
+   :alt: Available dashboards in Grafana
 
 Dashboard
 ---------
@@ -156,10 +150,8 @@ OpenStack Service Overview dashboard
 This is a dashboard providing an overview of the OpenStack services and
 stats.
 
-.. figure:: upload://oYViUcJhxOorEZMO3KPxeidLMsR.jpeg
-   :alt: 1713510393|800x386
-
-   1713510393|800x386
+.. figure:: grafana-openstack-dashboard-overview.jpeg
+   :alt: Openstack Service Overview dashboard
 
 OpenStack Cloud Usage dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,10 +160,8 @@ This is a dashboard providing information on the usage of the OpenStack
 cloud (for example, projects and virtual machines), using metrics mostly from
 `openstack-exporter <https://github.com/openstack-exporter/openstack-exporter>`__.
 
-.. figure:: upload://qXotBvFlYbwssrcVTzH8EcvQYr7.png
-   :alt: 1715301156|800x406
-
-   1715301156|800x406
+.. figure:: grafana-openstack-cloud-usage.png
+   :alt: OpenStack Cloud Usage dashboard
 
 OpenStack Compute Overview dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -179,10 +169,8 @@ OpenStack Compute Overview dashboard
 This is a dashboard more detailed information on the compute nodes,
 using metrics mostly from the Libvirt exporter.
 
-.. figure:: upload://84ANGD2FYcEnmyli0ZU3PEBk53B.png
-   :alt: 1713510810|800x337
-
-   1713510810|800x337
+.. figure:: grafana-compute-overview.png
+   :alt: OpenStack Compute Overview dashboard
 
 Capacity Dashboard
 ~~~~~~~~~~~~~~~~~~
@@ -191,10 +179,8 @@ Capacity Dashboard
 and CPU) of the MicroStack cluster, as well as the capacity of
 individual MicroStack node.
 
-.. figure:: upload://vLKlBFnI4L3Y8r4LKfLUIemnTYW.png
-   :alt: capacity_dashboard-\|800x368
-
-   capacity_dashboard-\|800x368
+.. figure:: grafana-capacity-overview.png
+   :alt: OpenStack Capacity Overview dashboard
 
 Days until storage / memory / CPU reaches threshold
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -214,10 +200,8 @@ will be the first one to exhaust its storage.
 The node-specific panels estimate resource consumption only within the
 given node.
 
-.. figure:: upload://lIkSFG9DpRQUgvj4Y6O4v99hxPQ.png
-   :alt: capacity_single_node|800x174
-
-   capacity_single_node|800x174
+.. figure:: grafana-days-until-threshold.png
+   :alt: Days until resource consumption dashboard
 
 [note type=“note” status=“Note”] You can filter the nodes using the
 multi-select dropdown menu: **Hostname**. [/note]
@@ -259,7 +243,5 @@ This is a dashboard that provides detailed information about a single
 project, including limits and a table of virtual machines. It uses
 metrics from openstack-exporter.
 
-.. figure:: upload://jbnbbbK7zGm6J35zzBDlfUBwp0u.png
-   :alt: 1717662978|800x450
-
-   1717662978|800x450
+.. figure:: grafana-project-overview.png
+   :alt: OpenStack Project Overview dashboard

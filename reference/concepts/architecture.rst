@@ -17,10 +17,8 @@ configured so that access to the OpenStack APIs, Dashboard and
 Instances is local and can only be access directly from the node being
 used.
 
-.. figure:: upload://g54FWbSbE8z5NJtFUp8q78QY06A.png
-   :alt: sunbeam-single-node|349x192
-
-   sunbeam-single-node|349x192
+.. figure:: sunbeam-single-node.png
+   :alt: single node architecture
 
 In a single-node deployment the node will assume all roles - control,
 compute and storage. Note that the use of the storage role currently
@@ -40,10 +38,8 @@ additional nodes are added to the cloud to expand the capacity and
 resilience of the control plane and add additional capacity and
 resilience to the compute and storage components.
 
-.. figure:: upload://ruPFS3MAT5lzNlcrv4yZbFZLKaL.png
-   :alt: sunbeam-multi-node|350x610,75%
-
-   sunbeam-multi-node|350x610,75%
+.. figure:: sunbeam-multi-node.png
+   :alt: multi-node architecture
 
 [note] **Important:** High availability, for both the control plane and
 the data plane, is only achievable with a minimum of three nodes.

@@ -29,17 +29,14 @@ file.
 
 The login page looks like this:
 
-.. figure:: upload://y9PSC9lBwUIPW2m74ow4JPLJfPU.png
-   :alt: Horizon login page|689x416
+.. figure:: horizon-login.png
+   :alt: Horizon login page
 
-   Horizon login page|689x416
 
 After a successful login, you should see the landing page:
 
-.. figure:: upload://nQDIQeaFDg4DcWWiL7P9M7CI49D.png
-   :alt: image|689x416
-
-   image|689x416
+.. figure:: horizon-overview.png
+   :alt: Horizon overview page
 
 You can now start managing your OpenStack cloud (e.g. create additional
 users, launch server instances, etc.).
