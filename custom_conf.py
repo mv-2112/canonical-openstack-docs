@@ -144,6 +144,8 @@ redirects = {}
 linkcheck_ignore = [
     'http://127.0.0.1:8000',
     'http://10.121.193.112:3128',
+    # TODO(wolsen) remove when this site is active
+    'https://canonical.com/openstack',
 ]
 
 # Pages on which to ignore anchors

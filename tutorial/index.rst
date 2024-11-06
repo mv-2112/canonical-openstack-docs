@@ -1,6 +1,11 @@
 Tutorials
 =========
 
+.. toctree::
+   :maxdepth: 1
+
+   get-started-with-openstack
+
 Canonical OpenStack is a complex piece of software.
 
 This tutorial will introduce you to key concepts, tools, processes and operations,
