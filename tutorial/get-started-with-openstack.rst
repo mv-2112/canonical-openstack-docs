@@ -3,7 +3,7 @@ Get started with OpenStack
 
 Welcome!
 
-If you are here, this likely means that you decided to give `Canonical OpenStack <https://canonical.com/openstack>`_ a try. You might have heard from various sources that OpenStack is a complex piece of software. And you know what? This is true. OpenStack is complex for some very good reasons. However, you should also be aware that with the use of a proper tooling its complexity can be fully tamed.
+If you are here, this likely means that you decided to give `Canonical OpenStack`_ a try. You might have heard from various sources that OpenStack is a complex piece of software. And you know what? This is true. OpenStack is complex for some very good reasons. However, you should also be aware that with the use of a proper tooling its complexity can be fully tamed.
 
 In this tutorial we will show you how to get started with Canonical OpenStack in a few simple steps. We will walk you through its installation and configuration processes and get your first VM running on top of it. You will only need one machine for this purpose and around 30 minutes to spare.
 
@@ -30,7 +30,7 @@ You will only need one dedicated physical machine with:
 
 .. TODO: TO be updated to Ubuntu Desktop 24.04 LTS once the re-base is complete
 
-You can also use a virtual machine instead, but you can expect some performance degradataion in this case.
+You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
 .. warning ::
 
@@ -48,7 +48,10 @@ Canonical OpenStack can be deployed for sample usage in four simple steps. Once 
 Install the snap
 ----------------
 
-We are going to start with installing the ``openstack`` `snap <https://snapcraft.io/openstack>`_. The ``openstack`` snap includes the ``sunbeam`` command which we'll further use to bootstrap the cloud and to operate it post-deployment. Sunbeam acts like a high-level interface to Canonical OpenStack, effectively abstracting its complexity from operators.
+We are going to start with installing the `OpenStack snap`_. The ``openstack`` snap includes the
+``sunbeam`` command which we'll further use to bootstrap the cloud and to operate it
+post-deployment. Sunbeam acts like a high-level interface to Canonical OpenStack, effectively
+abstracting its complexity from operators.
 
 To install the ``openstack`` snap, execute the following terminal command:
 
@@ -68,7 +71,8 @@ Before we'll be able to bootstrap the cloud, we have to prepare the machine for 
 * ensuring all required software dependencies are installed, including the ``openssh-server``,
 * configuring passwordless access to the ``sudo`` command for all terminal commands for the currently logged in user (i.e. ``NOPASSWD:ALL``).
 
-In order to facilate this process, Sunbeam can generate a script that you can further review and execute step by step:
+In order to facilitate this process, Sunbeam can generate a script that you can further review
+and execute step by step:
 
 .. code-block :: text
    
@@ -87,15 +91,18 @@ Bootstrap the cloud
 
    **Duration:** 20 minutes (exact time might vary depending on your Internet connection speed)
 
-Now, once the machine is ready for Canonical OpenStack usage, we can bootstrap the cloud on top of it. Even though triggered by a single command, the overall process is relatively complex and takes a while to complete. In principle, Sunbeam orchestrates the following actions in the background:
+Now, once the machine is ready for Canonical OpenStack usage, we can bootstrap the cloud on top of
+it. Even though triggered by a single command, the overall process is relatively complex and takes
+a while to complete. In principle, Sunbeam orchestrates the following actions in the background:
 
-* it installs `Canonical Kubernetes <https://ubuntu.com/kubernetes>`_ for the purpose of hosting cloud control functions,
-* it installs `Canonical Juju <https://juju.is/>`_ and bootstraps a Juju controller on top of Canonical Kubernetes,
-* it installs and configures cloud control functions on top of Canonical Kubernetes,
-* it installs the ``openstack-hypervisor`` `snap <https://snapcraft.io/openstack-hypervisor>`_ and plugs it into cloud control services,
-* it installs the ``microceph`` `snap <https://snapcraft.io/microceph>`_ and plugs it into cloud control services.
+* Installs `Canonical Kubernetes <https://ubuntu.com/kubernetes>`_ for the purpose of hosting
+  cloud control functions,
+* Installs `Canonical Juju`_ and bootstraps a Juju controller on top of Canonical Kubernetes,
+* Installs and configures cloud control functions on top of Canonical Kubernetes,
+* Installs the `OpenStack Hypervisor snap`_ and plugs it into cloud control services,
+* Installs the `MicroCeph snap`_ and plugs it into cloud control services.
 
-To bootstrap the cloud for sample usage, execute the following commmand:
+To bootstrap the cloud for sample usage, execute the following command:
 
 .. code-block :: text
    
@@ -116,7 +123,7 @@ Configure the cloud
 
 At this point your Canonical OpenStack installation is already up and running. However, to be able to demonstrate its capabilities, we have to prepare the cloud for sample use. This includes creating a ``demo`` user, populating the cloud with some common templates and creating a sandbox project with some basic configuration where we'll be able to provision resources.
 
-We will explore in another tutorial how this process usually looks like under the hood. However, for the time beeing we're simply going to let Sunbeam handle that.
+We will explore in another tutorial how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
 
 .. TODO: Add a link to the tutorial III
 
@@ -139,7 +146,7 @@ Launch a VM
 
    **Duration:** 1 minute (first VM launch always takes longer)
 
-The best way to verify whether Canonical OpenStack has been deployed successfully is to try to launch a VM on top of it. We will explore in another tutorial how this process usually looks like under the hood. However, for the time beeing we're simply going to let Sunbeam handle that.
+The best way to verify whether Canonical OpenStack has been deployed successfully is to try to launch a VM on top of it. We will explore in another tutorial how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
 
 .. TODO: Add a link to the tutorial II
 
