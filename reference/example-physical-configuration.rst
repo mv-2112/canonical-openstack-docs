@@ -4,7 +4,9 @@ Example physical configuration
 Sunbeam requires a properly cabled and configured hardware to be able to install Canonical OpenStack. Therefore, we use one example physical configuration across all examples in this documentation. It is highly recommended that you use exactly the same configuration in your environment until you become proficient with both OpenStack and Sunbeam.
 
 .. note ::
-  Depending on your scenario you might not need both physical networks and all six machines. Please refer to intrustions under tutorials and how-go guides for exact hardware requirements for each scenario.
+  Depending on your scenario you might not need both physical networks and all six machines.
+  Please refer to instructions under tutorials and how-go guides for exact hardware requirements
+  for each scenario.
 
 Layout
 ++++++
@@ -38,7 +40,11 @@ Those should be plugged into a router with an access to the Internet as shown in
 Virtual networks
 ----------------
 
-In addition to physical networks lited above, Canonical OpenStack uses virtual networks to provide an inter-VM communication for tenant's workloads running inside of a project. These networks are not routable outside of the Canonical OpenStack installation. We will use one such network in the example configuration and we will refer to it as **Project** in all parts of the documentation.
+In addition to physical networks listed above, Canonical OpenStack uses virtual networks to
+provide an inter-VM communication for tenant's workloads running inside of a project. These
+networks are not routable outside of the Canonical OpenStack installation. We will use one such
+network in the example configuration and we will refer to it as **Project** in all parts of the
+documentation.
 
 Reference parameters
 --------------------
