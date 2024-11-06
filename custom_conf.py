@@ -142,8 +142,9 @@ redirects = {}
 
 # Links to ignore when checking links
 linkcheck_ignore = [
-    'http://127.0.0.1:8000'
-    ]
+    'http://127.0.0.1:8000',
+    'http://10.121.193.112:3128',
+]
 
 # Pages on which to ignore anchors
 # (This list will be appended to linkcheck_anchors_ignore_for_url)
@@ -182,7 +183,8 @@ custom_extensions = [
 # sphinx-notfound-page, sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery,
 # sphinxext-opengraph
 custom_required_modules = [
-    'sphinxcontrib-svg2pdfconverter[CairoSVG]'
+    'sphinxcontrib-svg2pdfconverter[CairoSVG]',
+    'sphinxcontrib-spelling',
 ]
 
 # Add files or directories that should be excluded from processing.
@@ -201,7 +203,9 @@ custom_html_js_files = []
 # Specify a reST string that is included at the end of each file.
 # If commented out, use the default (which pulls the reuse/links.txt
 # file into each reST file).
-# custom_rst_epilog = ''
+custom_rst_epilog = """
+.. include:: /reuse/links.txt
+"""
 
 # By default, the documentation includes a feedback button at the top.
 # You can disable it by setting the following configuration to True.

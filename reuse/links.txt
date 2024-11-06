@@ -2,3 +2,10 @@
 .. _Read the Docs at Canonical: https://library.canonical.com/documentation/read-the-docs
 .. _How to publish documentation on Read the Docs: https://library.canonical.com/documentation/publish-on-read-the-docs
 .. _Example product documentation: https://canonical-example-product-documentation.readthedocs-hosted.com/
+
+.. _Barbican: https://docs.openstack.org/barbican/latest/index.html
+.. _Barbican CLI: https://docs.openstack.org/python-barbicanclient/latest/cli/
+.. _Designate: https://docs.openstack.org/designate/latest/index.html
+.. _Magnum: https://docs.openstack.org/magnum/latest/index.html
+
+.. _Multipass: https://multipass.run

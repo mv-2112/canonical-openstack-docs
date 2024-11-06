@@ -10,23 +10,7 @@ examples of good practice, and pointers to much more detailed information.
 Learning OpenStack
 ------------------
 
-Coming soon
-
-.. toctree::
-   :maxdepth: 1
-
-Deploying OpenStack
--------------------
-
-This tutorial will introduce you to designing and implementing your OpenStack cloud. It
-will walk you through standalone installation materials for a small 3-node cluster and
-expand how to integrate with MAAS.
-
-.. toctree::
-   :maxdepth: 1
-
-   Standalone installation <standalone-install>
-   MAAS installation <maas-install>
+Coming soon.
 
 Networking
 ----------
