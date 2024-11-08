@@ -11,8 +11,8 @@ Register the Juju controller
 :doc:`Register an existing Juju controller </how-to/misc/manage-external-juju-controllers>`
 in MicroStack.
 
-[note type=“note”] **Note:** Ensure the Juju user created in the
-external Juju controller has ``superuser`` permissions granted. [/note]
+[note type=“note”] **Note:** Ensure a dedicated user is created in the
+external Juju controller and has ``superuser`` permissions granted on this controller. [/note]
 
 Bootstrap with registered Juju controller
 -----------------------------------------
@@ -34,3 +34,10 @@ deployed, so the roles option is not used:
 ::
 
    sunbeam cluster bootstrap --controller prod-controller-01
+
+Example external Juju configuration
+-----------------------------------
+
+An external Juju controller can be boostrapped on top of a LXD cluster, for example, running across the same machines that are used in the Canonical OpenStack deployment.
+
+Please refer to the :doc:`Bootstrap highly available Juju controller on top of a LXD cluster </how-to/misc/bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster>` section of this documentation for a detailed procedure on how to accomplish this goal.
