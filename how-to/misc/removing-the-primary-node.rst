@@ -9,7 +9,7 @@ destroy the entire MicroStack deployment. [/note]
 
 If the deployment consists of multiple nodes then remove all non-primary
 nodes **before** removing the primary node. See page :doc:`Scaling down the
-cluster </how-to/misc/scaling-down-the-cluster>` for instructions on doing that.
+cluster </how-to/misc/scaling-the-cluster-in>` for instructions on doing that.
 
 Remove components from the node
 -------------------------------
