@@ -67,8 +67,8 @@ Miscellaneous
    misc/object-storage
    misc/reconfigure-k8s-api-endpoint-juju
    misc/removing-the-primary-node
-   misc/scaling-up-the-cluster
    misc/scaling-the-cluster-in
+   misc/scaling-the-cluster-out
 
 Troubleshooting
 ---------------
