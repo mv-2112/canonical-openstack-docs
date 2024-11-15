@@ -3,11 +3,18 @@ Get familiar with OpenStack
 
 Welcome!
 
-It's great to see that you decided to continue your journey with `Canonical OpenStack <https://canonical.com/openstack>`_. In the previous tutorial we showed you how to get started with OpenStack in five simple steps. By executing just a few terminal commands we deployed Canonical OpenStack for sample usage and got our first VM running on top of it. Now that the cloud is up and running we'll dig a little bit deeper into it.
+It's great to see that you decided to continue your journey with `Canonical OpenStack`_. In the
+previous tutorial we showed you how to get started with OpenStack in five simple steps. By
+executing just a few terminal commands we deployed Canonical OpenStack for sample usage and got
+our first VM running on top of it. Now that the cloud is up and running we'll dig a little bit
+deeper into it.
 
 .. TODO: Add a link to tutorial-1
 
-In this tutorial we will help you to get familiar with Canonical OpenStack. We will show you how to use both OpenStack dashboard and OpenStack client for the purpose of provisioning cloud resources. We will also demonstrate how to use the Sunbeam client for Canonical OpenStack daily operations.
+In this tutorial we will help you to get familiar with Canonical OpenStack. We will show you how
+to use both OpenStack dashboard and OpenStack client for the purpose of provisioning cloud
+resources. We will also demonstrate how to use the Sunbeam client for Canonical OpenStack daily
+operations.
 
 Ready for the next step? Let's dig into OpenStack together!
 
@@ -26,7 +33,7 @@ You will only need one dedicated physical machine with:
 
 .. TODO: Add a link to tutorial-1
 
-You can also use a virtual machine instead, but you can expect some performance degradataion in this case.
+You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
 .. warning ::
 
@@ -107,14 +114,15 @@ The **Admin** menu on the left is grouped into five sections:
 * **Network** provides access to global network settings, such as RBAC policies,
 * **System** provides access to various system information.
 
-For example, to list all flavors that were defined, navigate to **Admin** → **Compute** → **Flavors**:
+For example, to list all flavors that were defined, navigate to **Admin** → **Compute** →
+**Flavors**:
 
 .. figure:: images/get-familiar-with-openstack-04.png
    :align: center
 
 The **Identity** menu on the left is grouped into six sections:
 
-* **Domains** provides acces to domains,
+* **Domains** provides access to domains,
 * **Projects** provides access to projects,
 * **Users** provides access to user accounts,
 * **Groups** provides access to user groups,
@@ -181,7 +189,10 @@ Provision cloud resource
 
    **Duration:** 8 minutes
 
-Now that you've learned how to use both OpenStack dashboard and OpenStack client, we're going to see how those tools can be used to provision cloud resoures. In the previous tutorial - "Getting started with OpenStack" -  we launched our first test VM. In the following steps we're going to check how this process looks like in details under the hood.
+Now that you've learned how to use both OpenStack dashboard and OpenStack client, we're going to
+see how those tools can be used to provision cloud resources. In the previous tutorial -
+"Getting started with OpenStack" -  we launched our first test VM. In the following steps we're
+going to check how this process looks like in details under the hood.
 
 .. TODO: Add a link to tutorial-1 
 
@@ -260,7 +271,10 @@ Launching instances takes a while. You are going to see that the instance goes t
 Associate a floating IP address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be able to connect to the VM via SSH, we have to associate a `floating IP address <https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/floating-ip.html>`_ with it. Floating IPs are allocated from OpenStack's external network and should be routable within your data centre to ensure an inbound access to VMs.
+To be able to connect to the VM via SSH, we have to associate a `floating IP address
+<https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/floating-ip.html>`__
+with it. Floating IPs are allocated from the OpenStack external network and should be
+routable within your data centre to ensure an inbound access to VMs.
 
 .. TODO: Add a link to a page that explains the concept of the external network
 
@@ -269,7 +283,7 @@ Under the **Actions** column beside *my_instance_1*, select **Associate Floating
 .. figure:: images/get-familiar-with-openstack-13.png
    :align: center
 
-Press **Plus** beside the **IP Adress** field:
+Press **Plus** beside the **IP Address** field:
 
 .. figure:: images/get-familiar-with-openstack-14.png
    :align: center
@@ -441,7 +455,7 @@ Once this command finishes, you should be able to see the following message on t
 
 .. TODO:: Update the link to the enterprise requirements page
 
-Depending on the subscription type, your machine is now eligable for certain Ubuntu Pro services:
+Depending on the subscription type, your machine is now eligible for certain Ubuntu Pro services:
 
 .. code-block :: text
 
