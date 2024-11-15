@@ -27,7 +27,7 @@ You will only need one dedicated physical machine with:
 
 .. TODO: Add a link to tutorial-1 and tutorial-2
 
-You can also use a virtual machine instead, but you can expect some performance degradataion in this case.
+You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
 .. warning ::
 
@@ -57,12 +57,14 @@ Populate OpenStack with templates
 
 OpenStack uses the concept of `cloud images <https://docs.openstack.org/image-guide/>`_ which serve as templates for virtual machines creation. They contain the guest OS and are customised by `cloud-init <https://cloud-init.io/>`_ during the VM provisioning process. In this process, various pre-defined or user-defined actions are handled in an automated way (for example, cloud-init inserts public SSH keys of all authorised users).
 
-The upstream community maintains an `list of repositories <https://docs.openstack.org/image-guide/obtain-images.html>`_ from where users can download template images. For example, the repository of Ubuntu cloud images is available `here <https://cloud-images.ubuntu.com/>`_. However, users can also convert their existing images when migrating to Canonical OpenStack from other virtualisation platforms.
+The upstream community maintains an `list of repositories <https://docs.openstack
+.org/image-guide/obtain-images.html>`_ from where users can download template images. For example, the repository of Ubuntu cloud images is available `here <https://cloud-images.ubuntu.com/>`__. However, users can also convert their existing images when migrating to Canonical OpenStack from other virtualisation platforms.
 
 Converting images
 -----------------
 
-OpenStack uses QCOW2 image format, meaning that any other images have to be converted first before you'll be able to launch VMs. A typical use case here are VMware images which used VMDK format instead. In the following example we'll convert a VMDK image containing the Ubuntu 24.04 LTS OS that you can download from `here <https://cloud-images.ubuntu.com/daily/server/noble/current/noble-server-cloudimg-amd64.vmdk>`_.
+OpenStack uses qcow image format, meaning that any other images have to be converted first before
+you'll be able to launch VMs. A typical use case here are VMware images which used VMDK format instead. In the following example we'll convert a VMDK image containing the Ubuntu 24.04 LTS OS that you can download from `here <https://cloud-images.ubuntu.com/daily/server/noble/current/noble-server-cloudimg-amd64.vmdk>`_.
 
 To convert the image, first install the ``qemu-utils`` tool:
 
@@ -136,7 +138,11 @@ Set up a new project
 
    **Duration:** 5 minutes
 
-OpenStack is multi-tenant by default, meaning that more than one user can use the platform at the time without having an access to other users' resources, impacting their work in any way or even noticing their existance. Multi-tenancy is provided through the concepf of domains and projects which are an abstraction used by other OpenStack services to group and isolate various types of resources (e.g. VMs).
+OpenStack is multi-tenant by default, meaning that more than one user can use the platform at
+the time without having an access to other users' resources, impacting their work in any way or
+even noticing their existence. Multi-tenancy is provided through the concept of domains and
+projects which are an abstraction used by other OpenStack services to group and isolate various
+types of resources (e.g. VMs).
 
 In turn, authentication and authorisation functions are handled through the concept of users, groups and roles. Even though we're going to use the default database backend in this tutorial, organisations can also plug their Canonical OpenStack into an enterprise identity and access management system, such as LDAP.
 
@@ -212,7 +218,7 @@ Now that your colleagues have got their own account created and that they have g
 
 In previous tutorials we used the ``sunbeam configure`` command to configure the *demo* project for sample usage. In the following steps we're going to see how this process looks like in detail under the hood.
 
-We will use OpenStack client for this purpose. However, all those actions can also be executed through the dashboard. We will also use *myuser* user's credentials. However, all those actiocns could also be performed by the *admin* user.
+We will use OpenStack client for this purpose. However, all those actions can also be executed through the dashboard. We will also use *myuser* user's credentials. However, all those actions could also be performed by the *admin* user.
 
 Create a key pair
 -----------------
@@ -284,7 +290,8 @@ Lastly, we have to attach the *external-network* network to this router and conf
 
    openstack router set --external-gateway external-network myrouter
 
-The *external-network* network is OpenStack's external network that is attached to the host. It was created automatically by Sunbeam during Canonical OpenStack deployment.
+The *external-network* network is the external network that is attached to the host. It was
+created automatically by Sunbeam during the Canonical OpenStack deployment.
 
 .. _floatingips:
 
@@ -302,11 +309,12 @@ To allocate floating IP, execute the following command:
 Allow inbound traffic
 ---------------------
 
-OpenStack uses the concept of security groups to manage inbound and outbound network traffic. Those serve as virtual firewalls enforcing ACLs against incomming and outgoing network connections.
+OpenStack uses the concept of security groups to manage inbound and outbound network traffic. Those serve as virtual firewalls enforcing ACLs against incoming and outgoing network connections.
 
-By default newly create projects would only have the *default* security group defined. However, this group doesn't allow inbound SSH connctions out of the box.
+By default newly create projects would only have the *default* security group defined. However,
+this group doesn't allow inbound SSH connections out of the box.
 
-To allow inboud SSH traffic under the *default* security group, execute the following command:
+To allow inbound SSH traffic under the *default* security group, execute the following command:
 
 .. code-block :: text
 

@@ -2,6 +2,7 @@
 Alertmanager
 Ansible
 ACL
+ACLs
 APIs
 Aodh
 Barbican
@@ -43,6 +44,7 @@ MicroK
 MicroK8s
 MicroStack
 Multipass
+NATed
 NIC
 NOPASSWD
 Northd
@@ -53,6 +55,7 @@ OSI
 OVN
 OVS
 openssh
+QCOW
 QEMU
 RabbitMQ
 RefStack
@@ -64,6 +67,8 @@ TLS
 Terraform
 Traefik
 VMs
+VMDK
+VMware
 VLAN
 amd
 api
@@ -97,7 +102,15 @@ localhost
 metallb
 misconfiguration
 mycloud
+myinstance
+mykeypair
+mynetwork
+mypassword
+myproject
+myrouter
 myspace
+mysubnet
+myuser
 nameserver
 nameservers
 openrc
@@ -108,6 +121,7 @@ passwordless
 pcap
 physnet
 proxied
+qcow
 rebalancing
 refstack
 rgw
