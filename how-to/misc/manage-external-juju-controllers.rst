@@ -5,7 +5,7 @@ As a prerequisite, perform the following steps in existing Juju
 controller
 
 -  `Add a Juju
-   user <https://juju.is/docs/juju/manage-users#heading--add-a-user>`__.
+   user <https://juju.is/docs/juju/manage-users>`__.
 -  `Grant necessary
    permissions <https://juju.is/docs/juju/juju-grant>`__ to the Juju
    user.

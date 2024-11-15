@@ -18,6 +18,7 @@ CSRs
 CTRL
 DHCP
 DNS
+Flavors
 FQDN
 FQDNs
 Gbps
@@ -55,6 +56,7 @@ openssh
 QEMU
 RabbitMQ
 RefStack
+RBAC
 RPC
 SSD
 SimpleStreams
@@ -78,6 +80,8 @@ cron
 dev
 dom
 eno
+flavor
+flavors
 hostname
 hostnames
 href
