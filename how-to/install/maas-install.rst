@@ -18,7 +18,7 @@ You should also be acquainted with these MAAS concepts:
 -  `machine tags <https://maas.io/docs/how-to-use-machine-tags>`__
 -  `storage tags <https://maas.io/docs/how-to-use-storage-tags>`__
 -  `network tags <https://maas.io/docs/how-to-use-network-tags>`__
--  `Reserved IP Ranges <https://maas.io/docs/how-to-manage-ip-ranges>`__
+-  `Reserved IP Ranges <https://maas.io/docs/how-to-customise-maas-networks>`__
 
 Some knowledge of OpenStack networking will be helpful.
 
