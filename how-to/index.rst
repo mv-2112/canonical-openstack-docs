@@ -1,6 +1,11 @@
 How-to Guides
 =============
 
+.. toctree::
+   :maxdepth: 1
+
+   removing-the-primary-node
+
 These how-to guides cover key operations and process in Canonical OpenStack.
 
 Installation
