@@ -169,6 +169,7 @@ custom_myst_extensions = []
 # sphinx_reredirects, sphinxcontrib.jquery, sphinxext.opengraph
 custom_extensions = [
     'sphinx_tabs.tabs',
+    'sphinx.ext.todo',
     'canonical.youtube-links',
     'canonical.related-links',
     'canonical.custom-rst-roles',
