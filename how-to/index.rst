@@ -4,6 +4,16 @@ How-to Guides
 .. toctree::
    :maxdepth: 1
 
+   install-canonical-openstack-using-the-manual-bare-metal-provider
+
+These how-to guides cover key operations and process in Canonical OpenStack.
+
+Guide 1
+-------
+
+.. toctree::
+   :maxdepth: 1
+
    removing-the-primary-node
 
 These how-to guides cover key operations and process in Canonical OpenStack.
