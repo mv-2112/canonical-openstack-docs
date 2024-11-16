@@ -1,20 +1,24 @@
 Install Canonical OpenStack using the manual bare metal provider
 ################################################################
 
-This how-to guide provides all necessary information to install `Canonical OpenStack <https://canonical.com/openstack>`_ with Sunbeam using the manual bare metal provider.
+This how-to guide provides all necessary information to install `Canonical OpenStack`_ with
+Sunbeam using the manual bare metal provider.
 
-Make sure you get familiar with the following sections before proceeding with any instructions listed below:
+Make sure you get familiar with the following sections before proceeding with any instructions
+listed below:
 
 * Architecture
 * Design considerations
-* Enteprise requirements
+* Enterprise requirements
 * Sample configuration
 
 .. TODO: Add links to all the pages listed above
 
 .. note ::
 
-   This how-to guide is intended to serve operators willing to deploy a production-grade cloud. If you're looking for some simple learning materials instead, please refer to the Tutorials section of this documentation.
+   This how-to guide is intended to serve operators willing to deploy a production-grade cloud.
+   If you're looking for some simple learning materials instead, please refer to the Tutorials
+   section of this documentation.
 
 .. TODO: Add a link to the Tutorials page
 
@@ -26,14 +30,16 @@ You will need:
 * two dedicated physical networks with an unlimited access to the Internet
 * one dedicated physical machine with:
 
-  * hardware specifications matching minimum hardware specifications for the *Cloud* node as documented under the Enterprise requirements section
+  * hardware specifications matching minimum hardware specifications for the *Cloud* node as
+    documented under the Enterprise requirements section
   * fresh Ubuntu Server 22.04 LTS installed
 
 .. TODO: Add a link to the Enterprise requirements section
 
 .. TODO: TO be updated to Ubuntu Server 24.04 LTS once the re-base is complete
 
-If you can't provide an ulimited access to the Internet, see the Manage a proxied environment section.
+If you can't provide an unlimited access to the Internet, see the Manage a proxied environment
+section.
 
 .. TODO: Add a link to the Manage a proxied environment section
 
@@ -44,11 +50,17 @@ Additional machines can be added later. See the Scaling the cluster out how-to g
 Install Canonical OpenStack
 +++++++++++++++++++++++++++
 
-When using the manual bare metal provider, Canonical OpenStack installation process is relatively simple and takes around 30 minutes to complete, depending on your Internet connection speed.
+When using the manual bare metal provider, Canonical OpenStack installation process is
+relatively simple and takes around 30 minutes to complete, depending on your Internet connection
+speed.
 
 .. warning ::
 
-   Canonical Juju does not yet support controller HA modelling capabilities when deployed on top Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal provider do not provide HA for all types of governance functions by default. To bypass this limitation Canonical recommends using an external higly available Juju controller. External controller has to be registered before running the ``sunbeam cluster bootstrap`` command.
+   Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
+   Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal
+   provider do not provide HA for all types of governance functions by default. To bypass this
+   limitation Canonical recommends using an external highly available Juju controller. External
+   controller has to be registered before running the ``sunbeam cluster bootstrap`` command.
 
 .. TODO: Add a link to the Using an existing Juju controller how-to guide
 
@@ -61,7 +73,8 @@ First, install the ``openstack`` snap:
 
    sudo snap install openstack
 
-This will install the latest stable version by default. You can use the ``--channel`` switch to install a different version of OpenStack instead.
+This will install the latest stable version by default. You can use the ``--channel`` switch to
+install a different version of OpenStack instead.
 
 To list all available versions, execute the following command:
 
@@ -81,9 +94,11 @@ To prepare the machine for Canonical OpenStack usage, execute the following comm
 This command will:
 
 * ensure all required software dependencies are installed, including the ``openssh-server``,
-* configure passwordless access to the ``sudo`` command for all terminal commands for the currently logged in user (i.e. ``NOPASSWD:ALL``).
+* configure passwordless access to the ``sudo`` command for all terminal commands for the
+  currently logged in user (i.e. ``NOPASSWD:ALL``).
 
-Alternatively, you can let Sunbeam generate a script that you can further review and execute step by step:
+Alternatively, you can let Sunbeam generate a script that you can further review and execute
+step by step:
 
 .. code-block :: text
 
@@ -98,11 +113,14 @@ To bootstrap the cloud, execute the following command:
 
    sunbeam cluster bootstrap --role control,compute,storage
 
-This will assign all roles (``control``, ``compute``, ``storage``) to the machine by default. You can use the ``--role`` switch to narrow them down. See the Architecture section for more details.
+This will assign all roles (``control``, ``compute``, ``storage``) to the machine by default.
+You can use the ``--role`` switch to narrow them down. See the Architecture section for more
+details.
 
 .. TODO: Add a link to the Architecture section
 
-When prompted, answer some interactive questions. Below is a sample output from the *cloud-1* machine from the example configuration: 
+When prompted, answer some interactive questions. Below is a sample output from the *cloud-1*
+machine from the example configuration:
 
 .. TODO: Add a link to the Example configuration seciton
 
@@ -114,11 +132,13 @@ When prompted, answer some interactive questions. Below is a sample output from 
    OpenStack APIs IP ranges (172.16.1.201-172.16.1.240): 172.16.1.201-172.16.1.240
    Ceph devices (/dev/disk/by-id/wwn-0x500a0751e86b8eee): /dev/sdb
 
-You can also refer to the Interactive configuration prompts section for detailed description of each of those questions and some examples.
+You can also refer to the Interactive configuration prompts section for detailed description of
+each of those questions and some examples.
 
 .. TODO: Add a link to the Interactive configuration prompts section
 
-Also note that answers to all those questions can be automated with the use of a Deployment manifest.
+Also note that answers to all those questions can be automated with the use of a Deployment
+manifest.
 
 .. TODO: Add a link to the Deployment manifest section
 
@@ -137,9 +157,12 @@ Finally, configure the cloud for sample usage:
 
    sunbeam configure
 
-Unless directed otherwise, this command will create sample project and user account. You can use the ``--openrc`` switch to automatically generate an OpenStack RC file for this user (e.g. ``--openrc my-openrc``).
+Unless directed otherwise, this command will create sample project and user account. You can use
+the ``--openrc`` switch to automatically generate an OpenStack RC file for this user (e.g.
+``--openrc my-openrc``).
 
-When prompted, answer some interactive questions. Below is a sample output from the *cloud-1* machine from the example configuration:
+When prompted, answer some interactive questions. Below is a sample output from the *cloud-1*
+machine from the example configuration:
 
 .. TODO: Add a link to the Example configuration seciton
 
@@ -158,11 +181,13 @@ When prompted, answer some interactive questions. Below is a sample output from 
    Enable ping and SSH access to instances? [y/n] (y): y
    External network's interface [eno2] (eno2): eno2
 
-You can also refer to the Interactive configuration prompts section for detailed description of each of those questions and some examples.
+You can also refer to the Interactive configuration prompts section for detailed description of
+each of those questions and some examples.
 
 .. TODO: Add a link to the Interactive configuration prompts section
 
-Also note that answers to all those questions can be automated with the use of a Deployment manifest.
+Also note that answers to all those questions can be automated with the use of a Deployment
+manifest.
 
 .. TODO: Add a link to the Deployment manifest section
 
@@ -173,10 +198,11 @@ One finished, you should be able to see the following message on your screen:
    The cloud has been configured for sample usage.
    You can start using the OpenStack client or access the OpenStack dashboard at http://172.16.1.203:80/openstack-horizon
 
-Note that the IP address of the OpenStack dashboard (here ``172.16.1.203``) might be different in your environment.
+Note that the IP address of the OpenStack dashboard (here ``172.16.1.203``) might be different
+in your environment.
 
-Related how-tos
-+++++++++++++++
+Related how-to guides
++++++++++++++++++++++
 
 Now that Canonical OpenStack is installed, you might want to check out the following how-to guides:
 
