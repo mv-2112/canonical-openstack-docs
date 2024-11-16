@@ -1,7 +1,12 @@
 Bootstrap highly available Juju controller on top of a LXD cluster
 ##################################################################
 
-Canonical Juju does not yet support controller HA modelling capabilities when deployed on top Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal provider do not provide HA for all types of governance functions by default. To bypass this limitation Canonical recommends using an external higly available Juju controller. Such a controller can be boostrapped on top of a LXD cluster, for example, running across the same machines that are used in the Canonical OpenStack deployment.
+Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
+Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal
+provider do not provide HA for all types of governance functions by default. To bypass this
+limitation Canonical recommends using an external highly available Juju controller. Such a
+controller can be bootstrapped on top of a LXD cluster, for example, running across the same
+machines that are used in the Canonical OpenStack deployment.
 
 .. TODO: Add a link to the Install Canonical OpenStack using the manual bare metal provider section
 
@@ -402,7 +407,7 @@ To grant the user necessary permissions, run:
 Register Juju controller in the Sunbeam client
 ++++++++++++++++++++++++++++++++++++++++++++++
 
-First, log out from the ``boostrap`` account:
+First, log out from the ``bootstrap`` account:
 
 .. code-block :: text
 
@@ -422,7 +427,8 @@ For example:
 
    sunbeam juju register-controller mylxdcluster-default MHwTB3N1bmJlYW0wPBMSMTcyLjE2LjEuMTIxOjE3MDcwExIxNzIuMTYuMS4xMjI6MTcwNzATEjE3Mi4xNi4xLjEyMzoxNzA3MAQgJIknLboGwWOWObzGW1NFQ45z_TnBIEKt5kwfDL7ZSLsTD215Y2xvdWQtZGVmYXVsdBMA
 
-At this point, you can bootstrap Caonical OpenStack cluster with Sunbeam while using the ``mylxdcluster-default`` controller.
+At this point, you can bootstrap Canonical OpenStack cluster with Sunbeam while using the
+``mylxdcluster-default`` controller.
 
 For example:
 

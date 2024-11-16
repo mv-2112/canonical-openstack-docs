@@ -38,6 +38,7 @@ deployed, so the roles option is not used:
 Example external Juju configuration
 -----------------------------------
 
-An external Juju controller can be boostrapped on top of a LXD cluster, for example, running across the same machines that are used in the Canonical OpenStack deployment.
+An external Juju controller can be bootstrapped on top of a LXD cluster, for example, running
+across the same machines that are used in the Canonical OpenStack deployment.
 
 Please refer to the :doc:`Bootstrap highly available Juju controller on top of a LXD cluster </how-to/misc/bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster>` section of this documentation for a detailed procedure on how to accomplish this goal.
