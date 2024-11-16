@@ -3,9 +3,14 @@ Explore full potential of OpenStack
 
 Welcome!
 
-We hope that both you and your team are now getting up to speed with `Canonical OpenStack <https://canonical.com/openstack>`_. We've already learned how to deploy the coud, interact with it and provision cloud resources (i.e. VMs). But OpenStack is not just a virtualisation platform. Its potential spans far beyond that.
+We hope that both you and your team are now getting up to speed with `Canonical OpenStack`_. We've
+already learned how to deploy the cloud, interact with it and provision cloud resources (i.e.
+VMs). But OpenStack is not just a virtualisation platform. Its potential spans far beyond that.
 
-In this tutorial we will demonstrate how to use a wider spectrum of OpenStack's capabilities to handle a real life scenario. We will provision two VMs with the Apache HTTP Server installed and set up a load balancer in front of them. Moreover, we will automate the whole process using OpenStack's orchestration service (Heat).
+In this tutorial we will demonstrate how to use a wider spectrum of the capabilities of
+OpenStack available to handle a real life scenario. We will provision two VMs with the
+Apache HTTP Server installed and set up a load balancer in front of them. Moreover, we will
+automate the whole process using the OpenStack orchestration service (Heat).
 
 Ready to take your knowledge to the next level? Let's explore full potential of OpenStack together!
 
@@ -26,7 +31,7 @@ You will only need one dedicated physical machine with:
 
 .. TODO: Add a link to tutorial-1, tutorial-2 and tutorial-3
 
-You can also use a virtual machine instead, but you can expect some performance degradataion in this case.
+You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
 .. warning ::
 
@@ -61,7 +66,7 @@ To enable the first feature, execute the following command:
 
    sunbeam enable loadbalancer
 
-Afer a while, you should be able to see the following message on your screen:
+After a while, you should be able to see the following message on your screen:
 
 .. code-block :: text
 
@@ -73,7 +78,7 @@ To enable the other one, run:
 
    sunbeam enable orchestration
 
-After a whille, this should result in:
+After a while, this should result in:
 
 .. code-block :: text
 
@@ -86,7 +91,8 @@ Assign the *load-balancer_member* role
 
    **Duration:** 1 minute
 
-To be able to create and manage load balancers, users must have the *load-balancer_member* role asigned.
+To be able to create and manage load balancers, users must have the *load-balancer_member* role
+assigned.
 
 Execute the following command to assign the *load-balancer_member* role to the *myuser* user in the *myproject* project:
    
