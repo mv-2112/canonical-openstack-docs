@@ -25,6 +25,7 @@ FQDNs
 Gbps
 GiB
 Github
+HOTs
 HTTP
 HTTPS
 Hostname
@@ -71,9 +72,11 @@ VMDK
 VMware
 VLAN
 amd
+apache
 api
 args
 balancers
+balancer's
 backend
 br
 ceph
@@ -99,6 +102,7 @@ kube-api
 filesystem
 filesystems
 localhost
+loadbalancer
 metallb
 misconfiguration
 mycloud
@@ -109,6 +113,7 @@ mypassword
 myproject
 myrouter
 myspace
+mystack
 mysubnet
 myuser
 nameserver
