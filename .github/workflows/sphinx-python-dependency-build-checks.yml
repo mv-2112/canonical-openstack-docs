@@ -11,9 +11,15 @@
 # succeed.
 name: Check and document build requirements for Sphinx venv
 on:
-  - push
-  - pull_request
-  - workflow_dispatch
+  push:
+    paths:
+      - 'conf.py'
+      - 'custom_conf.py'
+  pull_request:
+    paths:
+      - 'conf.py'
+      - 'custom_conf.py'
+  workflow_dispatch:
 
 
 concurrency:
