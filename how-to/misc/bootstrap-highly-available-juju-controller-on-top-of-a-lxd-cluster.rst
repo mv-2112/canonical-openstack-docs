@@ -378,7 +378,7 @@ At this point you should be able to see all three containers being equally distr
 Create necessary credentials for the Sunbeam client
 ---------------------------------------------------
 
-To be able to use the newly bootstrapped, highly available Juju controller in the Sunbeam client, `add a new user <https://juju.is/docs/juju/manage-users#heading--add-a-user>`_ to the controller and `grant necessary permissions <https://juju.is/docs/juju/juju-grant>`_ (``superuser``) to this user on the controller. 
+To be able to use the newly bootstrapped, highly available Juju controller in the Sunbeam client, `add a new user <https://juju.is/docs/juju/manage-users#add-a-user>`_ to the controller and `grant necessary permissions <https://juju.is/docs/juju/juju-grant>`_ (``superuser``) to this user on the controller.
 
 To add a new user, run:
 
