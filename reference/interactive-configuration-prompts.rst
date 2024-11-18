@@ -76,7 +76,7 @@ preceding question.
        |
        | Remote hosts intending to access VMs must be able to contact this interface.
    * - **Populate OpenStack cloud with demo user, default images, flavors, etc.**
-     - | Whether the cloud is to be pre-populated with common OpenStack artifacts. In most cases this is desirable.
+     - | Whether the cloud is to be pre-populated with common OpenStack artefacts. In most cases this is desirable.
    * - **Username to use for access to OpenStack**
      - | The username of the demo user.
    * - **Password to use for access to OpenStack**

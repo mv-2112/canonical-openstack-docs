@@ -148,6 +148,7 @@ ubuntu
 un
 unconfigured
 unregister
+unroutable
 untagged
 vlan
 vSwitch
