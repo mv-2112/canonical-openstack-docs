@@ -55,10 +55,11 @@ Miscellaneous
    :maxdepth: 1
 
    misc/accessing-the-openstack-dashboard
-   misc/manage-external-juju-controllers
    misc/manage-workloads-with-juju
    misc/managing-deployment-manifests
    misc/using-an-existing-juju-controller
+   misc/manage-external-juju-controllers
+   misc/bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster
    misc/using-the-openstack-cli
    misc/implement-tls-using-a-third-party-ca
    misc/live-migration

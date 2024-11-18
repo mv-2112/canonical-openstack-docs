@@ -10,6 +10,15 @@ controller
    permissions <https://juju.is/docs/juju/juju-grant>`__ to the Juju
    user.
 
+For example:
+
+.. code-block :: text
+
+   juju add-user sunbeam
+   juju grant -c CONTROLLER sunbeam superuser
+
+``CONTROLLER`` is a name of the Juju controller.
+
 Adding the Juju user will generate a registration token which is
 required to register the Juju controller in the MicroStack deployment.
 
