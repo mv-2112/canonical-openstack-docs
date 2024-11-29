@@ -89,7 +89,7 @@ requirements are described here:
 +=======================+=======================+=======================+
 | juju-controller       | Juju controller       | management            |
 +-----------------------+-----------------------+-----------------------+
-| infra                 | ``clusterd`` database | management            |
+| sunbeam               | ``clusterd`` database | management            |
 +-----------------------+-----------------------+-----------------------+
 | control               | cloud control plane   | management, internal, |
 |                       | services              | public, storage       |
