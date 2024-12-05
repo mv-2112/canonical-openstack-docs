@@ -19,3 +19,4 @@ Index
    proxy-acl-access
    underlying-projects-and-charms
    example-physical-configuration
+   release-cycle-and-supported-versions
