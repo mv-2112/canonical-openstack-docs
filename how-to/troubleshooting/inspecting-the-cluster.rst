@@ -203,7 +203,7 @@ cluster can also be checked and the log output captured if need be:
    sudo systemctl status snap.openstack.clusterd.service
    sudo journalctl -xe -u snap.openstack.clusterd.service
 
-Inspect Terraform plans
+Terraform plans
 -----------------------
 
 Sunbeam makes extensive use of Terraform to deploy OpenStack. In some
@@ -215,13 +215,13 @@ To list the current lock state of all Terraform plans:
 
 ::
 
-   sunbeam inspect plans
+   sunbeam plans list
 
 To unlock a specific Terraform plan:
 
 ::
 
-   sunbeam inspect unlock-plan --plan <plan_name>
+   sunbeam plans unlock <plan_name>
 
 This command may prompt you to confirm unlocking depending on how recent
 the lock timestamp is.
