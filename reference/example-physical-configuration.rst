@@ -189,111 +189,132 @@ Some basic reference parameters of all those machines are listed in Tab. 3 below
      - eno1
      - Generic
      - 172.16.1.13
-   * - sunbeam-client-1
+   * - maas-1
      - Virtual
      - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.21
-   * - sunbeam-client-2
+   * - maas-2
      - Virtual
-     - governor-2
+     - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.22
-   * - sunbeam-client-3
+   * - maas-3
      - Virtual
-     - governor-3
+     - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.23
-   * - sunbeam-database-1
+   * - sunbeam-client-1
      - Virtual
      - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.31
-   * - sunbeam-database-2
+   * - sunbeam-client-2
      - Virtual
      - governor-2
      - N/A
      - eno1
      - Generic
      - 172.16.1.32
-   * - sunbeam-database-3
+   * - sunbeam-client-3
      - Virtual
      - governor-3
      - N/A
      - eno1
      - Generic
      - 172.16.1.33
-   * - juju-controller-1
+   * - sunbeam-database-1
      - Virtual
      - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.41
-   * - juju-controller-2
+   * - sunbeam-database-2
      - Virtual
      - governor-2
      - N/A
      - eno1
      - Generic
      - 172.16.1.42
-   * - juju-controller-3
+   * - sunbeam-database-3
      - Virtual
      - governor-3
      - N/A
      - eno1
      - Generic
      - 172.16.1.43
-   * - observability-1
+   * - juju-controller-1
      - Virtual
      - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.51
-   * - observability-2
+   * - juju-controller-2
      - Virtual
      - governor-2
      - N/A
      - eno1
      - Generic
      - 172.16.1.52
-   * - observability-3
+   * - juju-controller-3
      - Virtual
      - governor-3
      - N/A
      - eno1
      - Generic
      - 172.16.1.53
-   * - landscape-1
+   * - observability-1
      - Virtual
      - governor-1
      - N/A
      - eno1
      - Generic
      - 172.16.1.61
-   * - landscape-2
+   * - observability-2
      - Virtual
      - governor-2
      - N/A
      - eno1
      - Generic
      - 172.16.1.62
-   * - landscape-3
+   * - observability-3
      - Virtual
      - governor-3
      - N/A
      - eno1
      - Generic
      - 172.16.1.63
+   * - landscape-1
+     - Virtual
+     - governor-1
+     - N/A
+     - eno1
+     - Generic
+     - 172.16.1.71
+   * - landscape-2
+     - Virtual
+     - governor-2
+     - N/A
+     - eno1
+     - Generic
+     - 172.16.1.72
+   * - landscape-3
+     - Virtual
+     - governor-3
+     - N/A
+     - eno1
+     - Generic
+     - 172.16.1.73
 
 When using Canonical MAAS as a bare metal provider, some additional parameters have to be set up first. Those are listed in Tab. 4:
 
@@ -391,4 +412,4 @@ The following section documents example configuration of Canonical MAAS bare met
 
 * **Deployment name** - ``mycloud``
 * **Token** - ``Nehk886eajph68tGEK:HcaG27ACee2X2LuPA2:2GtynUxLHXWmQsRYznKahfy3F6D8e4ex``
-* **VIP** - ``172.16.1.14``
+* **VIP** - ``172.16.1.24``
