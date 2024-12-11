@@ -45,7 +45,7 @@ Remove the Juju agent:
 Remove the ``juju`` snap:
 
 .. code-block :: text
-    
+
    sudo snap remove --purge juju
 
 Remove Juju configuration:
@@ -67,14 +67,12 @@ Remove ``openstack`` snap configuration:
 
    rm -rf ~/.local/share/openstack
 
-Remove the ``microk8s`` snap:
+Remove the ``k8s`` snap:
 
 .. code-block :: text
 
-   sudo microk8s leave
-   sudo snap remove --purge microk8s
-
-.. TODO: To be updated once the transition to Canonical Kubernetes is completed
+   sudo k8s remove-node
+   sudo snap remove --purge k8s
 
 .. note ::
 

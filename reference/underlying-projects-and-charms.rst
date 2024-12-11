@@ -57,12 +57,12 @@ Dependencies
   * - MicroCeph
     - `Source <https://github.com/canonical/microceph.git>`__
     - `Bugs <https://github.com/canonical/microceph/issues>`__
-  * - MicroK8s
-    - `Source <https://github.com/canonical/microk8s.git>`__
-    - `Bugs <https://github.com/canonical/microk8s/issues>`__
-  * - MicroK8s Operator
-    - `Source <https://github.com/canonical/charm-microk8s/tree/legacy>`__
-    - `Bugs <https://github.com/canonical/charm-microk8s/issues>`__
+  * - Canonical Kubernetes
+    - `Source <https://github.com/canonical/k8s-snap.git>`__
+    - `Bugs <https://github.com/canonical/k8s-snap/issues>`__
+  * - Canonical Kubernetes Operator
+    - `Source <https://github.com/canonical/k8s-operator.git>`__
+    - `Bugs <https://github.com/canonical/k8s-operator/issues>`__
   * - MySQL Kubernetes Operator
     - `Source <https://github.com/canonical/mysql-k8s-operator.git>`__
     - `Bugs <https://github.com/canonical/mysql-k8s-operator/issues>`__
@@ -212,8 +212,8 @@ Machine charms
     - `options <https://charmhub.io/grafana-agent/configurations>`__
   * - `MicroCeph <https://charmhub.io/microceph>`__
     - `options <https://charmhub.io/microceph/configurations>`__
-  * - `MicroK8s <https://charmhub.io/microk8s>`__
-    - `options <https://charmhub.io/microk8s/configurations>`__
+  * - `Canonical Kubernetes <https://charmhub.io/k8s>`__
+    - `options <https://charmhub.io/k8s/configurations>`__
   * - `OpenStack Hypervisor <https://charmhub.io/openstack-hypervisor>`__
     - `options <https://charmhub.io/openstack-hypervisor>`__
   * - `Sunbeam Clusterd <https://charmhub.io/sunbeam-clusterd>`__

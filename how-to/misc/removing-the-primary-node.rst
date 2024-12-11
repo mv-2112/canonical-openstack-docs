@@ -63,12 +63,12 @@ Remove openstack snap configuration:
 
    rm -rf ~/.local/share/openstack
 
-Remove MicroK8s snap:
+Remove k8s snap:
 
 ::
 
-   sudo microk8s leave
-   sudo snap remove --purge microk8s
+   sudo k8s remove-node
+   sudo snap remove --purge k8s
 
 The above steps can take a few minutes to complete.
 

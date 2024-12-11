@@ -8,7 +8,7 @@ A known limitation of MicroStack today is that the Juju Controller (the
 service responsible for orchestrating the deployment of MicroStack) only
 communicates with a single Kubernetes API address.
 
-MicroK8S does not setup load balancing in front of the Kubernetes API.
+Canonical Kubernetes does not setup load balancing in front of the Kubernetes API.
 This means that if the node the Juju Controller is communicating with is
 removed, Juju will not be able to communicate with the Kubernetes
 cluster anymore.

@@ -14,7 +14,7 @@ Juju
 
 MicroStack makes extensive use of Juju to manage the components of the
 OpenStack cloud across both the underlying nodes and on Kubernetes (see
-MicroK8S).
+Canonical Kubernetes).
 
 MicroStack uses two Juju models for managing the various components
 deployed to create the OpenStack cloud.
@@ -54,7 +54,7 @@ this model can be queried using the following command:
 
 This should work from any node in the deployment
 
-This model contains the application deployments for the MicroK8S
+This model contains the application deployments for the Canonical K8s
 (control role), MicroCeph (storage role) and OpenStack Hypervisor
 (compute role) components of MicroStack.
 
@@ -68,8 +68,8 @@ OpenStack model
 ~~~~~~~~~~~~~~~
 
 The ``openstack`` model contains all of the components of the OpenStack
-Cloud that are deployed on top of Kubernetes (provided by MicroK8S from
-the ``controller`` model).
+Cloud that are deployed on top of Kubernetes (provided by Canonical K8s
+from the ``controller`` model).
 
 The status of this model can be queried using the following command:
 
@@ -110,42 +110,42 @@ This component is deployed and integrated into the cloud using the
 ``openstack-hypervisor`` charm that is deployed in the ``controller``
 model.
 
-MicroK8S
---------
+Canonical Kubernetes
+--------------------
 
-MicroK8S provides Kubernetes as part of MicroStack.
+Canonical Kubernetes (K8s) provides Kubernetes as part of MicroStack.
 
-The current status of the MicroK8S cluster can be checked by running:
+The current status of the K8s cluster can be checked by running:
 
 ::
 
-   sudo microk8s status
+   sudo k8s status
 
 A more in-depth inspection and generation of a archive suitable for use
 as part of a bug submission can also be completed by running:
 
 ::
 
-   sudo microk8s inspect
+   sudo k8s inspect
 
-Services hosted on MicroK8S
----------------------------
+Services hosted on Canonical Kubernetes
+---------------------------------------
 
-Components of OpenStack Control Plane are hosted on MicroK8S.
+Components of OpenStack Control Plane are hosted on K8S.
 
 You can get the different units by running:
 
 ::
 
-   sudo microk8s.kubectl get pods --namespace openstack
+   sudo k8s kubectl get pods --namespace openstack
 
-To fetch the logs of a specific unit on MicroK8S, it is necessary to
+To fetch the logs of a specific unit on K8S, it is necessary to
 know the name of the containers running inside a given pod. To get the
 names of the containers:
 
 ::
 
-   sudo microk8s.kubectl get pod --namespace openstack -o jsonpath="{.spec.containers[*].name}" <pod_name>
+   sudo k8s kubectl get pod --namespace openstack -o jsonpath="{.spec.containers[*].name}" <pod_name>
 
 A Juju unit will always have a ``charm`` container running the Juju
 agent responsible for running the charm. To fetch logs associated with
@@ -153,7 +153,7 @@ the charm of a particular unit:
 
 ::
 
-   sudo microk8s.kubectl logs --namespace openstack --container charm <pod_name>
+   sudo k8s kubectl logs --namespace openstack --container charm <pod_name>
 
 [note type=“information”] **Information**: The charm container logs are
 also available through ``juju debug-log -m openstack``, and will be
@@ -163,7 +163,7 @@ To fetch the payload logs, use:
 
 ::
 
-   sudo microk8s.kubectl logs --namespace openstack --container <container_name> <pod_name>
+   sudo k8s kubectl logs --namespace openstack --container <container_name> <pod_name>
 
 MicroCeph
 ---------
