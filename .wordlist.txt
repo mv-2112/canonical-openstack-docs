@@ -5,6 +5,7 @@
 addons
 API
 APIs
+API's
 balancer
 Charmhub
 CLI
@@ -39,7 +40,10 @@ NodePort
 Numbat
 observability
 OEM
+OIF
 OLM
+OpenInfra
+OpenStack's
 Permalink
 pre
 Quickstart
