@@ -8,6 +8,7 @@ Index
    :maxdepth: 1
 
    concepts/architecture
+   concepts/design-considerations
    concepts/deployment-manifest
    concepts/network-traffic-isolation-with-maas
    concepts/service-endpoint-encryption

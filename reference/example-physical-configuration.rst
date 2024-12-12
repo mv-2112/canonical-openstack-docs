@@ -32,8 +32,8 @@ Physical networks
 
 Canonical OpenStack requires at least two physical networks to function properly:
 
-* **External** – used to provide an inbound access to VMs running on top of OpenStack through the mechanism of floating IPs,
-* **Generic** – used for any other purposes (machine provisioning, machine management, providing an access to OpenStack APIs, etc.).
+* **External** – used to provide an inbound (south) access to virtual machines (VMs) running on top of OpenStack through the mechanism of floating IPs, and outbound (north) access from instances to networks outside of OpenStack.
+* **Generic** – used for any other purposes (machine provisioning, machine management, providing access to OpenStack APIs, etc.).
 
 Those should be plugged into a router with an access to the Internet as shown in Fig. 1.
 
