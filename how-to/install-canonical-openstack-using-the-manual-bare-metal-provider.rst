@@ -85,6 +85,8 @@ To list all available versions, execute the following command:
 Prepare the machine
 -------------------
 
+As a prerequisite, deploy LXD based Juju controller on the node. Refer :doc:`Bootstrap LXD based Juju controller on single node </how-to/misc/bootstrap-single-node-lxd-based-juju-controller>` for detailed procedure.
+
 To prepare the machine for Canonical OpenStack usage, execute the following command:
 
 .. code-block :: text

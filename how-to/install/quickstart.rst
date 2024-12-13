@@ -45,6 +45,44 @@ Begin by installing the openstack snap:
 Prepare the machine
 ~~~~~~~~~~~~~~~~~~~
 
+As a prerequisite, deploy LXD based Juju controller on the node. Refer :doc:`Bootstrap LXD based Juju controller on single node </how-to/misc/bootstrap-single-node-lxd-based-juju-controller>` for detailed procedure.
+
+The minimal set of commands to bootstrap juju controller:
+
+.. code:: bash
+
+    sudo snap install lxd --channel 5.21
+    sudo snap install juju --channel 3.6
+    sudo usermod -a -G lxd ubuntu
+    # Reset the connection by logout/login
+
+    cat <<EOF | sudo lxd init --preseed
+    networks:
+    - config:
+        ipv4.address: auto
+        ipv6.address: none
+      name: br0
+      project: default
+    storage_pools:
+    - name: default
+      driver: dir
+    profiles:
+    - devices:
+        eth0:
+          name: eth0
+          network: br0
+          type: nic
+        root:
+          path: /
+          pool: default
+          type: disk
+      name: default
+    EOF
+
+    juju bootstrap localhost
+
+[note type=“info”] **Note:** Re-login to the shell after setting lxd group to ubuntu. [/note]
+
 Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack - you can review this script using:
 
 .. code:: bash

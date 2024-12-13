@@ -104,6 +104,8 @@ Begin by installing the **openstack** snap:
 Prepare the machine
 ~~~~~~~~~~~~~~~~~~~
 
+As a prerequisite, deploy LXD based Juju controller on the node. Refer :doc:`Bootstrap LXD based Juju controller on single node </how-to/misc/bootstrap-single-node-lxd-based-juju-controller>` for detailed procedure. This is required only on the first machine (bootstrap machine).
+
 Sunbeam can generate a script to ensure that the machine has all of the
 required dependencies installed and is configured correctly for use in
 OpenStack - you can review this script using:

@@ -35,6 +35,8 @@ Kubernetes
 Launchpad
 linter
 LTS
+lxd
+lxdbr
 Makefile
 Matrix
 Mattermost
@@ -51,6 +53,7 @@ OpenInfra
 OpenStack's
 Permalink
 pre
+preseed
 Quickstart
 ReadMe
 reST
