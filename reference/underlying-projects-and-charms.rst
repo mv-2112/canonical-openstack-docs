@@ -119,7 +119,7 @@ Charms
 Both Kubernetes charms and machine charms are available.
 
 Configuration options are useful when a deployment manifest is in use.
-See the :doc:`Deployment manifest <concepts/deployment-manifest>` page.
+See the :doc:`Deployment manifest </explanation/deployment-manifest>` page.
 
 Kubernetes charms
 ~~~~~~~~~~~~~~~~~

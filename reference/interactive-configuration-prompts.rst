@@ -11,7 +11,7 @@ of each prompt (question).
 
 .. tip::
    Some of these questions’ values can be provided by means of a
-   :doc:`manifest file <concepts/deployment-manifest>`
+   :doc:`manifest file </explanation/deployment-manifest>`
    file passed to the ``sunbeam cluster bootstrap`` and ``sunbeam configure``
    commands.
 

@@ -9,7 +9,7 @@ supported in channel ``2023.2/edge`` of the **openstack** snap. [/note]
 
 .. tip::
    For a conceptual overview of manifests, see the :doc:`Deployment manifest
-   <concepts/deployment-manifest>` page.
+   </explanation/deployment-manifest>` page.
 
 .. code:: yaml
 

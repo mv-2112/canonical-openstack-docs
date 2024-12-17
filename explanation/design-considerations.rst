@@ -16,7 +16,7 @@ Canonical OpenStack requires at least two physical networks to function properly
 * **External** – used to provide an inbound (south) access to virtual machines (VMs) running on top of OpenStack through the mechanism of floating IPs, and outbound (north) access from instances to networks outside of OpenStack.
 * **Generic** – used for any other purposes (machine provisioning, machine management, providing access to OpenStack APIs, etc.).
 
-Customers can optionally use more physical networks or VLANs to further segregate network traffic when using Canonical MAAS as a :ref:`bare metal provider<Bare metal provider>`. Network traffic isolation with MAAS is handled through the concept of network spaces and :doc:`space mappings </reference/concepts/network-traffic-isolation-with-maas>`.
+Customers can optionally use more physical networks or VLANs to further segregate network traffic when using Canonical MAAS as a :ref:`bare metal provider<Bare metal provider>`. Network traffic isolation with MAAS is handled through the concept of network spaces and :doc:`space mappings </explanation/network-traffic-isolation-with-maas>`.
 
 Cloud architecture
 ++++++++++++++++++
@@ -138,5 +138,5 @@ Please refer to the `product website <https://canonical.com/openstack>`_ for a d
 Related sections
 ++++++++++++++++
 
-* :doc:`Architecture</reference/concepts/architecture>`
+* :doc:`Architecture</explanation/architecture>`
 * :doc:`Enterprise requirements</reference/enterprise-requirements>`
