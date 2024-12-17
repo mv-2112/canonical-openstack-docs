@@ -5,7 +5,7 @@ Overview
 --------
 
 This feature enables `Ubuntu Pro <https://ubuntu.com/pro>`__ support for
-MicroStack. Ubuntu Pro provides additional benefits such as Livepatch
+Canonical OpenStack. Ubuntu Pro provides additional benefits such as Livepatch
 and extended security support periods for Ubuntu LTS.
 
 Ubuntu Pro is free for `limited personal
@@ -34,8 +34,8 @@ To disable Ubuntu Pro support, run the following command:
 Usage
 -----
 
-To check the Ubuntu Pro status on any node in the MicroStack deployment
-login to the node and use the ``pro`` command to validate the
+To check the Ubuntu Pro status on any node in the Canonical OpenStack
+deployment login to the node and use the ``pro`` command to validate the
 subscription attachment and enabled services:
 
 ::

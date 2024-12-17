@@ -5,9 +5,9 @@ Overview
 --------
 
 The encryption of service API endpoints in an OpenStack cloud requires a
-method for the creation and distribution of TLS certificates. MicroStack
-supports enabling TLS via the Traefik application, which is the ingress
-point for all service endpoints.
+method for the creation and distribution of TLS certificates. Canonical
+OpenStack supports enabling TLS via the Traefik application, which is the
+ingress point for all service endpoints.
 
 [note type=“info”] **Note:** Currently, only the TLS CA feature method
 is supported. This feature only works with certificates signed by an

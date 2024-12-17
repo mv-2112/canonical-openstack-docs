@@ -4,7 +4,7 @@ Inspecting the cluster
 Overview
 --------
 
-MicroStack aims to remove the need for an operator to know all of the
+Sunbeam aims to remove the need for an operator to know all of the
 technical detail about how to deploy an OpenStack cloud; however when
 something does go wrong it’s important to be able to inspect the various
 components in order to discover the nature of the problem.
@@ -12,17 +12,17 @@ components in order to discover the nature of the problem.
 Juju
 ----
 
-MicroStack makes extensive use of Juju to manage the components of the
+Sunbeam makes extensive use of Juju to manage the components of the
 OpenStack cloud across both the underlying nodes and on Kubernetes (see
 Canonical Kubernetes).
 
-MicroStack uses two Juju models for managing the various components
+Sunbeam uses two Juju models for managing the various components
 deployed to create the OpenStack cloud.
 
 Juju controller authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-MicroStack uses a set of credentials for each node in the cluster for
+Sunbeam uses a set of credentials for each node in the cluster for
 access to the Juju controller. The authenticated session for each node
 expires after 24 hours so to use the ``juju`` command directly it may be
 necessary to re-authenticate.
@@ -44,7 +44,7 @@ the ``2023.1/edge`` version of the ``openstack`` snap. [/note]
 Controller model
 ~~~~~~~~~~~~~~~~
 
-The ``controller`` model contains the MicroStack components that are
+The ``controller`` model contains the Canonical OpenStack components that are
 placed directly on the nodes that make up the deployment. The status of
 this model can be queried using the following command:
 
@@ -56,7 +56,7 @@ This should work from any node in the deployment
 
 This model contains the application deployments for the Canonical K8s
 (control role), MicroCeph (storage role) and OpenStack Hypervisor
-(compute role) components of MicroStack.
+(compute role) components of Canonical OpenStack.
 
 Depending on the roles assigned to individual machines, a unit of each
 of the applications should be present in the model.
@@ -113,7 +113,7 @@ model.
 Canonical Kubernetes
 --------------------
 
-Canonical Kubernetes (K8s) provides Kubernetes as part of MicroStack.
+Canonical Kubernetes (K8s) provides Kubernetes as part of Canonical OpenStack.
 
 The current status of the K8s cluster can be checked by running:
 
@@ -187,7 +187,7 @@ Sunbeam MicroCluster
 --------------------
 
 Sunbeam MicroCluster provides some basic cluster coordination and state
-sharing services as part of MicroStack. The status of the nodes
+sharing services as part of Canonical OpenStack. The status of the nodes
 participating in the Sunbeam MicroCluster can be queried using the
 following command:
 

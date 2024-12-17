@@ -3,7 +3,7 @@
 Network traffic isolation with MAAS
 ===================================
 
-MicroStack, in MAAS mode, supports network traffic isolation in a
+Canonical OpenStack, in MAAS mode, supports network traffic isolation in a
 multi-network environment, where each of these cloud networks is coupled
 with specific cloud activity. It does this through the integration of
 Juju network spaces.
@@ -23,19 +23,19 @@ with unique subnet-space pairings. The subnet:space mappings are done
 within MAAS.
 
 To finish, spaces are mapped to the cloud network names supported by
-MicroStack. The space:network mappings are done at the MicroStack level.
+Sunbeam. The space:network mappings are done at the Sunbeam level.
 In the case of an environment consisting of a sole subnet, each cloud
 network will be mapped to the same space.
 
 [note type=“note”] **Note:** The
 :doc:`Install Canonical OpenStack using Canonical MAAS
 </how-to/install/install-canonical-openstack-using-canonical-maas>`
-page shows how to use MicroStack with MAAS. [/note]
+page shows how to use Canonical OpenStack with MAAS. [/note]
 
 Cloud networks
 --------------
 
-The cloud network names supported by MicroStack, their corresponding
+The cloud network names supported by Sunbeam, their corresponding
 traffic types, and examples of such traffic is given here:
 
 +-----------------+----------------------------+------------------------+
@@ -80,7 +80,7 @@ networks.
 Node roles
 ~~~~~~~~~~
 
-Machines identified by their MicroStack node roles, and their associated
+Machines identified by their Sunbeam node roles, and their associated
 services, must have access to specific cloud networks. These access
 requirements are described here:
 

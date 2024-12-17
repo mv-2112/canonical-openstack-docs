@@ -1,8 +1,9 @@
 Technical motives
 =================
 
-This page describes the technical motivations behind MicroStack, a
-second generation OpenStack solution, with `Charmed
+This page describes the technical motivations behind Canonical OpenStack 
+(based on Sunbeam), a second generation of Canonical's commercial OpenStack
+product, with `Canonical OpenStack (based on OpenStack Charms), aka Charmed
 OpenStack <https://docs.openstack.org/charm-guide/latest/>`__ being the
 first generation.
 
@@ -19,11 +20,11 @@ However, this solution has not proven to be a good fit for smaller
 footprint deployments due to the infrastructure overheads of Juju and
 MAAS.
 
-This set of use cases is the target for the first release of MicroStack,
-which has provided a beta-grade solution for single and small multi-node
-deployments without incurring the overheads of Juju and MAAS. However,
-it compromises by not having the same set of operational semantics as an
-OpenStack charm deployed cloud.
+This set of use cases is the target for the first release of Canonical
+OpenStack, which has provided a beta-grade solution for single and small
+multi-node deployments without incurring the overheads of Juju and MAAS.
+However, it compromises by not having the same set of operational semantics as
+an OpenStack charm deployed cloud.
 
 Technology evolution
 --------------------

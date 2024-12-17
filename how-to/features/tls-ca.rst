@@ -8,7 +8,7 @@ cloud. A Traefik instance is associated with either public or private
 cloud traffic.
 
 [note type=“note”] **Note:** TLS CA is currently the only way to enable
-TLS in MicroStack. [/note]
+TLS in Canonical OpenStack. [/note]
 
 Enable TLS CA
 -------------
