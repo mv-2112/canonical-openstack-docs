@@ -53,6 +53,8 @@ Northd
 OpenFlow
 OpenStack
 OCI
+OSD
+OSDs
 OSI
 OVN
 OVS

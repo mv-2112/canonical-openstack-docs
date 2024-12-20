@@ -26,7 +26,7 @@ Installation
 
    install/quickstart
    install/multinode-install
-   install/maas-install
+   install/install-canonical-openstack-using-canonical-maas
 
 Optional Features
 -----------------

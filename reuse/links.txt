@@ -15,5 +15,6 @@
 .. _Canonical Juju: https://juju.is
 .. _Canonical Kubernetes: https://ubuntu.com/kubernetes
 .. _Canonical OpenStack: https://canonical.com/openstack
+.. _Canonical MAAS: https://maas.io/
 
 .. _Multipass: https://multipass.run
