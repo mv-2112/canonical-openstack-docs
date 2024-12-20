@@ -27,8 +27,9 @@ MicroStack. The space:network mappings are done at the MicroStack level.
 In the case of an environment consisting of a sole subnet, each cloud
 network will be mapped to the same space.
 
-[note type=“note”] **Note:** The :doc:`Multi-node with MAAS
-</how-to/install/install-canonical-openstack-using-canonical-maas.rst>`
+[note type=“note”] **Note:** The
+:doc:`Install Canonical OpenStack using Canonical MAAS
+</how-to/install/install-canonical-openstack-using-canonical-maas>`
 page shows how to use MicroStack with MAAS. [/note]
 
 Cloud networks
