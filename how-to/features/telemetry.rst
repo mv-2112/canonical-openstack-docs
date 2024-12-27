@@ -148,7 +148,7 @@ log events on ``aodh-evaluator``:
 
 ::
 
-   sudo microk8s.kubectl -n openstack logs aodh-0 -c aodh-notifier | grep memory_high
+   sudo k8s kubectl -n openstack logs aodh-0 -c aodh-notifier | grep memory_high
 
    2023-10-13T04:08:45.650Z [aodh-notifier] 2023-10-13 04:08:45.648 17 INFO aodh.notifier.log [-]
    Notifying alarm memory_high d365506b-fc14-479d-b34d-0f3ae267a858 of low priority from insufficient data to alarm with action log: because Transition to alarm due to 3 samples outside threshold, most recent:  2138.4609375.

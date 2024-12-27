@@ -75,9 +75,10 @@ Control
 ~~~~~~~
 
 The control role encapsulates the control plane of the cloud;
-specifically this includes Kubernetes (deployed using MicroK8s) and the
-Charmed K8s Operators that are used for the OpenStack control plane
-components - API and RPC services, Database and Messaging.
+specifically this includes Kubernetes (deployed using Canonical
+Kubernetes) and the Charmed K8s Operators that are used for the
+OpenStack control plane components - API and RPC services, Database and
+Messaging.
 
 Compute
 ~~~~~~~

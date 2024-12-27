@@ -1,4 +1,4 @@
-# Leave a blank line at the end of this file to support concatenation 
+# Leave a blank line at the end of this file to support concatenation
 Alertmanager
 Ansible
 ACL
@@ -43,7 +43,6 @@ MetalLB
 MicroCeph
 MicroCluster
 MicroK
-MicroK8s
 MicroStack
 Multipass
 NATed
