@@ -5,7 +5,7 @@ Removing the primary node refers to the removal of the initial
 (bootstrap) node.
 
 [note type=“warning”] **Warning:** Removing the primary node will
-destroy the entire MicroStack deployment. [/note]
+destroy the entire Canonical OpenStack deployment. [/note]
 
 If the deployment consists of multiple nodes then remove all non-primary
 nodes **before** removing the primary node. See page :doc:`Scaling down the

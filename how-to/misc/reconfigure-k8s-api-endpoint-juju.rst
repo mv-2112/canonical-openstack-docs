@@ -4,9 +4,9 @@ Reconfigure the Kubernetes API endpoint in Juju
 Overview
 --------
 
-A known limitation of MicroStack today is that the Juju Controller (the
-service responsible for orchestrating the deployment of MicroStack) only
-communicates with a single Kubernetes API address.
+A known limitation of Canonical OpenStack today is that the Juju Controller
+(the service responsible for orchestrating the deployment of Canonical
+OpenStack) only communicates with a single Kubernetes API address.
 
 Canonical Kubernetes does not setup load balancing in front of the Kubernetes API.
 This means that if the node the Juju Controller is communicating with is

@@ -1,10 +1,10 @@
 Observability
 =============
 
-This feature integrates MicroStack with (and optionally deploys) the
+This feature integrates Canonical OpenStack with (and optionally deploys) the
 `Canonical Observability Stack
 (COS) <https://charmhub.io/topics/canonical-observability-stack>`__.
-MicroStack will automatically propagate default metrics and dashboards,
+Sunbeam will automatically propagate default metrics and dashboards,
 enabling you to effortlessly monitor the status of your single-node or
 multi-node deployment of Sunbeam without the need for any additional
 setup.
@@ -19,12 +19,12 @@ Enabling Observability
 ~~~~~~~~~~~~~~~~~~~~~~
 
 :doc:`Register the external controller </how-to/misc/manage-external-juju-controllers>`
-hosting COS in MicroStack.
+hosting COS in Canonical OpenStack.
 
 Ensure the Juju user has consume permissions granted on the
 observability related offers.
 
-To enable MicroStack observability integration, run the following
+To enable Sunbeam observability integration, run the following
 command:
 
 ::
@@ -50,8 +50,8 @@ To disable Observability, run the following command:
 
    sunbeam disable observability external
 
-Deploy COS in MicroStack
-------------------------
+Deploy COS in Canonical OpenStack
+---------------------------------
 
 .. _enabling-observability-1:
 
@@ -176,8 +176,8 @@ Capacity Dashboard
 ~~~~~~~~~~~~~~~~~~
 
 **Capacity Dashboard** displays the overall capacity (storage, memory,
-and CPU) of the MicroStack cluster, as well as the capacity of
-individual MicroStack node.
+and CPU) of the Canonical OpenStack cluster, as well as the capacity of
+individual nodes.
 
 .. figure:: grafana-capacity-overview.png
    :alt: OpenStack Capacity Overview dashboard
@@ -191,7 +191,7 @@ linear projection based on the average usage over the past 360 days. If
 the average usage is zero or negative, the panel will show “Stable”
 because it’s not possible to estimate when they will be depleted. For
 the overall capacity, this estimation is chosen to be the minimum value
-across all MicroStack nodes. For example, if the projected days it will
+across all nodes. For example, if the projected days it will
 take for storage consumption to reach 90% is about 80 days for node 1,
 90 for node 2,, and “Stable” (i.e. not expected to run out given the
 current trend) for node 3, then the panel will show “80” since node 1
@@ -224,7 +224,7 @@ Memory usage
 
 “Memory usage (total memory: …GB)” shows the total memory usage, memory
 assigned to huge pages, and used huge pages memory. For the overall
-capacity, “Memory usage” is summed over all MicroStack nodes. The
+capacity, “Memory usage” is summed over all nodes. The
 individual memory capacity panel shows the memory usage of a particular
 node.
 

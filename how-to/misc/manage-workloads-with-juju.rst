@@ -1,6 +1,6 @@
-Once MicroStack has been deployed, you have the option of managing
+Once Canonical OpenStack has been deployed, you have the option of managing
 workloads manually (i.e. via the ``openstack`` CLI) or with Juju. This
-document shows how to set up the latter: How to manage MicroStack
+document shows how to set up the latter: How to manage OpenStack
 workloads with Juju.
 
 There is more than one way to proceed depending on your local networking

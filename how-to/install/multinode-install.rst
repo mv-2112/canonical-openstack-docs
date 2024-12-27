@@ -22,7 +22,7 @@ requirements:
    physical machines with fixed IP address allocations are therefore required.
 
 .. note::
-   For environments constrained by a proxy server, the intended MicroStack nodes must first be
+   For environments constrained by a proxy server, the intended Canonical OpenStack nodes must first be
    configured accordingly. See section **Configure for the proxy at the OS level** on
    the :ref:`Manage a proxied environment` page before proceeding.
 
@@ -223,7 +223,7 @@ Run the below command on ``sunbeam02``.
 
 Sunbeam can generate a script to ensure that the machine has all of the
 required dependencies installed and is configured correctly for use in
-MicroStack - you can review this script using:
+Canonical Openstack - you can review this script using:
 
 ::
 

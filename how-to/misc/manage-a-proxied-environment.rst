@@ -3,14 +3,15 @@
 Manage a proxied environment
 ============================
 
-This page shows how to configure proxy settings for MicroStack. This is
-required for an environment that has network egress traffic restrictions
+This page shows how to configure proxy settings for Canonical OpenStack. This
+is required for an environment that has network egress traffic restrictions
 placed upon it. These restrictions are typically implemented via a
-corporate proxy server that is separate from the MicroStack deployment.
+corporate proxy server that is separate from the Canonical OpenStack
+deployment.
 
 The proxy server itself must permit access to certain external
-(internet) resources in order for MicroStack to deploy (and operate)
-correctly. These resources are listed on the :doc:`Proxy ACL
+(internet) resources in order for Sunbeam to deploy (and operate) Canonical
+OpenStack correctly. These resources are listed on the :doc:`Proxy ACL
 access </reference/proxy-acl-access>` reference page.
 
 Configure for the proxy at the OS level

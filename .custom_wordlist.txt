@@ -42,8 +42,6 @@ MAAS
 MetalLB
 MicroCeph
 MicroCluster
-MicroK
-MicroStack
 Multipass
 NATed
 NIC

@@ -1,15 +1,16 @@
-MicroStack can use an existing Juju controller during bootstrap instead
-of deploying a Juju controller within the MicroStack deployment.
+Canonical OpenStack can use an existing Juju controller during bootstrap
+instead of deploying a Juju controller within the Canonical OpenStack
+deployment.
 
 This allows operators to make use of an existing Juju controller that
 could be used to control many Juju deployments of different types of
-services - including multiple MicroStack deployments!
+services - including multiple Canonical OpenStack deployments!
 
 Register the Juju controller
 ----------------------------
 
 :doc:`Register an existing Juju controller </how-to/misc/manage-external-juju-controllers>`
-in MicroStack.
+in Sunbeam.
 
 [note type=“note”] **Note:** Ensure a dedicated user is created in the
 external Juju controller and has ``superuser`` permissions granted on this controller. [/note]

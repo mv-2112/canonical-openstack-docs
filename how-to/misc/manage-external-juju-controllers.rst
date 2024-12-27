@@ -20,9 +20,9 @@ For example:
 ``CONTROLLER`` is a name of the Juju controller.
 
 Adding the Juju user will generate a registration token which is
-required to register the Juju controller in the MicroStack deployment.
+required to register the Juju controller in the Sunbeam deployment.
 
-To register the controller in MicroStack use the ``register-controller``
+To register the controller in Sunbeam use the ``register-controller``
 command:
 
 ::
@@ -30,7 +30,7 @@ command:
    sunbeam juju register-controller NAME TOKEN
 
 ``NAME`` is an arbitrary name to refer the Juju controller in
-MicroStack.
+Sunbeam.
 
 ``TOKEN`` is the registration token generated during Juju user creation.
 
@@ -45,7 +45,7 @@ For example, to register an existing controller with the name
 Unregister the Juju controller
 ------------------------------
 
-To unregister the controller in MicroStack use the
+To unregister the controller in Sunbeam use the
 ``unregister-controller`` command:
 
 ::

@@ -2,7 +2,7 @@ Deployment manifest
 ===================
 
 A deployment manifest allows a user to override the default configuration
-settings for MicroStack.
+settings for Canonical OpenStack.
 
 Manifests are supported by the following commands:
 
@@ -147,4 +147,4 @@ This section is for demonstration and development purposes only.
 
 [note type=“caution”] **Caution:** There is significant risk of
 misconfiguration when using a local Terraform plan due to the fact that
-MicroStack depends heavily on the plan variables. [/note]
+Sunbeam depends heavily on the plan variables. [/note]
