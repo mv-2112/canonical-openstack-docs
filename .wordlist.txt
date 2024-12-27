@@ -14,7 +14,7 @@ dropdown
 EBS
 EKS
 enablement
-Enteprise
+EOL
 favicon
 Furo
 Git
@@ -50,8 +50,12 @@ RTD
 subdirectories
 subfolders
 subtree
+synchronized
+UA
 Ubuntu
+UCA
 UI
+Ussuri
 UUID
 VM
 YAML

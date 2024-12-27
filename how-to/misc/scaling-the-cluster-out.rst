@@ -7,7 +7,7 @@ Make sure you get familiar with the following sections before proceeding with an
 
 * Architecture
 * Design considerations
-* Enteprise requirements
+* Enterprise requirements
 * Sample configuration
 
 .. TODO: Add links to all the pages listed above
