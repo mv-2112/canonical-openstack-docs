@@ -53,6 +53,24 @@ different topologies to be created where CPU, memory, and storage
 resources are either shared between roles or dedicated to specific
 roles.
 
+Juju Controller
+~~~~~~~~~~~~~~~
+
+The juju-controller role encapsulates the function the juju controller
+serves in the deployment. It is responsible for creating and managing
+models as well as the deployment and scaling of charmed applications.
+In a multi-node deployment the Juju controller is deployed in a separate
+environment to ensure a separation between control plane and workload
+tasks.
+
+Sunbeam
+~~~~~~~
+
+The sunbeam role provides the operational framework and integration
+layer for OpenStack in the deployment. It serves as the mechanism to
+deploy, coordinate, and manage OpenStack components across the
+underlying infrastructure.
+
 Control
 ~~~~~~~
 
@@ -64,7 +82,7 @@ components - API and RPC services, Database and Messaging.
 Compute
 ~~~~~~~
 
-The compute role encapsulated the hypervisor component on the cloud;
+The compute role encapsulates the hypervisor component on the cloud;
 specifically this includes the Nova Compute service, the Libvirt/QEMU
 virtualisation stack, OVN (Open Virtual Network) and OVS (Open vSwitch)
 services for software defined networking and a Neutron service for
