@@ -6,10 +6,13 @@ addons
 API
 APIs
 API's
+AZs
 balancer
 Charmhub
 CLI
+CPM
 Diátaxis
+Disaggregated
 Dqlite
 dropdown
 EBS
@@ -18,11 +21,13 @@ enablement
 EOL
 favicon
 Furo
+gapped
 Git
 GitHub
 Grafana
 IAM
 installable
+Integrations
 JSON
 Juju
 Kubeflow
@@ -51,6 +56,10 @@ ReadMe
 reST
 reStructuredText
 RTD
+SDN
+SDS
+sharding
+SLAs
 subdirectories
 subfolders
 subtree
@@ -61,5 +70,6 @@ UCA
 UI
 Ussuri
 UUID
+VLANs
 VM
 YAML
