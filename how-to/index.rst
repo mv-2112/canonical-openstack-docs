@@ -48,6 +48,7 @@ Miscellaneous
 .. toctree::
    :maxdepth: 1
 
+   misc/backup-and-restore-maas-deployment
    misc/bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster
    misc/implement-tls-using-a-third-party-ca
    misc/manage-workloads-with-juju

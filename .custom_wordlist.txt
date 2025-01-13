@@ -92,6 +92,7 @@ dom
 eno
 flavor
 flavors
+gz
 hostname
 hostnames
 href
