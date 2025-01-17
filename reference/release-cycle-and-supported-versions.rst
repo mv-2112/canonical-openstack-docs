@@ -120,7 +120,7 @@ Also refer to the table below:
      - Ubuntu version
      - Released
      - EOL (standard)
-     - EOL (under Ubuntu Pro)
+     - EOL (under Ubuntu Pro / Legacy Support)
    * - 2024.1
      - 22.04 LTS
      - Dec 2024
