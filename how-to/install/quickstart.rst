@@ -49,13 +49,13 @@ Sunbeam can generate a script to ensure that the machine has all of the required
 
 .. code:: bash
 
-    sunbeam prepare-node-script
+    sunbeam prepare-node-script --bootstrap
 
 or the script can be directly executed in this way:
 
 .. code:: bash
 
-    sunbeam prepare-node-script | bash -x && newgrp snap_daemon
+    sunbeam prepare-node-script --bootstrap | bash -x && newgrp snap_daemon
 
 The script will ensure some software requirements are satisfied on the host. In particular, it will:
 

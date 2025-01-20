@@ -60,6 +60,7 @@ Miscellaneous
    misc/using-an-existing-juju-controller
    misc/manage-external-juju-controllers
    misc/bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster
+   misc/bootstrap-single-node-lxd-based-juju-controller
    misc/using-the-openstack-cli
    misc/implement-tls-using-a-third-party-ca
    misc/live-migration
