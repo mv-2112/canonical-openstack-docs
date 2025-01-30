@@ -1,7 +1,7 @@
 Projects and charms
 ===================
 
-Canonical OpenStack can be organised in terms of a number of underlying projects
+Canonical OpenStack can be organized in terms of a number of underlying projects
 as well as in terms of the individual charmed operators it leverages.
 
 Projects

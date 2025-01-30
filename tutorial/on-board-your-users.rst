@@ -5,7 +5,10 @@ Welcome!
 
 We hope you've had a great time so far exploring `Canonical OpenStack <https://canonical.com/openstack>`_. In the :doc:`previous tutorial</tutorial/get-familiar-with-openstack>` we learned how to use the OpenStack dashboard and the OpenStack client to interact with the cloud as both admin and a regular user, and how to provision cloud resources. Now that you're familiar with both tools, it's the highest time to start on-boarding your users.
 
-In this tutorial we will demonstrate how to prepare Canonical OpenStack for your organisation's usage. We will show you how to create a new project from scratch, distribute credentials to your colleagues and populate the cloud with some common templates used by your organisation. Finally, we will showcase how users can further customise their project according to their needs.
+In this tutorial we will demonstrate how to prepare Canonical OpenStack for your organization's
+usage. We will show you how to create a new project from scratch, distribute credentials to your
+colleagues and populate the cloud with some common templates used by your organization. Finally,
+we will showcase how users can further customize their project according to their needs.
 
 Ready to share OpenStack with your colleagues? Let's take it to the next level together!
 
@@ -47,10 +50,17 @@ Populate OpenStack with templates
 
    **Duration:** 5 minutes
 
-OpenStack uses the concept of `cloud images <https://docs.openstack.org/image-guide/>`_ which serve as templates for virtual machines creation. They contain the guest OS and are customised by `cloud-init <https://cloud-init.io/>`_ during the VM provisioning process. In this process, various pre-defined or user-defined actions are handled in an automated way (for example, cloud-init inserts public SSH keys of all authorised users).
+OpenStack uses the concept of `cloud images <https://docs.openstack.org/image-guide/>`_ which
+serve as templates for virtual machines creation. They contain the guest OS and are customized by
+`cloud-init <https://cloud-init.io/>`_ during the VM provisioning process. In this process,
+various pre-defined or user-defined actions are handled in an automated way (for example,
+cloud-init inserts public SSH keys of all authorized users).
 
 The upstream community maintains an `list of repositories <https://docs.openstack
-.org/image-guide/obtain-images.html>`_ from where users can download template images. For example, the repository of Ubuntu cloud images is available `here <https://cloud-images.ubuntu.com/>`__. However, users can also convert their existing images when migrating to Canonical OpenStack from other virtualisation platforms.
+.org/image-guide/obtain-images.html>`_ from where users can download template images. For
+example, the repository of Ubuntu cloud images is available
+`here <https://cloud-images.ubuntu.com/>`__. However, users can also convert their existing
+images when migrating to Canonical OpenStack from other virtualization platforms.
 
 Converting images
 -----------------
@@ -136,9 +146,14 @@ even noticing their existence. Multi-tenancy is provided through the concept of 
 projects which are an abstraction used by other OpenStack services to group and isolate various
 types of resources (e.g. VMs).
 
-In turn, authentication and authorisation functions are handled through the concept of users, groups and roles. Even though we're going to use the default database backend in this tutorial, organisations can also plug their Canonical OpenStack into an enterprise identity and access management system, such as :doc:`LDAP</how-to/features/ldap>`.
+In turn, authentication and authorization functions are handled through the concept of users,
+groups and roles. Even though we're going to use the default database backend in this tutorial,
+organizations can also plug their Canonical OpenStack into an enterprise identity and access
+management system, such as :doc:`LDAP</how-to/features/ldap>`.
 
-In the following example we'll create a new project and a user under the *users* domain, assign a *member* role to this user, and demonstrate how to distribute the newly created users' credentials to your colleagues so that they could also start their journey with Canonical OpenStack.
+In the following example we'll create a new project and a user under the *users* domain, assign
+a *member* role to this user, and demonstrate how to distribute the newly created users'
+credentials to your colleagues so that they could also start their journey with Canonical OpenStack.
 
 Create necessary records
 ------------------------

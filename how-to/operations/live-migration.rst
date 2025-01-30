@@ -28,8 +28,8 @@ Oversubscribing the destination host (hypervisor) can lead to service
 outages. This is only an issue when a destination host is explicitly
 selected by the operator.
 
-The following commands are useful for discovering a instance’s flavour,
-listing flavour parameters, and viewing the available capacity of a
+The following commands are useful for discovering a instance’s flavor,
+listing flavor parameters, and viewing the available capacity of a
 destination host:
 
 .. code:: text

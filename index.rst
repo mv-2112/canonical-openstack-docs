@@ -21,7 +21,7 @@ are required to form an end-to-end cloud solution.
 
 Sunbeam is an upstream OpenStack project hosted under the governance of the
 OpenInfra Foundation which aims to lower the barrier to entry for people with
-no previous OpenStack background and fully revolutionise the operational
+no previous OpenStack background and fully revolutionize the operational
 experience.
 
 ---------

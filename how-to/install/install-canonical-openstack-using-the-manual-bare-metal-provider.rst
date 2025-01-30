@@ -44,7 +44,7 @@ speed.
 
 .. warning ::
 
-   Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
+   Canonical Juju does not yet support controller HA modeling capabilities when deployed on top
    Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal
    provider do not provide HA for all types of governance functions by default. To bypass this
    limitation Canonical recommends :doc:`using an external highly available Juju controller</how-to/misc/using-an-existing-juju-controller>`. External

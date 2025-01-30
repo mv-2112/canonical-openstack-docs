@@ -106,7 +106,7 @@ In addition to some generic settings operators must create reserved IP ranges fo
 endpoints.
 
 Those ranges have to be created under subnets that :ref:`will be further mapped<mapping>` to
-``internal`` and ``public`` cloud networks, and labelled with ``<name>-internal-api``, and
+``internal`` and ``public`` cloud networks, and labeled with ``<name>-internal-api``, and
 ``<name>-public-api`` accordingly where the ``<name>`` prefix matches the deployment name.
 Depending on the number of optional features being used, you have to account for around 10-20
 IP addresses per each range.

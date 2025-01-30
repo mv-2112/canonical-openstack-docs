@@ -15,10 +15,10 @@ To enable Vault, run the following command:
 
 Vault units will be in blocked state after this step.
 
-Initialising Vault
+Initializing Vault
 ------------------
 
-To initialise Vault, run the following command:
+To initialize Vault, run the following command:
 
 ::
 
@@ -59,7 +59,7 @@ the vault leader unit.
 
 To unseal the non-leader units, repeat the unseal commands again.
 
-For example, the process to unseal the Vault with 3 units, initialised with
+For example, the process to unseal the Vault with 3 units, initialized with
 5 key shares and 3 key threshold looks like:
 
 Unseal with the first key:
@@ -114,10 +114,10 @@ Unseal with the third key:
 
 Unsealing vault process completed.
 
-Authorising Vault charm
+Authorizing Vault charm
 -----------------------
 
-To authorise vault charm, run the following command:
+To authorize vault charm, run the following command:
 
 ::
 

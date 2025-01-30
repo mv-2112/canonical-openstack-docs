@@ -135,7 +135,11 @@ Get familiar with the OpenStack client
 
    **Duration:** 3 minutes
 
-In addition to the OpenStack dashboard, users can also use the `OpenStack client <https://docs.openstack.org/python-openstackclient/latest/>`_ to interact with the cloud. While the dashboard helps to visualise the environment and all the resources being used, the client provides a command line interface which is especially useful when performing bulk operations or automating administrative tasks.
+In addition to the OpenStack dashboard, users can also use the
+`OpenStack client <https://docs.openstack.org/python-openstackclient/latest/>`_ to interact with
+the cloud. While the dashboard helps to visualize the environment and all the resources being
+used, the client provides a command line interface which is especially useful when performing
+bulk operations or automating administrative tasks.
    
 To interact with the cloud through the OpenStack client, first, set necessary environmental variables:
 
@@ -267,7 +271,7 @@ Associate a floating IP address
 To be able to connect to the VM via SSH, we have to associate a `floating IP address
 <https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/floating-ip.html>`__
 with it. Floating IPs are allocated from the OpenStack
-:doc:`external network</explanation/architecture>` and should be routable within your data centre
+:doc:`external network</explanation/architecture>` and should be routable within your data center
 to ensure an inbound access to VMs.
 
 Under the **Actions** column beside *my_instance_1*, select **Associate Floating IP** from the drop-down menu:

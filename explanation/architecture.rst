@@ -15,9 +15,14 @@ Even though Canonical OpenStack is an enterprise-grade product that is available
 OpenStack
 ~~~~~~~~~
 
-Canonical OpenStack is built on top of the pure upstream OpenStack project, guaranteeing  API compatibility. Canonical has been involved in OpenStack and the wider OpenInfra community since the very early beginnings of the project and is the third largest contributor to OpenStack code over all time.
+Canonical OpenStack is built on top of the pure upstream OpenStack project, guaranteeing  API
+compatibility. Canonical has been involved in OpenStack and the wider OpenInfra community since
+the very early beginnings of the project and is the third largest contributor to OpenStack code
+over all time.
 
-In the Canonical OpenStack development process Canonical packages the upstream code and makes it available in the form of various artefacts that are then used to deploy and operate the product. Only mature and well-maintained services are included to ensure production-grade stability.
+In the Canonical OpenStack development process Canonical packages the upstream code and makes it
+available in the form of various artifacts that are then used to deploy and operate the product.
+Only mature and well-maintained services are included to ensure production-grade stability.
 
 Ubuntu
 ~~~~~~
@@ -27,17 +32,20 @@ Canonical OpenStack is only available on top of the Ubuntu operating system (OS)
 Sunbeam
 ~~~~~~~
 
-Canonical OpenStack is built on top of Sunbeam. Sunbeam is an upstream OpenStack project under the governance of the OIF. The project aims to lower the barrier to entry for people with no previous OpenStack background and fully revolutionise the operational experience. Canonical is the maintainer and the biggest contributor to the Sunbeam project.
+Canonical OpenStack is built on top of Sunbeam. Sunbeam is an upstream OpenStack project under
+the governance of the OIF. The project aims to lower the barrier to entry for people with no
+previous OpenStack background and fully revolutionize the operational experience. Canonical is the
+maintainer and the biggest contributor to the Sunbeam project.
 
 Software architecture
 ---------------------
 
 Canonical OpenStack uses cloud-native architecture to isolate individual components from each other and fully decouple the software from the underlying OS. In the background the product uses various technologies, open-source projects and other Canonical products that are required to form an end-to-end cloud solution.
 
-Artefacts
+Artifacts
 ~~~~~~~~~
 
-Canonical OpenStack is distributed in the form of three types of artefacts.
+Canonical OpenStack is distributed in the form of three types of artifacts.
 
 Rocks
 ^^^^^
@@ -52,7 +60,10 @@ Snaps
 Charms
 ^^^^^^
 
-`Charms <https://juju.is/docs/sdk>`_ are operators – software that wraps an application and that contains all of the instructions necessary for deploying, configuring, scaling, integrating, etc. the application. Canonical OpenStack uses Charms for the purpose of deploying and operating many other artefacts, including Rocks and Snaps.
+`Charms <https://juju.is/docs/sdk>`_ are operators – software that wraps an application and that
+contains all of the instructions necessary for deploying, configuring, scaling, integrating, etc.
+the application. Canonical OpenStack uses Charms for the purpose of deploying and operating many
+other artifacts, including Rocks and Snaps.
 
 Functions
 ---------
@@ -112,11 +123,11 @@ Compute
 
 The compute role encapsulates the hypervisor component on the cloud;
 specifically this includes the Nova Compute service, the Libvirt/QEMU
-virtualisation stack, OVN (Open Virtual Network) and OVS (Open vSwitch)
+virtualization stack, OVN (Open Virtual Network) and OVS (Open vSwitch)
 services for software defined networking and a Neutron service for
 provision of metadata to instances.
 
-Nodes with the compute role should be hardware virtualisation (KVM) capable
+Nodes with the compute role should be hardware virtualization (KVM) capable
 otherwise user-space emulation is used for instances which has a significant
 performance impact.
 

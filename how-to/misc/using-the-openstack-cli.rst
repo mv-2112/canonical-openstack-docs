@@ -7,7 +7,7 @@ Once OpenStack has been deployed you can interact with your cloud via
 the CLI by using the standard ``openstack`` client commands. The CLI
 client is provided as part of the ``openstack`` snap.
 
-The client recognises the environment variables stored in generated
+The client recognizes the environment variables stored in generated
 credential files. Source a cloud credentials file to set these environment
 variables in the current shell before using the client:
 

@@ -33,7 +33,7 @@ Create a registration token
 
 .. warning ::
 
-   Clustering does not support base hostnames. Nodes are only recognised by their **FQDNs**.
+   Clustering does not support base hostnames. Nodes are only recognized by their **FQDNs**.
 
 A registration token has to be created first for the other machine to be able to join the existing Canonical OpenStack cluster.
 
