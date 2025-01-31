@@ -120,15 +120,18 @@ Also refer to the table below:
      - Ubuntu version
      - Released
      - EOL (standard)
-     - EOL (under Ubuntu Pro / Legacy Support)
+     - EOL (under Ubuntu Pro)
+     - EOL (under Legacy Support)
    * - 2024.1
      - 22.04 LTS
      - Dec 2024
      - Apr 2027
      - Apr 2032
+     - Apr 2034
    * - 2023.2
      - 22.04 LTS
      - Oct 2023
+     - Apr 2025
      - Apr 2025
      - Apr 2025
    * - Yoga LTS
@@ -136,9 +139,11 @@ Also refer to the table below:
      - Apr 2022
      - Apr 2027
      - Apr 2032
+     - Apr 2034
    * - Yoga
      - 20.04 LTS
      - Apr 2022
+     - Apr 2025
      - Apr 2025
      - Apr 2025
    * - Ussuri LTS
@@ -146,11 +151,13 @@ Also refer to the table below:
      - May 2020
      - Apr 2025
      - Apr 2030
+     - Apr 2032
    * - Queens LTS
      - 18.04 LTS
      - Apr 2018
      - Apr 2023
      - Apr 2028
+     - Apr 2030
 
 OpenStack packages
 ++++++++++++++++++
