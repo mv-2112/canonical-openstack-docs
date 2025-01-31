@@ -1,5 +1,5 @@
 This page shows how to manage deployment manifests. For an overview of
-manifests, see the :doc:`Deployment manifest </reference/concepts/deployment-manifest>` page.
+manifests, see the :doc:`Deployment manifest </explanation/deployment-manifest>` page.
 
 [note type=“caution”] **Note:** This feature is currently only supported
 in channel ``2023.2/edge`` and later of the **openstack** snap. [/note]

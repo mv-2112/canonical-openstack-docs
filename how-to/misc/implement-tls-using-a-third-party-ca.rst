@@ -6,7 +6,7 @@ Authority for your certificates.
 
 .. tip::
    For conceptual background on TLS in Canonical OpenStack see the
-   :doc:`Service endpoint encryption </reference/concepts/service-endpoint-encryption>`
+   :doc:`Service endpoint encryption </explanation/service-endpoint-encryption>`
    page.
 
 [note type=“caution”] **Note:** This feature is currently only supported
