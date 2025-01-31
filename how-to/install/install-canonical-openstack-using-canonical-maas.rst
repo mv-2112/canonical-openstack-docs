@@ -84,10 +84,10 @@ The following section assumes a generic knowledge of OpenStack and Canonical MAA
 the upstream `OpenStack documentation <https://docs.openstack.org/>`_ and `MAAS documentation`_
 for more information.
 
-Pick up a deployment name
--------------------------
+Pick a deployment name
+----------------------
 
-Before you get started you have to pick up a name for your Canonical OpenStack deployment. This
+Before you get started you have to pick a name for your Canonical OpenStack deployment. This
 name will be used in various parts of this how-to guide. We'll refer to it as a *deployment name*.
 
 .. _prerequisites:
