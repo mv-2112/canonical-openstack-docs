@@ -148,9 +148,7 @@ In a single-node deployment, all of the components of the deployed OpenStack Clo
 
 In a single-node deployment the node will assume control and compute roles by default. Note that the use of the storage role currently requires pristine, un-partitioned block devices on the node being used.
 
-It is possible to deploy a single-node cloud with remote access to control plane services and instances - this is the ``remote`` option for instance networking and requires a range of IP addresses for K8s loadbalancer use on the network upon which the node being used resides - see the Install Canonical OpenStack using the manual bare metal provider how-to guide for examples on how to do this.
-
-.. TODO: Add a link to the Install Canonical OpenStack using the manual bare metal provider how-to guide
+It is possible to deploy a single-node cloud with remote access to control plane services and instances - this is the ``remote`` option for instance networking and requires a range of IP addresses for K8s loadbalancer use on the network upon which the node being used resides - see the :doc:`Install Canonical OpenStack using the manual bare metal provider how-to guide</how-to/install/install-canonical-openstack-using-the-manual-bare-metal-provider>` for examples on how to do this.
 
 Multi-node
 ~~~~~~~~~~

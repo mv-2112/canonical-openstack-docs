@@ -2,13 +2,12 @@ Bootstrap highly available Juju controller on top of a LXD cluster
 ##################################################################
 
 Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
-Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal
-provider do not provide HA for all types of governance functions by default. To bypass this
+Kubernetes. This means that Canonical OpenStack clouds deployed using the
+:doc:`manual bare metal provider</how-to/install/install-canonical-openstack-using-the-manual-bare-metal-provider>`
+do not provide HA for all types of governance functions by default. To bypass this
 limitation Canonical recommends using an external highly available Juju controller. Such a
 controller can be bootstrapped on top of a LXD cluster, for example, running across the same
 machines that are used in the Canonical OpenStack deployment.
-
-.. TODO: Add a link to the Install Canonical OpenStack using the manual bare metal provider section
 
 This how-to guide provides all necessary information on how to perform aforementioned actions.
 
@@ -19,12 +18,8 @@ You will need:
 
 * at least three dedicated physical machines with:
 
-  * hardware specifications matching minimum hardware specifications for the *Cloud* node as documented under the Enterprise requirements section
-  * fresh Ubuntu Server 22.04 LTS installed
-
-.. TODO: Add a link to the Enterprise requirements section
-
-.. TODO: TO be updated to Ubuntu Server 24.04 LTS once the re-base is complete
+  * hardware specifications matching minimum hardware specifications for the *Cloud* node as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
+  * fresh Ubuntu Server 24.04 LTS installed
 
 Prepare machines
 ++++++++++++++++
@@ -74,7 +69,7 @@ To bootstrap the cluster, execute the ``lxd init`` command on the first machine 
 
    lxd init
 
-When prompted, answer some interactive questions. Below is a sample output from the *cloud-1* machine from the example configuration:
+When prompted, answer some interactive questions. Below is a sample output from the *cloud-1* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>`:
 
 .. code-block :: text
 
@@ -94,8 +89,6 @@ When prompted, answer some interactive questions. Below is a sample output from 
    Would you like stale cached images to be updated automatically? (yes/no) [default=yes]: yes
    Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]: no
 
-.. TODO: Add a link to the Example configuration seciton
-
 Refer to the `LXD documentation <https://documentation.ubuntu.com/lxd/en/latest/>`_ for detailed description of each of those questions and some examples.
 
 Create registration tokens
@@ -111,9 +104,7 @@ In order to create a registration token for the new machine, execute the ``lxc c
 
 ``NAME`` is the name of the machine being added.
 
-For example, to create a registration token for the *cloud-2* machine from the example configuration section, execute the following command on the *cloud-1* machine:
-
-.. TODO: Add a link to the Example configuration section
+For example, to create a registration token for the *cloud-2* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section, execute the following command on the *cloud-1* machine:
 
 .. code-block :: text
 
@@ -139,7 +130,7 @@ To join the cluster, execute the ``sudo lxd init`` command on all remaining mach
 
    sudo lxd init
 
-When prompted, answer some interactive questions. Below is a sample output from the *cloud-2* machine from the example configuration:
+When prompted, answer some interactive questions. Below is a sample output from the *cloud-2* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>`:
 
 .. code-block :: text
 
@@ -155,8 +146,6 @@ When prompted, answer some interactive questions. Below is a sample output from 
    Choose "zfs.pool_name" property for storage pool "local": 
    Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]: no 
 
-.. TODO: Add a link to the Example configuration section
-
 Refer to the `LXD documentation <https://documentation.ubuntu.com/lxd/en/latest/>`_ for detailed description of each of those questions and some examples.
 
 Verify cluster setup
@@ -170,9 +159,7 @@ To verify cluster setup, execute the ``lxc cluster list`` command on any machine
 
 You should be able to see all machines being used.
 
-Sample output (based on example configuration):
-
-.. TODO: Add a link to the Example configuration section
+Sample output (based on the :doc:`Example physical configuration</reference/example-physical-configuration>` section):
 
 .. code-block :: text
 
@@ -256,9 +243,7 @@ Add the LXD cluster to the local LXC config:
 
 When prompted, type ``y``.
 
-For example, to register the LXD cluster from the example configuration as ``mylxdcluster`` cloud, execute the following commands:
-
-.. TODO: Add a link to the Example configuration section
+For example, to register the LXD cluster from the :doc:`Example physical configuration</reference/example-physical-configuration>` section as ``mylxdcluster`` cloud, execute the following commands:
 
 .. code-block :: text
 

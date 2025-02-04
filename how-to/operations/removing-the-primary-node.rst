@@ -3,9 +3,7 @@ Removing the primary node
 
 Removing the primary node refers to the removal of the first (bootstrap) node in the cluster and is only applicable when using the manual bare metal provider.
 
-If the deployment consists of multiple nodes then remove all non-primary nodes before removing the primary node. Refer to the Scaling the cluster in section of this documentation for exact instructions on how to do that.
-
-.. TODO: Add a link to the Scaling the cluster in section
+If the deployment consists of multiple nodes then remove all non-primary nodes before removing the primary node. Refer to the :doc:`Scaling the cluster in</how-to/operations/scaling-the-cluster-in>` section of this documentation for exact instructions on how to do that.
 
 Remove components from the machine
 ++++++++++++++++++++++++++++++++++

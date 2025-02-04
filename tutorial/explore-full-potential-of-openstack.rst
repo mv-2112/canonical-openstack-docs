@@ -16,20 +16,16 @@ Ready to take your knowledge to the next level? Let's explore full potential of 
 
 .. note ::
 
-   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the How-to Guides section of this documentation instead.
-
-.. TODO: Add a link to the "How-to guides" section
+   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the :doc:`How-to Guides section</how-to/index>` of this documentation instead.
 
 Requirements
 ++++++++++++
 
 You will only need one dedicated physical machine with:
 
-* Canonical OpenStack deployed according to instructions listed under the "Get started with OpenStack" tutorial,
-* OpenStack client configured according to instructions listed under the "Get familiar with OpenStack" tutorial,
-* A new project and a user account created according to instructions listed under the "On-board your users" tutorial.
-
-.. TODO: Add a link to tutorial-1, tutorial-2 and tutorial-3
+* Canonical OpenStack deployed according to instructions listed under the :doc:`"Get started with OpenStack"</tutorial/get-started-with-openstack>` tutorial,
+* OpenStack client configured according to instructions listed under the :doc:`"Get familiar with OpenStack"</tutorial/get-familiar-with-openstack>` tutorial,
+* A new project and a user account created according to instructions listed under the :doc:`"On-board your users"</tutorial/on-board-your-users>` tutorial.
 
 You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
@@ -364,8 +360,6 @@ Congratulations!
 
 You have reached the end of this tutorial and the whole series of tutorials we prepared to help you get up to speed with Canonical OpenStack.
 
-You can now explore our How-to Guides for instructions on setting up a production-grade environment.
+You can now explore our :doc:`How-to Guides</how-to/index>` for instructions on setting up a production-grade environment.
 
 Good luck!
-
-.. TODO: Add a link to the How-to guides section

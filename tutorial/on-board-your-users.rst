@@ -3,9 +3,7 @@ On-board your users
 
 Welcome!
 
-We hope you've had a great time so far exploring `Canonical OpenStack <https://canonical.com/openstack>`_. In the previous tutorial we learned how to use the OpenStack dashboard and the OpenStack client to interact with the cloud as both admin and a regular user, and how to provision cloud resources. Now that you're familiar with both tools, it's the highest time to start on-boarding your users.
-
-.. TODO: Add a link to tutorial-2
+We hope you've had a great time so far exploring `Canonical OpenStack <https://canonical.com/openstack>`_. In the :doc:`previous tutorial</tutorial/get-familiar-with-openstack>` we learned how to use the OpenStack dashboard and the OpenStack client to interact with the cloud as both admin and a regular user, and how to provision cloud resources. Now that you're familiar with both tools, it's the highest time to start on-boarding your users.
 
 In this tutorial we will demonstrate how to prepare Canonical OpenStack for your organisation's usage. We will show you how to create a new project from scratch, distribute credentials to your colleagues and populate the cloud with some common templates used by your organisation. Finally, we will showcase how users can further customise their project according to their needs.
 
@@ -13,19 +11,15 @@ Ready to share OpenStack with your colleagues? Let's take it to the next level t
 
 .. note ::
 
-   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the How-to Guides section of this documentation instead.
-
-.. TODO: Add a link to the "How-to guides" section
+   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the :doc:`How-to Guides section</how-to/index>` of this documentation instead.
 
 Requirements
 ++++++++++++
 
 You will only need one dedicated physical machine with:
 
-* Canonical OpenStack deployed according to instructions listed under the "Get started with OpenStack" tutorial,
-* OpenStack dashboard and OpenStack client configured according to instructions listed under the "Get familiar with OpenStack" tutorial.
-
-.. TODO: Add a link to tutorial-1 and tutorial-2
+* Canonical OpenStack deployed according to instructions listed under the :doc:`"Get started with OpenStack"</tutorial/get-started-with-openstack>` tutorial,
+* OpenStack dashboard and OpenStack client configured according to instructions listed under the :doc:`"Get familiar with OpenStack"</tutorial/get-familiar-with-openstack>` tutorial.
 
 You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
@@ -44,9 +38,7 @@ To log in as the *admin* user through the OpenStack client, execute the followin
 
    source <(sunbeam openrc)
 
-To log in as the *admin* user through the OpenStack dashboard, refer to instructions under the "Get familiar with OpenStack" tutorial.
-
-.. TODO: Add a link to tutorial-2
+To log in as the *admin* user through the OpenStack dashboard, refer to instructions under the :doc:`"Get familiar with OpenStack"</tutorial/get-familiar-with-openstack>` tutorial.
 
 Populate OpenStack with templates
 +++++++++++++++++++++++++++++++++
@@ -144,9 +136,7 @@ even noticing their existence. Multi-tenancy is provided through the concept of 
 projects which are an abstraction used by other OpenStack services to group and isolate various
 types of resources (e.g. VMs).
 
-In turn, authentication and authorisation functions are handled through the concept of users, groups and roles. Even though we're going to use the default database backend in this tutorial, organisations can also plug their Canonical OpenStack into an enterprise identity and access management system, such as LDAP.
-
-.. TODO: Add a link to the LDAP feature
+In turn, authentication and authorisation functions are handled through the concept of users, groups and roles. Even though we're going to use the default database backend in this tutorial, organisations can also plug their Canonical OpenStack into an enterprise identity and access management system, such as :doc:`LDAP</how-to/features/ldap>`.
 
 In the following example we'll create a new project and a user under the *users* domain, assign a *member* role to this user, and demonstrate how to distribute the newly created users' credentials to your colleagues so that they could also start their journey with Canonical OpenStack.
 
@@ -380,8 +370,5 @@ You have reached the end of this tutorial.
 
 You can now:
 
-* Move to the next tutorial in this series - "Explore full potential of OpenStack",
-* Explore How-to Guides for instructions on setting up a production-grade environment.
-
-.. TODO: Add a link to the tutorial IV
-.. TODO: Add a link to the How-to guides section
+* Move to the next tutorial in this series - :doc:`"Explore full potential of OpenStack"</tutorial/explore-full-potential-of-openstack>`,
+* Explore :doc:`How-to Guides</how-to/index>` for instructions on setting up a production-grade environment.

@@ -11,9 +11,7 @@ Ready for the adventure? Let's explore OpenStack together!
 
 .. note ::
 
-   This tutorial is intended to serve for learning purposes only. If you've looking for detailed instructions on how to deploy a production-grade cloud, please refer to the How-to Guides section of this documentation instead.
-
-.. TODO: Add a link to the "How-to guides" section
+   This tutorial is intended to serve for learning purposes only. If you've looking for detailed instructions on how to deploy a production-grade cloud, please refer to the :doc:`How-to Guides section</how-to/index>` of this documentation instead.
 
 Requirements
 ++++++++++++
@@ -23,12 +21,8 @@ You will only need one dedicated physical machine with:
 * 4+ core amd64 processor
 * minimum of 16 GiB of RAM
 * minimum of 50 GiB SSD storage on the ``rootfs`` partition
-* fresh Ubuntu Desktop 22.04 LTS installed
+* fresh Ubuntu Desktop 24.04 LTS installed
 * unlimited access to the Internet
-
-.. TODO: Update once https://warthogs.atlassian.net/browse/OPEN-2486 is completed
-
-.. TODO: TO be updated to Ubuntu Desktop 24.04 LTS once the re-base is complete
 
 You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
@@ -123,9 +117,7 @@ Configure the cloud
 
 At this point your Canonical OpenStack installation is already up and running. However, to be able to demonstrate its capabilities, we have to prepare the cloud for sample use. This includes creating a ``demo`` user, populating the cloud with some common templates and creating a sandbox project with some basic configuration where we'll be able to provision resources.
 
-We will explore in another tutorial how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
-
-.. TODO: Add a link to the tutorial III
+We will explore in :doc:`another tutorial</tutorial/on-board-your-users>` how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
 
 To configure the cloud for sample usage, execute the following command:
 
@@ -146,9 +138,7 @@ Launch a VM
 
    **Duration:** 1 minute (first VM launch always takes longer)
 
-The best way to verify whether Canonical OpenStack has been deployed successfully is to try to launch a VM on top of it. We will explore in another tutorial how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
-
-.. TODO: Add a link to the tutorial II
+The best way to verify whether Canonical OpenStack has been deployed successfully is to try to launch a VM on top of it. We will explore in :doc:`another tutorial</tutorial/get-familiar-with-openstack>` how this process usually looks like under the hood. However, for the time being we're simply going to let Sunbeam handle that.
 
 In order to launch a test VM, execute the following command:
 
@@ -189,8 +179,5 @@ You have reached the end of this tutorial.
 
 You can now:
 
-* Move to the next tutorial in this series - "Get familiar with OpenStack",
-* Explore How-to Guides for instructions on setting up a production-grade environment.
-
-.. TODO: Add a link to the tutorial II
-.. TODO: Add a link to the How-to guides section
+* Move to the next tutorial in this series - :doc:`"Get familiar with OpenStack"</tutorial/get-familiar-with-openstack>`,
+* Explore :doc:`How-to Guides</how-to/index>` for instructions on setting up a production-grade environment.

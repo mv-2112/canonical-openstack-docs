@@ -8,9 +8,7 @@ Scaling the cluster in using the manual bare metal provider
 
 The following section provides instructions on scaling the cluster in with the manual bare metal provider.
 
-These instructions apply to all node types but the primary node. For instruction on the latter, refer to Removing the primary node section of this documentation.
-
-.. TODO: Add a link to the Removing the primary node section
+These instructions apply to all node types but the primary node. For instruction on the latter, refer to :doc:`Removing the primary node</how-to/operations/removing-the-primary-node>` section of this documentation.
 
 Remove the machine from the cluster
 -----------------------------------
@@ -23,9 +21,7 @@ To remove the machine from the cluster, execute the ``sunbeam cluster remove`` c
 
 ``FQDN`` is a fully qualified domain name (FQDN) of the machine being removed.
 
-For example, to remove the *cloud-2* machine from the example configuration section, execute the following command:
-
-.. TODO: Add a link to the Example configuration section
+For example, to remove the *cloud-2* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section, execute the following command:
 
 .. code-block :: text
 

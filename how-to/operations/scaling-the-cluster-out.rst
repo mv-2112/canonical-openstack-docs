@@ -5,12 +5,10 @@ Canonical OpenStack scales out, meaning that you can add more machines to the cl
 
 Make sure you get familiar with the following sections before proceeding with any instructions listed below:
 
-* Architecture
-* Design considerations
-* Enterprise requirements
-* Sample configuration
-
-.. TODO: Add links to all the pages listed above
+* :doc:`Architecture</explanation/architecture>`
+* :doc:`Design considerations</explanation/design-considerations>`
+* :doc:`Enterprise requirements</reference/enterprise-requirements>`
+* :doc:`Example physical configuration</reference/example-physical-configuration>`
 
 Scaling the cluster out using the manual bare metal provider
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -22,19 +20,13 @@ Requirements
 
 You will need:
 
-* Canonical OpenStack already installed using the manual bare metal provider
+* Canonical OpenStack already installed using the :doc:`manual bare metal provider</how-to/install/install-canonical-openstack-using-the-manual-bare-metal-provider>`
 * one dedicated physical machine with:
 
-  * hardware specifications matching minimum hardware specifications as documented under the Enterprise requirements section
-  * fresh Ubuntu Server 22.04 LTS installed
+  * hardware specifications matching minimum hardware specifications as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
+  * fresh Ubuntu Server 24.04 LTS installed
 
-.. TODO: Add links to the "Install Canonical OpenStack using the manual bare metal provider" how-to guide and the Enterprise requirements section
-
-.. TODO: TO be updated to Ubuntu Server 24.04 LTS once the re-base is complete
-
-If you can't provide an unlimited access to the Internet, see the Manage a proxied environment section.
-
-.. TODO: Add a link to the Manage a proxied environment section
+If you can't provide an unlimited access to the Internet, see the :doc:`Manage a proxied environment</how-to/misc/manage-a-proxied-environment>` section.
 
 Create a registration token
 ---------------------------
@@ -55,9 +47,7 @@ In order to create a registration token for the new machine, execute the ``sunbe
 
 ``FILE`` is a name of the file where to save the registration token.
 
-For example, to create a registration token for the *cloud-2* machine from the example configuration section, execute the following command on the *cloud-1* machine:
-
-.. TODO: Add a link to the Example configuration section
+For example, to create a registration token for the *cloud-2* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section, execute the following command on the *cloud-1* machine:
 
 .. code-block :: text
 
@@ -114,9 +104,7 @@ In order to add the machine to the cluster, execute the ``sunbeam cluster join``
 
 ``ROLES``` is a comma-separated list of roles (``control``, ``compute``, ``storage``) to assign to the machine being added.
 
-For example, to add the *cloud-2* machine from the example configuration section, execute the following command:
-
-.. TODO: Add a link to the Example configuration section
+For example, to add the *cloud-2* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section, execute the following command:
 
 .. code-block :: text
 
@@ -151,13 +139,13 @@ Requirements
 
 You will need:
 
-* Canonical OpenStack already installed using Canonical MAAS
+* Canonical OpenStack already installed using :doc:`Canonical MAAS</how-to/install/install-canonical-openstack-using-canonical-maas>`
 * one dedicated physical machine:
 
-  * with hardware specifications matching minimum hardware specifications as documented under the Enterprise requirements section
+  * with hardware specifications matching minimum hardware specifications as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
   * ready to be used by MAAS (enlisted, commissioned, configured and tagged)
 
-.. TODO: Add links to the "Install Canonical OpenStack using the manual bare metal provider" how-to guide and the Enterprise requirements section
+If you can't provide an unlimited access to the Internet, see the :doc:`Manage a proxied environment</how-to/misc/manage-a-proxied-environment>` section.
 
 Provision the new machine
 -------------------------
