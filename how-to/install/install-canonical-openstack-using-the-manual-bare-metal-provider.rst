@@ -7,20 +7,16 @@ Sunbeam using the manual bare metal provider.
 Make sure you get familiar with the following sections before proceeding with any instructions
 listed below:
 
-* Architecture
-* Design considerations
-* Enterprise requirements
-* Sample configuration
-
-.. TODO: Add links to all the pages listed above
+* :doc:`Architecture</explanation/architecture>`
+* :doc:`Design considerations</explanation/design-considerations>`
+* :doc:`Enterprise requirements</reference/enterprise-requirements>`
+* :doc:`Example physical configuration</reference/example-physical-configuration>`
 
 .. note ::
 
    This how-to guide is intended to serve operators willing to deploy a production-grade cloud.
-   If you're looking for some simple learning materials instead, please refer to the Tutorials
-   section of this documentation.
-
-.. TODO: Add a link to the Tutorials page
+   If you're looking for some simple learning materials instead, please refer to the
+   :doc:`Tutorials</tutorial/index>` section of this documentation.
 
 Requirements
 ++++++++++++
@@ -31,21 +27,13 @@ You will need:
 * one dedicated physical machine with:
 
   * hardware specifications matching minimum hardware specifications for the *Cloud* node as
-    documented under the Enterprise requirements section
-  * fresh Ubuntu Server 22.04 LTS installed
+    documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
+  * fresh Ubuntu Server 24.04 LTS installed
 
-.. TODO: Add a link to the Enterprise requirements section
+If you can't provide an unlimited access to the Internet, see the
+:doc:`Manage a proxied environment</how-to/misc/manage-a-proxied-environment>` section.
 
-.. TODO: TO be updated to Ubuntu Server 24.04 LTS once the re-base is complete
-
-If you can't provide an unlimited access to the Internet, see the Manage a proxied environment
-section.
-
-.. TODO: Add a link to the Manage a proxied environment section
-
-Additional machines can be added later. See the Scaling the cluster out how-to guide.
-
-.. TODO: Add a link to the Scaling the cluster out how-to guide
+Additional machines can be added later. See the :doc:`Scaling the cluster out</how-to/operations/scaling-the-cluster-out>` how-to guide.
 
 Install Canonical OpenStack
 +++++++++++++++++++++++++++
@@ -59,10 +47,8 @@ speed.
    Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
    Kubernetes. This means that Canonical OpenStack clouds deployed using the manual bare metal
    provider do not provide HA for all types of governance functions by default. To bypass this
-   limitation Canonical recommends using an external highly available Juju controller. External
+   limitation Canonical recommends :doc:`using an external highly available Juju controller</how-to/misc/using-an-existing-juju-controller>`. External
    controller has to be registered before running the ``sunbeam cluster bootstrap`` command.
-
-.. TODO: Add a link to the Using an existing Juju controller how-to guide
 
 Install the snap
 ----------------
@@ -84,8 +70,6 @@ To list all available versions, execute the following command:
 
 Prepare the machine
 -------------------
-
-As a prerequisite, deploy LXD based Juju controller on the node. Refer :doc:`Bootstrap LXD based Juju controller on single node </how-to/misc/bootstrap-single-node-lxd-based-juju-controller>` for detailed procedure.
 
 To prepare the machine for Canonical OpenStack usage, execute the following command:
 
@@ -116,15 +100,11 @@ To bootstrap the cloud, execute the following command:
    sunbeam cluster bootstrap --role control,compute,storage
 
 This will assign all roles (``control``, ``compute``, ``storage``) to the machine by default.
-You can use the ``--role`` switch to narrow them down. See the Architecture section for more
+You can use the ``--role`` switch to narrow them down. See the :doc:`Architecture</explanation/architecture>` section for more
 details.
 
-.. TODO: Add a link to the Architecture section
-
 When prompted, answer some interactive questions. Below is a sample output from the *cloud-1*
-machine from the example configuration:
-
-.. TODO: Add a link to the Example configuration seciton
+machine from the :doc:`Example physical configuration </reference/example-physical-configuration>` section:
 
 .. code-block :: text
 
@@ -134,15 +114,11 @@ machine from the example configuration:
    OpenStack APIs IP ranges (172.16.1.201-172.16.1.240): 172.16.1.201-172.16.1.240
    Ceph devices (/dev/disk/by-id/wwn-0x500a0751e86b8eee): /dev/sdb
 
-You can also refer to the Interactive configuration prompts section for detailed description of
+You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
 each of those questions and some examples.
 
-.. TODO: Add a link to the Interactive configuration prompts section
-
-Also note that answers to all those questions can be automated with the use of a Deployment
-manifest.
-
-.. TODO: Add a link to the Deployment manifest section
+Also note that answers to all those questions can be automated with the use of a
+:doc:`Deployment manifest</explanation/deployment-manifest>`.
 
 One finished, you should be able to see the following message on your screen:
 
@@ -155,7 +131,7 @@ Configure the cloud
 
 Finally, configure the cloud for sample usage:
 
-.. TODO: text
+.. code-block :: text
 
    sunbeam configure
 
@@ -164,9 +140,7 @@ the ``--openrc`` switch to automatically generate an OpenStack RC file for this 
 ``--openrc my-openrc``).
 
 When prompted, answer some interactive questions. Below is a sample output from the *cloud-1*
-machine from the example configuration:
-
-.. TODO: Add a link to the Example configuration seciton
+machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section:
 
 .. code-block :: text
 
@@ -183,15 +157,11 @@ machine from the example configuration:
    Enable ping and SSH access to instances? [y/n] (y): y
    External network's interface [eno2] (eno2): eno2
 
-You can also refer to the Interactive configuration prompts section for detailed description of
+You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
 each of those questions and some examples.
 
-.. TODO: Add a link to the Interactive configuration prompts section
-
-Also note that answers to all those questions can be automated with the use of a Deployment
-manifest.
-
-.. TODO: Add a link to the Deployment manifest section
+Also note that answers to all those questions can be automated with the use of a
+:doc:`Deployment manifest</explanation/deployment-manifest>`.
 
 One finished, you should be able to see the following message on your screen:
 
@@ -208,8 +178,6 @@ Related how-to guides
 
 Now that Canonical OpenStack is installed, you might want to check out the following how-to guides:
 
-* Using the OpenStack dashboard
-* Using the OpenStack client
-* Scaling the cluster out
-
-.. TODO: Add links to the how-to guides listed above
+* :doc:`Using the OpenStack dashboard</how-to/misc/using-the-openstack-dashboard>`
+* :doc:`Using the OpenStack client</how-to/misc/using-the-openstack-cli>`
+* :doc:`Scaling the cluster out</how-to/operations/scaling-the-cluster-out>`

@@ -24,8 +24,6 @@ Canonical OpenStack (based on Sunbeam) release cycle can be represented this way
 
    Fig. 1. Canonical OpenStack (based on Sunbeam) release cycle.
 
-.. TODO: Replace the Fig. 1 image with the one created by the Design team
-
 Also refer to the table below:
 
 .. list-table :: Tab. 1. Supported versions of Canonical OpenStack (based on Sunbeam).
@@ -109,8 +107,6 @@ Canonical OpenStack (based on OpenStack Charms) release cycle can be represented
 
    Fig. 2. Canonical OpenStack (based on OpenStack Charms) release cycle.
 
-.. TODO: Replace the Fig. 2 image with the one created by the Design team
-
 Also refer to the table below:
 
 .. list-table :: Tab. 3. Supported versions of Canonical OpenStack (based on OpenStack Charms).
@@ -176,8 +172,6 @@ Release cycle of OpenStack packages on Ubuntu can be represented this way:
    ..
 
    Fig. 3. OpenStack packages` release cycle.
-
-.. TODO: Replace the Fig. 3 image with the one created by the Design team
 
 Also refer to the table below:
 

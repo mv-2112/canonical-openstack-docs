@@ -7,21 +7,17 @@ Sunbeam using `Canonical MAAS`_.
 Make sure you get familiar with the following sections before proceeding with any instructions
 listed below:
 
-* Architecture
-* Design considerations
-* Network traffic isolation with MAAS
-* Enterprise requirements
-* Sample configuration
-
-.. TODO: Add links to all the pages listed above
+* :doc:`Architecture</explanation/architecture>`
+* :doc:`Design considerations</explanation/design-considerations>`
+* :doc:`Network traffic isolation with MAAS</explanation/network-traffic-isolation-with-maas>`
+* :doc:`Enterprise requirements</reference/enterprise-requirements>`
+* :doc:`Example physical configuration</reference/example-physical-configuration>`
 
 .. note ::
 
    This how-to guide is intended to serve operators willing to deploy a production-grade cloud.
-   If you're looking for some simple learning materials instead, please refer to the Tutorials
-   section of this documentation.
-
-.. TODO: Add a link to the Tutorials page
+   If you're looking for some simple learning materials instead, please refer to the
+   :doc:`Tutorials</tutorial/index>` section of this documentation.
 
 Requirements
 ++++++++++++
@@ -32,50 +28,44 @@ You will need:
 * one (or at least three for full HA) dedicated physical machine(s) with:
 
   * hardware specifications matching minimum hardware specifications for the *Cloud* node as
-    documented under the Enterprise requirements section
+    documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
 
 * one (or at least three for full HA) dedicated physical machine(s) with:
 
   * hardware specifications matching minimum hardware specifications for the *Governor* node as
-    documented under the Enterprise requirements section
+    documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
   * fresh Ubuntu Server 24.04 LTS installed
 
 * one (or at least three for full HA) dedicated virtual machine(s), running on the *Governor*
   node(s), with:
 
   * hardware specifications matching minimum hardware specifications for the *MAAS* node as
-    documented under the Enterprise requirements section
+    documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
   * fresh Ubuntu Server 24.04 LTS installed
  
 * one (or at least three for full HA) dedicated virtual machine(s), running on the *Governor*
   node(s), with:
 
   * hardware specifications matching minimum hardware specifications for the *Sunbeam Client* node
-    as documented under the Enterprise requirements section
+    as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
   * fresh Ubuntu Server 24.04 LTS installed
 
 * one (or at least three for full HA) dedicated virtual machine(s), running on the *Governor*
   node(s), with:
   
-  * hardware specifications matching minimum hardware specifications for the *Sunbeam Database*
-    node as documented under the Enterprise requirements section
+  * hardware specifications matching minimum hardware specifications for the *Sunbeam Controller*
+    node as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
 
 * one (or at least three for full HA) dedicated virtual machine(s), running on the *Governor*
   node(s), with:
 
   * hardware specifications matching minimum hardware specifications for the *Juju Controller*
-    node as documented under the Enterprise requirements section
-
-.. TODO: Add links to the Enterprise requirements and Sample configuration sections
+    node as documented under the :doc:`Enterprise requirements</reference/enterprise-requirements>` section
 
 If you can't provide unlimited access to the Internet, see the :doc:`Manage a proxied
 environment </how-to/misc/manage-a-proxied-environment>` page.
 
-.. TODO: Add a link to the Manage a proxied environment section
-
-Additional machines can always be added later. See the Scaling the cluster out how-to guide.
-
-.. TODO: Add a link to the Scaling the cluster out how-to guide
+Additional machines can always be added later. See the :doc:`Scaling the cluster out</how-to/operations/scaling-the-cluster-out>` how-to guide.
 
 Install Canonical OpenStack
 +++++++++++++++++++++++++++
@@ -106,10 +96,8 @@ Install and configure MAAS
 Sunbeam expects a working MAAS environment to be able to install Canonical OpenStack using
 Canonical MAAS.
 
-In the example configuration Canonical MAAS gets installed on `maas-1`, `maas-2` and `maas-3`
+In the :doc:`Example physical configuration</reference/example-physical-configuration>` section Canonical MAAS gets installed on `maas-1`, `maas-2` and `maas-3`
 machines in the HA mode. All of them are VMs running on Governor nodes.
-
-.. TODO: Add a link to the Example physical configuration section
 
 Create reserved IP ranges for OpenStack API endpoints
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -123,12 +111,10 @@ Those ranges have to be created under subnets that :ref:`will be further mapped<
 Depending on the number of optional features being used, you have to account for around 10-20
 IP addresses per each range.
 
-Reserved IP ranges from the example configuration would look like as follows:
+Reserved IP ranges from the :doc:`Example physical configuration</reference/example-physical-configuration>` section would look like as follows:
 
 .. figure:: images/install-canonical-openstack-using-canonical-maas-01.png
    :align: center
-
-.. TODO: Add a link to the Example physical configuration section
 
 Refer to `MAAS documentation`_ for more information on creating reserved IP ranges.
 
@@ -138,11 +124,9 @@ Enlist, commission and configure machines
 All machines but the Governor and Sunbeam Client nodes must be enlisted, commissioned and
 configured in MAAS.
 
-In the example configuration `sunbeam-database-1`, `sunbeam-database-2`, `sunbeam-database-3`,
+In the :doc:`Example physical configuration</reference/example-physical-configuration>` section `sunbeam-controller-1`, `sunbeam-controller-2`, `sunbeam-controller-3`,
 `juju-controller-1`, `juju-controller-2` and `juju-controller-3` machines are VMs running on
 Governor nodes.
-
-.. TODO: Add a link to the Example physical configuration section
 
 Assign machine tags
 """""""""""""""""""
@@ -161,7 +145,7 @@ in the cluster:
      - Nodes to assign the tag to
    * - openstack-<name>
      - Defines which machines to use in this particular deployment
-     - Cloud, Control, Compute, Storage, Sunbeam Database, Juju Controller
+     - Cloud, Control, Compute, Storage, Sunbeam Controller, Juju Controller
    * - control
      - Defines where to host cloud control functions
      - Cloud, Control
@@ -172,20 +156,18 @@ in the cluster:
      - Defines where to host cloud storage functions
      - Cloud, Storage
    * - sunbeam
-     - Defines where to host the Sunbeam database
-     - Sunbeam Database
+     - Defines where to host the Sunbeam controller
+     - Sunbeam Controller
    * - juju-controller
      - Defines where to host the Juju controller
      - Juju Controller
 
 Note that the ``<name>`` suffix must match the deployment name.
 
-Machines from the example configuration would look like as follows:
+Machines from the :doc:`Example physical configuration</reference/example-physical-configuration>` section would look like as follows:
 
 .. figure:: images/install-canonical-openstack-using-canonical-maas-02.png
    :align: center
-
-.. TODO: Add a link to the Example physical configuration section
 
 Refer to `MAAS documentation`_ for more information on assigning machine tags.
 
@@ -198,10 +180,8 @@ also configure the network interface attached to the External physical network. 
 leaving the *Subnet* field of this interface as *Unconfigured* and assigning the
 ``neutron:physnet1`` network tag.
 
-For example, network configuration of the *cloud-1* machine from the example configuration
+For example, network configuration of the *cloud-1* machine from the :doc:`Example physical configuration</reference/example-physical-configuration>`
 section would look like as follows:
-
-.. TODO: Add a link to the Example physical configuration section
 
 .. figure:: images/install-canonical-openstack-using-canonical-maas-03.png
    :align: center
@@ -284,10 +264,8 @@ In order to add the Canonical MAAS provider, execute the ``sunbeam deployment ad
 
 ``URL`` is the MAAS URL.
 
-For example, to add the Canonical MAAS provider from the example configuration section, execute
+For example, to add the Canonical MAAS provider from the :doc:`Example configuration section</reference/example-physical-configuration>`, execute
 the following command:
-
-.. TODO: Add a link to the Example physical configuration section
 
 .. code-block :: text
 
@@ -299,9 +277,7 @@ Map network spaces to cloud networks
 ------------------------------------
 
 Certain machines need access to certain cloud networks. This is managed through the concept of
-MAAS network spaces to cloud networks mapping.
-
-.. TODO: Add a link to the Network traffic isolation with MAAS section.
+:doc:`MAAS network spaces to cloud networks mapping</explanation/network-traffic-isolation-with-maas>`.
 
 To map network space to cloud network, execute the ``sunbeam deployment space map`` command:
 
@@ -372,23 +348,17 @@ To bootstrap the orchestration layer, execute the following command:
    sunbeam cluster bootstrap
 
 When prompted, answer some interactive questions. Below is a sample output from the *client-1*
-machine from the example configuration:
-
-.. TODO: Add a link to the Example configuration section
+machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section:
 
 .. code-block :: text
 
    Use proxy to access external network resources? [y/n] (n): n
 
-You can also refer to the Interactive configuration prompts section for detailed description of
+You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
 each of those questions and some examples.
 
-.. TODO: Add a link to the Interactive configuration prompts section
-
-Also note that answers to all those questions can be automated with the use of a Deployment
-manifest.
-
-.. TODO: Add a link to the Deployment manifest section
+Also note that answers to all those questions can be automated with the use of a
+:doc:`Deployment manifest</explanation/deployment-manifest>`.
 
 One finished, you should be able to see the following message on your screen:
 
@@ -406,23 +376,17 @@ To bootstrap the cloud, execute the following command:
    sunbeam cluster deploy
 
 When prompted, answer some interactive questions. Below is a sample output from the *client-1*
-machine from the example configuration:
-
-.. TODO: Add a link to the Example configuration section
+machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section:
 
 .. code-block :: text
 
    Enter a region name (cannot be changed later) (RegionOne): RegionOne
 
-You can also refer to the Interactive configuration prompts section for detailed description of
+You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
 each of those questions and some examples.
 
-.. TODO: Add a link to the Interactive configuration prompts section
-
-Also note that answers to all those questions can be automated with the use of a Deployment
-manifest.
-
-.. TODO: Add a link to the Deployment manifest section
+Also note that answers to all those questions can be automated with the use of a
+:doc:`Deployment manifest</explanation/deployment-manifest>`.
 
 One finished, you should be able to see the following message on your screen:
 
@@ -435,7 +399,7 @@ Configure the cloud
 
 Finally, configure the cloud for sample usage:
 
-.. TODO: text
+.. code-block :: text
 
    sunbeam configure
 
@@ -444,9 +408,7 @@ the ``--openrc`` switch to automatically generate an OpenStack RC file for this 
 (e.g. ``--openrc my-openrc``).
 
 When prompted, answer some interactive questions. Below is a sample output from the *client-1*
-machine from the example configuration:
-
-.. TODO: Add a link to the Example configuration seciton
+machine from the :doc:`Example physical configuration</reference/example-physical-configuration>` section:
 
 .. code-block :: text
 
@@ -461,15 +423,11 @@ machine from the example configuration:
    Project network's nameservers (8.8.8.8): 8.8.8.8
    Enable ping and SSH access to instances? [y/n] (y): y
 
-You can also refer to the Interactive configuration prompts section for detailed description of
+You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
 each of those questions and some examples.
 
-.. TODO: Add a link to the Interactive configuration prompts section
-
-Also note that answers to all those questions can be automated with the use of a Deployment
-manifest.
-
-.. TODO: Add a link to the Deployment manifest section
+Also note that answers to all those questions can be automated with the use of a
+:doc:`Deployment manifest</explanation/deployment-manifest>`.
 
 One finished, you should be able to see the following message on your screen:
 
@@ -487,11 +445,9 @@ Related Guides
 
 Now that Canonical OpenStack is installed, you might want to check out the following how-to guides:
 
-* Using the OpenStack dashboard
-* Using the OpenStack client
-* Scaling the cluster out
-
-.. TODO: Add links to the how-to guides listed above
+* :doc:`Using the OpenStack dashboard</how-to/misc/using-the-openstack-dashboard>`
+* :doc:`Using the OpenStack client</how-to/misc/using-the-openstack-cli>`
+* :doc:`Scaling the cluster out</how-to/operations/scaling-the-cluster-out>`
 
 .. LINKS
 .. _MAAS documentation: https://maas.io/docs

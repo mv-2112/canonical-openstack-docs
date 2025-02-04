@@ -4,12 +4,10 @@ Get familiar with OpenStack
 Welcome!
 
 It's great to see that you decided to continue your journey with `Canonical OpenStack`_. In the
-previous tutorial we showed you how to get started with OpenStack in five simple steps. By
-executing just a few terminal commands we deployed Canonical OpenStack for sample usage and got
-our first VM running on top of it. Now that the cloud is up and running we'll dig a little bit
-deeper into it.
-
-.. TODO: Add a link to tutorial-1
+:doc:`previous tutorial</tutorial/get-started-with-openstack>` we showed you how to get started
+with OpenStack in five simple steps. By executing just a few terminal commands we deployed
+Canonical OpenStack for sample usage and got our first VM running on top of it. Now that the cloud
+is up and running we'll dig a little bit deeper into it.
 
 In this tutorial we will help you to get familiar with Canonical OpenStack. We will show you how
 to use both OpenStack dashboard and OpenStack client for the purpose of provisioning cloud
@@ -20,18 +18,14 @@ Ready for the next step? Let's dig into OpenStack together!
 
 .. note ::
 
-   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the How-to Guides section of this documentation instead.
-
-.. TODO: Add a link to the "How-to guides" section
+   This tutorial is intended to serve for learning purposes only. If you're looking for detailed instructions on how to deploy a production-grade cloud, please refer to the :doc:`How-to Guides section</how-to/index>` of this documentation instead.
 
 Requirements
 ++++++++++++
 
 You will only need one dedicated physical machine with:
 
-* Canonical OpenStack deployed according to instructions listed under the "Get started with OpenStack" tutorial.
-
-.. TODO: Add a link to tutorial-1
+* Canonical OpenStack deployed according to instructions listed under the :doc:`"Get started with OpenStack"</tutorial/get-started-with-openstack>` tutorial.
 
 You can also use a virtual machine instead, but you can expect some performance degradation in this case.
 
@@ -191,10 +185,9 @@ Provision cloud resource
 
 Now that you've learned how to use both OpenStack dashboard and OpenStack client, we're going to
 see how those tools can be used to provision cloud resources. In the previous tutorial -
-"Getting started with OpenStack" -  we launched our first test VM. In the following steps we're
-going to check how this process looks like in details under the hood.
-
-.. TODO: Add a link to tutorial-1 
+:doc:`"Getting started with OpenStack"</tutorial/get-started-with-openstack>` -  we launched our
+first test VM. In the following steps we're going to check how this process looks like in details
+under the hood.
 
 We will use *demo* project for this purpose that was automatically created by Sunbeam during the Canonical OpenStack deployment. This is because the *demo* project already has all the necessary configuration and required resources in place to enable VM provisioning. We will explore in another tutorial how to setup a new project in OpenStack from scratch.
 
@@ -273,10 +266,9 @@ Associate a floating IP address
 
 To be able to connect to the VM via SSH, we have to associate a `floating IP address
 <https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/floating-ip.html>`__
-with it. Floating IPs are allocated from the OpenStack external network and should be
-routable within your data centre to ensure an inbound access to VMs.
-
-.. TODO: Add a link to a page that explains the concept of the external network
+with it. Floating IPs are allocated from the OpenStack
+:doc:`external network</explanation/architecture>` and should be routable within your data centre
+to ensure an inbound access to VMs.
 
 Under the **Actions** column beside *my_instance_1*, select **Associate Floating IP** from the drop-down menu:
 
@@ -431,13 +423,11 @@ To operate the cloud through the Sunbeam client, execute the ``sunbeam`` command
 
    sunbeam --help
 
-For example, to enable the Ubuntu Pro feature, execute the following command:
+For example, to enable the :doc:`Ubuntu Pro feature</how-to/features/ubuntu-pro>`, execute the following command:
 
 .. code-block :: text
 
    sunbeam enable pro --token <ubuntu pro token>
-
-.. TODO: Add a link to the Ubuntu Pro feature page
 
 .. note ::
 
@@ -479,8 +469,5 @@ You have reached the end of this tutorial.
 
 You can now:
 
-* Move to the next tutorial in this series - "On-board your users",
-* Explore How-to Guides for instructions on setting up a production-grade environment.
-
-.. TODO: Add a link to the tutorial III
-.. TODO: Add a link to the How-to guides section
+* Move to the next tutorial in this series - :doc:`"On-board your users"</tutorial/on-board-your-users>`,
+* Explore :doc:`How-to Guides</how-to/index>` for instructions on setting up a production-grade environment.
