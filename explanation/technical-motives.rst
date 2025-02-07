@@ -51,7 +51,7 @@ How can we leverage the features of the evolved technology around us to
 improve the experience of deploying and operating OpenStack, while
 ensuring we can support all use cases - from a single node running in a
 virtual machine on a developer’s laptop to large deployments of
-thousands of physical servers in data centres?
+thousands of physical servers in data centers?
 
 The majority of the OpenStack Control Plane (API and RPC services, Web
 Apps, Databases) is a great candidate for deployment and operation on

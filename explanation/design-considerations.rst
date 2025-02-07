@@ -28,7 +28,7 @@ Canonical OpenStack supports the following cloud architectures:
 * **Fully-Disaggregated** – dedicated machines (aka Governor, Control, Compute & Network and Storage nodes) exist to host individual cloud functions.
 * **Disaggregated** – some functions (e.g. compute & network and storage) are co-hosted, while dedicated machines exist to host remaining cloud functions.
 
-Control, compute, network and storage function assignment is modelled through the concept of roles which are assigned during the initial deployment or when adding new machines to an existing cluster.
+Control, compute, network and storage function assignment is modeled through the concept of roles which are assigned during the initial deployment or when adding new machines to an existing cluster.
 
 .. _Bare metal provider:
 
@@ -69,7 +69,10 @@ The list of recommended options, depending on the scale, is shown in Tab. 1:
 High availability
 +++++++++++++++++
 
-Canonical OpenStack can be deployed with or without high availability (HA). However, Canonical recommends using HA to minimise service disruption and avoid data loss in the event of hardware failure. At least 3 instances of every machine type are required for full HA regardless of the cloud architecture being used.
+Canonical OpenStack can be deployed with or without high availability (HA). However, Canonical
+recommends using HA to minimize service disruption and avoid data loss in the event of hardware
+failure. At least 3 instances of every machine type are required for full HA regardless of the
+cloud architecture being used.
 
 Availability zones
 ++++++++++++++++++
@@ -93,7 +96,8 @@ In general, Canonical recommends running several small clouds rather than one bi
 Hypervisor
 ++++++++++
 
-Canonical OpenStack uses a virtualisation stack consisting of QEMU, KVM and Libvirt as the only available and supported option for running a hypervisor.
+Canonical OpenStack uses a virtualization stack consisting of QEMU, KVM and Libvirt as the only
+available and supported option for running a hypervisor.
 
 SDN
 +++
@@ -108,7 +112,9 @@ Canonical OpenStack uses Ceph software-defined storage (SDS) platform as the onl
 Air-gapped and offline deployments
 ++++++++++++++++++++++++++++++++++
 
-Canonical OpenStack can be deployed in an air-gapped mode by using an :doc:`external proxy </how-to/misc/manage-a-proxied-environment>` external proxy to download all necessary artefacts from the Internet. Fully offline deployments will be available soon.
+Canonical OpenStack can be deployed in an air-gapped mode by using an :doc:`external proxy
+</how-to/misc/manage-a-proxied-environment>` external proxy to download all necessary artifacts
+from the Internet. Fully offline deployments will be available soon.
 
 .. _Third-party software:
 
@@ -122,9 +128,14 @@ Since Canonical OpenStack is built using pure upstream open source projects, it 
 Commercial services
 +++++++++++++++++++
 
-Even though project Sunbeam was launched to lower the barrier to entry for people with no previous OpenStack background and fully revolutionise its operational experience, some organisations might still struggle when figuring out the right design, deploying Canonical OpenStack at scale, integrating it with third-party software and storage platforms, and operating it post-deployment.
+Even though project Sunbeam was launched to lower the barrier to entry for people with no
+previous OpenStack background and fully revolutionize its operational experience, some
+organizations might still struggle when figuring out the right design, deploying Canonical
+OpenStack at scale, integrating it with third-party software and storage platforms, and operating
+it post-deployment.
 
-In response to those challenges, Canonical provides a wide variety of commercial services available for enterprise customers. Those include:
+In response to those challenges, Canonical provides a wide variety of commercial services
+available for enterprise customers. Those include:
 
 * **Consulting** - design, delivery, integration and on-boarding services
 * **Security** - expanded security maintenance (up to 12 years)
@@ -133,7 +144,8 @@ In response to those challenges, Canonical provides a wide variety of commercial
 * **Managed** - fully-managed cloud service
 * **Training** - professional training courses
 
-Please refer to the `product website <https://canonical.com/openstack>`_ for a detailed description of Canonical’s commercial services for Canonical OpenStack.
+Please refer to the `product website <https://canonical.com/openstack>`_ for a detailed
+description of Canonical’s commercial services for Canonical OpenStack.
 
 Related sections
 ++++++++++++++++

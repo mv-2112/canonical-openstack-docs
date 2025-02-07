@@ -5,7 +5,7 @@ Welcome!
 
 We hope that both you and your team are now getting up to speed with `Canonical OpenStack`_. We've
 already learned how to deploy the cloud, interact with it and provision cloud resources (i.e.
-VMs). But OpenStack is not just a virtualisation platform. Its potential spans far beyond that.
+VMs). But OpenStack is not just a virtualization platform. Its potential spans far beyond that.
 
 In this tutorial we will demonstrate how to use a wider spectrum of the capabilities of
 OpenStack available to handle a real life scenario. We will provision two VMs with the

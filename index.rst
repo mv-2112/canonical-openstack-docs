@@ -1,5 +1,3 @@
-:relatedlinks: [Diátaxis](https://diataxis.fr/)
-
 .. _home:
 
 Canonical OpenStack documentation
@@ -23,7 +21,7 @@ are required to form an end-to-end cloud solution.
 
 Sunbeam is an upstream OpenStack project hosted under the governance of the
 OpenInfra Foundation which aims to lower the barrier to entry for people with
-no previous OpenStack background and fully revolutionise the operational
+no previous OpenStack background and fully revolutionize the operational
 experience.
 
 ---------
@@ -32,9 +30,9 @@ experience.
 
 ..  grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorial <tutorial/index>`
+   ..  grid-item:: :doc:`Tutorials <tutorial/index>`
 
-       **Start here**: a hands-on introduction to Example Product for new users
+       **Start here**: a hands-on introduction to Canonical OpenStack for new users
 
    ..  grid-item:: :doc:`How-to guides <how-to/index>`
 
@@ -53,8 +51,7 @@ experience.
 
 ---------
 
-Community and commercial usage
-------------------------------
+.. rubric:: :h2:`Community and commercial usage`
 
 Canonical OpenStack is based on Sunbeam - an open source project that warmly
 welcomes a free-of-charge usage, constructive feedback, community discussions

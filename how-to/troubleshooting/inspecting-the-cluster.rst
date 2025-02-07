@@ -90,7 +90,7 @@ OpenStack Hypervisor
 The OpenStack Hypervisor is a snap based component that provides all of
 the core functionality needed to operate a hypervisor as part of an
 OpenStack Cloud. This include Nova Compute, Libvirt+QEMU for hardware
-based virtualisation, OVN and OVS for software defined networking and
+based virtualization, OVN and OVS for software defined networking and
 supporting services to provide metadata to instances.
 
 The status of the snap’s services can be checked using:

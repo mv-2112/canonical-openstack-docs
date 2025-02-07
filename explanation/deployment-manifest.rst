@@ -122,7 +122,7 @@ introduce a new setting only when necessary. For example, only change
 the channel/revision to get a possible hot fix or change a configuration
 setting as per the local environment (e.g. Keystone LDAP URL).
 
-It is recommended to test any customisation in a staging environment
+It is recommended to test any customization in a staging environment
 before applying them in production.
 
 .. tip::

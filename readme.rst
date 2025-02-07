@@ -10,7 +10,7 @@ The Documentation starter pack includes:
 * a bundled Sphinx_ theme, configuration, and extensions
 * support for both reStructuredText (reST) and Markdown
 * build checks for links, spelling, and inclusive language
-* customisation support layered above a core configuration
+* customization support layered above a core configuration
 
 Quickstart guide
 ----------------
@@ -76,7 +76,7 @@ pack* and *Work with your documentation* post-enablement.
 
 - `Enable the starter pack`_
 
-  * `Initialise your repository`_
+  * `Initialize your repository`_
 
     + `Standalone documentation repository`_
     + `Documentation in a code repository`_
@@ -117,7 +117,7 @@ pack* and *Work with your documentation* post-enablement.
 Enable the starter pack
 -----------------------
 
-This section is for repository administrators. It shows how to initialise a
+This section is for repository administrators. It shows how to initialize a
 repository with the starter pack. Once this is done, documentation contributors
 should follow section `Work with your documentation`_.
 
@@ -129,7 +129,7 @@ See the `Read the Docs at Canonical <https://library.canonical.com/documentation
 `How to publish documentation on Read the Docs <https://library.canonical.com/documentation/publish-on-read-the-docs>`_ guides for
 instructions on how to get started with Sphinx documentation.
 
-Initialise your repository
+Initialize your repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can either create a standalone documentation project based on this repository or include the files from this repository in a dedicated documentation folder in an existing code repository. The next two sections show the steps needed for each scenario.
@@ -190,7 +190,7 @@ value of ``docs/.readthedocs.yaml``.
 Automation
 ^^^^^^^^^^
 
-To automate the initialisation for either scenario ensure you have the following:
+To automate the initialization for either scenario ensure you have the following:
 
 - A GitHub repository where you want to host your documentation, cloned to your
   local machine. The recommended approach is to host the documentation alongside
@@ -250,7 +250,7 @@ On Linux, required packages can be installed with:
 
 .. note::
     
-    When generating a PDF, the index page is considered a 'foreword' and will not be labelled with a chapter.
+    When generating a PDF, the index page is considered a 'foreword' and will not be labeled with a chapter.
 
 .. important::
     
@@ -269,7 +269,7 @@ You should never modify the common ``conf.py`` file.
 
 Go through all settings in the ``Project information`` section of the ``custom_conf.py`` file and update them for your project.
 
-See the following sections for further customisation.
+See the following sections for further customization.
 
 Configure the header
 ^^^^^^^^^^^^^^^^^^^^
@@ -297,7 +297,8 @@ Configure included extensions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The starter pack includes a set of extensions that are useful for all documentation sets.
-They are pre-configured as needed, but you can customise their configuration in the  ``custom_conf.py`` file.
+They are pre-configured as needed, but you can customize their configuration in the
+``custom_conf.py`` file.
 
 The following extensions are always included:
 
@@ -394,7 +395,7 @@ Work with your documentation
 ----------------------------
 
 This section is for documentation contributors. It assumes that the current
-repository has been initialised with the starter pack as described in section
+repository has been initialized with the starter pack as described in section
 `Enable the starter pack`_.
 
 There are make targets defined in the :file:`Makefile` that provide different functionality. To

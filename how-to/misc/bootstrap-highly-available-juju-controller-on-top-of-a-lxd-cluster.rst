@@ -1,7 +1,7 @@
 Bootstrap highly available Juju controller on top of a LXD cluster
 ##################################################################
 
-Canonical Juju does not yet support controller HA modelling capabilities when deployed on top
+Canonical Juju does not yet support controller HA modeling capabilities when deployed on top
 Kubernetes. This means that Canonical OpenStack clouds deployed using the
 :doc:`manual bare metal provider</how-to/install/install-canonical-openstack-using-the-manual-bare-metal-provider>`
 do not provide HA for all types of governance functions by default. To bypass this
