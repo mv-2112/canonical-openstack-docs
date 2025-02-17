@@ -232,7 +232,7 @@ To prepare the machine for Canonical OpenStack usage, execute the following comm
 
 .. code-block :: text
    
-   sunbeam prepare-node-script | bash -x && newgrp snap_daemon
+   sunbeam prepare-node-script --client | bash -x
 
 This command will:
 
@@ -244,7 +244,7 @@ by step:
 
 .. code-block :: text
 
-   sunbeam prepare-node-script
+   sunbeam prepare-node-script --client
 
 Add the Canonical MAAS provider
 -------------------------------

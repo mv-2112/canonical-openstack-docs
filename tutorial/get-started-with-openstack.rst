@@ -70,13 +70,13 @@ and execute step by step:
 
 .. code-block :: text
    
-   sunbeam prepare-node-script
+   sunbeam prepare-node-script --bootstrap
 
 However, if you simply want to execute all those commands at once, you can also pipe them directly to Bash instead:
 
 .. code-block :: text
    
-   sunbeam prepare-node-script | bash -x && newgrp snap_daemon
+   sunbeam prepare-node-script --bootstrap | bash -x && newgrp snap_daemon
 
 Bootstrap the cloud
 -------------------
