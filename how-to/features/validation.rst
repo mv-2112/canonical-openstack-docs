@@ -18,6 +18,12 @@ To enable Validation, run the following command:
 
    sunbeam enable validation
 
+.. note ::
+
+    During the initialization of Tempest, multiple network resources—including routers, networks, subnets, and ports—will be created on OpenStack.
+    Currently, Tempest requires 40 external IP addresses for router gateways.
+    Please ensure that at least 40 external IP addresses are available before enabling validation.
+
 Disable Validation
 ------------------
 
