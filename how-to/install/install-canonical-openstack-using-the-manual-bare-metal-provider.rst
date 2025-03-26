@@ -110,6 +110,7 @@ machine from the :doc:`Example physical configuration </reference/example-physic
 
    Management network (172.16.1.0/24): 172.16.1.0/24
    Use proxy to access external network resources? [y/n] (n): n
+   Enter database toplogy: single/multi (cannot be changed later) (single): single
    Enter a region name (cannot be changed later) (RegionOne): RegionOne
    OpenStack APIs IP ranges (172.16.1.201-172.16.1.240): 172.16.1.201-172.16.1.240
    Ceph devices (/dev/disk/by-id/wwn-0x500a0751e86b8eee): /dev/sdb

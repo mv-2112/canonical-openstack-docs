@@ -380,6 +380,7 @@ machine from the :doc:`Example physical configuration</reference/example-physica
 
 .. code-block :: text
 
+   Enter database toplogy: single/multi (cannot be changed later) (single): single
    Enter a region name (cannot be changed later) (RegionOne): RegionOne
 
 You can also refer to the :doc:`Interactive configuration prompts</reference/interactive-configuration-prompts>` section for detailed description of
