@@ -182,17 +182,17 @@ Multi-node deployments all start off as single-node deployments; additional node
 MySQL configuration
 ~~~~~~~~~~~~~~~~~~~
 
-In order to support the scalability and resilience needs of the OpenStack control plane the database component of the control plane can be deployed in two different configurations. This is automatically selected during the bootstrap of the initial node in the cluster but can be overridden if required.
+In order to support the scalability and resilience needs of the OpenStack control plane the database component of the control plane can be deployed in two different configurations.
 
-Single instance
----------------
+Single database per cluster
+---------------------------
 
-For smaller, single node deployments a single MySQL service is deployed to support all OpenStack services. As this configuration limits the scalability of the control plane it is only recommended for small single-node deployments and is automatically selected when bootstrapping an initial node with less than 32GiB of RAM.
+For smaller, single node deployments a single MySQL service is deployed to support all OpenStack services. As this configuration limits the scalability of the control plane it is only recommended for small single-node deployments. For medium sized multi node deployments, it is recommended to have single MySQL service for the entire openstack cluster and will be automatically scaled for high-availability as the cluster is resized during deployment.
 
-Multiple instances
-------------------
+Multiple databases one per openstack service
+--------------------------------------------
 
-For larger, multi-node deployments a MySQL service is deployed for each OpenStack service; each MySQL service will also be automatically scaled for high-availability as the cluster is resized during deployment. This configuration provides a more scalable approach to deployment of the control plan and is automatically selected when bootstrapping an initial node with more than 32GiB of RAM.
+For larger, multi-node deployments a MySQL service is deployed for each OpenStack service; each MySQL service will also be automatically scaled for high-availability as the cluster is resized during deployment.
 
 Related sections
 ----------------

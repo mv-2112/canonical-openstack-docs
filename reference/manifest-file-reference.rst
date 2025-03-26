@@ -29,6 +29,10 @@ supported in channel ``2023.2/edge`` of the **openstack** snap. [/note]
        # Example:
        # management_cidr: 192.168.29.0/24
 
+     # Enter database toplogy: single/multi (cannot be changed later)
+     # This will configure number of databases, single for entire cluster or multiple databases with one per openstack service.
+     database: single
+
      # Enter a region name (cannot be changed later)
      region: <region>
      # Example:
