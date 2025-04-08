@@ -172,4 +172,4 @@ unschedulable
 PV
 mds
 mons
-SHOTOFF
+SHUTOFF
