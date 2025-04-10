@@ -17,6 +17,7 @@ Operations
    :maxdepth: 1
 
    operations/live-migration
+   operations/maintenance-mode
    operations/removing-the-primary-node
    operations/scaling-the-cluster-in
    operations/scaling-the-cluster-out
@@ -41,7 +42,6 @@ Optional Features
    features/ubuntu-pro
    features/validation
    features/vault
-   features/maintenance
 
 Miscellaneous
 -------------

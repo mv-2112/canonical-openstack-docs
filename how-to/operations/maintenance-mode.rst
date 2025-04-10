@@ -1,5 +1,5 @@
-Maintenance
-===========
+Maintenance mode
+================
 
 Overview
 --------
