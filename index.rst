@@ -76,5 +76,5 @@ For a commercial usage, consider visiting the following links instead:
 
    tutorial/index
    how-to/index
-   reference/index
    explanation/index
+   reference/index
