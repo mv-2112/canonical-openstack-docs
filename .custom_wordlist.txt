@@ -94,6 +94,8 @@ dom
 eno
 flavor
 flavors
+ghcr
+githubusercontent
 gz
 hostname
 hostnames
