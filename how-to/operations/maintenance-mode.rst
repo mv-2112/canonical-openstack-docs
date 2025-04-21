@@ -4,7 +4,7 @@ Maintenance mode
 Overview
 --------
 
-Maintenance mode helps protecting the cluster from potentially disruptive maintenance operations. It is particularly useful when an operator needs to manually perform tasks on a node that may pose a risk of failure or data loss.
+Maintenance mode helps by protecting the cluster from potentially disruptive maintenance operations. It is useful for performing maintenance tasks on a node that may result in a loss of data or disrupt running services such as firmware upgrades.
 
 Before proceeding, refer to the :doc:`Maintenance Mode </explanation/maintenance-mode>` to understand its functionality and impact.
 
