@@ -12,6 +12,7 @@ Optional Features
    object-storage
    observability
    orchestration
+   resource-optimization
    secrets
    telemetry
    tls-ca

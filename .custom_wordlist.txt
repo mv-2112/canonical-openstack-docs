@@ -162,6 +162,7 @@ unroutable
 unschedulable
 untagged
 vlan
+vm
 vSwitch
 yaml
 # These are used for the proxy list. Need to find a better way to do this
