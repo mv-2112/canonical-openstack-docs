@@ -4,6 +4,7 @@ Miscellaneous
 .. toctree::
    :maxdepth: 2
 
+   adding-amd-sev-enabled-compute-node
    backup-and-restore-maas-deployment
    bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster
    implement-tls-using-a-third-party-ca

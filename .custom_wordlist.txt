@@ -65,6 +65,7 @@ RabbitMQ
 RefStack
 RBAC
 RPC
+SEV
 SHUTOFF
 SSD
 SimpleStreams
@@ -102,6 +103,7 @@ hostnames
 href
 http
 https
+hw
 init
 intra
 juju
@@ -113,6 +115,7 @@ localhost
 loadbalancer
 lp
 mds
+mem
 mons
 metallb
 misconfiguration
@@ -147,6 +150,7 @@ sandboxing
 scalable
 scalability
 sdb
+sev
 snapd
 subnet
 subnets
@@ -155,6 +159,7 @@ tcpdump
 topologies
 tls
 ubuntu
+uefi
 un
 unconfigured
 unregister
