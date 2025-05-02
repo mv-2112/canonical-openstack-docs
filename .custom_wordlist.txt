@@ -21,6 +21,7 @@ CSRs
 CTRL
 DHCP
 DNS
+Failover
 Flavors
 FQDN
 FQDNs
@@ -41,6 +42,7 @@ Livepatch
 LXC
 LXD
 MAAS
+Masakari
 MDS
 MetalLB
 MicroCeph
@@ -58,6 +60,7 @@ OSDs
 OSI
 OVN
 OVS
+PID
 PV
 QCOW
 QEMU
@@ -92,6 +95,7 @@ cron
 dev
 dom
 eno
+failover
 flavor
 flavors
 ghcr
@@ -112,6 +116,7 @@ filesystems
 localhost
 loadbalancer
 lp
+masakari
 mds
 mons
 metallb
@@ -142,6 +147,7 @@ qcow
 rebalancing
 refstack
 rgw
+rh
 routable
 sandboxing
 scalable

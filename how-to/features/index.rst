@@ -7,6 +7,7 @@ Optional Features
    caas
    dns
    images-sync
+   instance-recovery
    ldap
    load-balancer
    object-storage
