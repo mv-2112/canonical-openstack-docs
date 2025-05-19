@@ -1,3 +1,6 @@
+Manage workloads with Juju
+==========================
+
 Once Canonical OpenStack has been deployed, you have the option of managing
 workloads manually (i.e. via the ``openstack`` CLI) or with Juju. This
 document shows how to set up the latter: How to manage OpenStack
