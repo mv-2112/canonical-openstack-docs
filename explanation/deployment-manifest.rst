@@ -78,7 +78,7 @@ Here is an example software configuration:
 
      charms:
        glance-k8s:
-         channel: 2023.2/candidate
+         channel: 2024.1/candidate
          revision: 66
          config:
            debug: True

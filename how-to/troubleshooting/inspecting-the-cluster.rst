@@ -38,10 +38,6 @@ with the Juju controller:
 
    sunbeam utils juju-login
 
-.. caution::
-   The ``juju-login`` command is only available in the ``2023.1/edge`` version
-   of the ``openstack`` snap.
-
 Controller model
 ~~~~~~~~~~~~~~~~
 
