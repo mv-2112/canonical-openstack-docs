@@ -4,10 +4,6 @@ Manifest file reference
 This resource aims to provide a definitive structure of a deployment
 manifest file will all its supported keys.
 
-.. note::
-   The manifest file is currently only supported in channel ``2023.2/edge`` of
-   the **openstack** snap.
-
 .. tip::
    For a conceptual overview of manifests, see the :doc:`Deployment manifest
    </explanation/deployment-manifest>` page.
@@ -131,9 +127,9 @@ manifest file will all its supported keys.
        ...
        # Examples:
        # keystone-k8s:
-       #   channel: 2023.2/candidate
+       #   channel: 2024.1/candidate
        # glance-k8s:
-       #   channel: 2023.2/candidate
+       #   channel: 2024.1/candidate
        #   revision: 66
        #   config:
        #     debug: true

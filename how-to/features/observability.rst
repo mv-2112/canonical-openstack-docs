@@ -140,10 +140,6 @@ You can now look at the different dashboards configured.
 Dashboard
 ---------
 
-.. note::
-   Dashboard is currently only supported in channel ``2023.2`` of the
-   **:spelling:ignore:`openstack`** snap.
-
 OpenStack Service Overview dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

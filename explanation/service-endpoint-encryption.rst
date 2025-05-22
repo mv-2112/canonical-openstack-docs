@@ -19,10 +19,6 @@ TLS CA feature
 The TLS CA feature is the method to use for deployments that use a third
 party CA for certificates.
 
-.. caution::
-   This feature is currently only supported in channel ``2023.2/edge`` of the
-   **openstack** snap.
-
 .. tip::
    For a how-to on using the TLS CA feature see :doc:`Implement TLS using a third-party CA
    </how-to/misc/implement-tls-using-a-third-party-ca>`.

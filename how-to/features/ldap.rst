@@ -6,10 +6,6 @@ This feature integrates the OpenStack
 external LDAP service. Effectively, the feature maps LDAP-based users to
 cloud users via an OpenStack domain.
 
-.. caution::
-   This feature is currently only supported in channel ``2023.2`` of the
-   **openstack** snap.
-
 Enabling LDAP
 -------------
 

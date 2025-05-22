@@ -1,10 +1,6 @@
 This page shows how to manage deployment manifests. For an overview of
 manifests, see the :doc:`Deployment manifest </explanation/deployment-manifest>` page.
 
-.. caution::
-   This feature is currently only supported in channel ``2023.2/edge`` and
-   later of the **openstack** snap.
-
 .. note::
    Looking to use a manifest from an edge deployment? Take a look at
    `Manifest for non-stable deployments <#manifest-for-non-stable-deployments-4>`__.
@@ -43,9 +39,9 @@ Sample output:
    software:
      charms:
        keystone-k8s:
-         channel: 2023.2/candidate
+         channel: 2024.1/candidate
        glance-k8s:
-         channel: 2023.2/candidate
+         channel: 2024.1/candidate
 
 To get the latest manifest, use the keyword ``latest`` instead of the
 manifest ID:

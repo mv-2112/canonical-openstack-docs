@@ -9,10 +9,6 @@ Authority for your certificates.
    :doc:`Service endpoint encryption </explanation/service-endpoint-encryption>`
    page.
 
-.. caution::
-   This feature is currently only supported in channel ``2023.2/edge`` of the
-   **openstack** snap.
-
 Enable the TLS CA feature
 -------------------------
 
