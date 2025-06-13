@@ -37,12 +37,6 @@ All the API requests and responses that reach the `audit` filter will be logged.
     Keystone doesn't use the `audit` middleware. CADF notifications are emited
     when successfully creating, modifying or deleting resources.
 
-Keystone AMQP notifications are disabled by default and can be enabled like so:
-
-::
-
-   juju config keystone enable-telemetry-notifications=true
-
 
 Sample
 ------
