@@ -10,8 +10,12 @@ format using the `pyCADF <https://docs.openstack.org/pycadf/latest/>`_ library.
 .. note::
 
     Some OpenStack services no longer support api-paste pipelines,
-    namely Keystone, Placement and Watcher. In case of Keystone, a separate
-    service consumes the audit events over AMQP.
+    namely Keystone, Placement and Watcher.
+
+    Keystone emits CADF notifications using `oslo_messaging` but only for
+    successful create, update, or delete operations. The `log` notification
+    driver will be enabled by default, while the optional `messagingv2` driver
+    can be enabled through the Canonical OpenStack `telemetry` feature.
 
     Furthermore, Gnocchi auditing currently requires debug logging.
 
@@ -31,12 +35,6 @@ All the API requests and responses that reach the `audit` filter will be logged.
 
     Some requests may be rejected by other filters, for example due to an
     invalid token. No CADF event will be emitted in this case.
-
-.. note::
-
-    Keystone doesn't use the `audit` middleware. CADF notifications are emited
-    when successfully creating, modifying or deleting resources.
-
 
 Sample
 ------
