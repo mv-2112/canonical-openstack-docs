@@ -111,6 +111,7 @@ http
 https
 hw
 init
+initiator
 intra
 juju
 kubectl

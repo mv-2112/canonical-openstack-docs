@@ -7,29 +7,45 @@ services, leveraging the `Keystone audit middleware <https://docs.openstack.org/
 The audit events are logged in `CADF <https://www.dmtf.org/standards/cadf>`_
 format using the `pyCADF <https://docs.openstack.org/pycadf/latest/>`_ library.
 
-.. note::
+.. list-table:: API service support matrix
+   :header-rows: 1
 
-    Some OpenStack services no longer support api-paste pipelines,
-    namely Keystone, Placement and Watcher.
+   * - Service name
+     - CADF auditing supported
+   * - Aodh
+     - ✓
+   * - Barbican
+     - ✓
+   * - Ceilometer
+     - ✓
+   * - Cinder
+     - ✓
+   * - Designate
+     - ✓
+   * - Glance
+     - ✓
+   * - Gnocchi
+     - X
+   * - Heat
+     - ✓
+   * - Keystone
+     - ✓
+   * - Magnum
+     - ✓
+   * - Masakari
+     - ✓
+   * - Neutron
+     - ✓
+   * - Octavia
+     - ✓
+   * - Placement
+     - X
+   * - Watcher
+     - X
 
-    Keystone emits CADF notifications using `oslo_messaging` but only for
-    successful create, update, or delete operations. The `log` notification
-    driver will be enabled by default, while the optional `messagingv2` driver
-    can be enabled through the Canonical OpenStack `telemetry` feature.
-
-    Furthermore, Gnocchi auditing currently requires debug logging.
-
-The `audit` filter leverages environment variables set by the `authtoken`
-middleware and is usually placed close to the end of the
-`api-paste pipeline <https://docs.pylonsproject.org/projects/pastedeploy>`_.
-
-.. code:: text
-
-    [composite:openstack_compute_api_v21]
-    use = call:nova.api.auth:pipeline_factory_v21
-    keystone = cors http_proxy_to_wsgi compute_req_id faultwrap request_log sizelimit osprofiler authtoken keystonecontext audit osapi_compute_app_v21
-
-All the API requests and responses that reach the `audit` filter will be logged.
+All the API requests and responses that reach the `audit`
+`api-paste filter <https://docs.pylonsproject.org/projects/pastedeploy>`_.
+will be logged.
 
 .. note::
 
@@ -44,7 +60,7 @@ another for the corresponding reply.
 
 The records include information such as:
 
-* intitiator credentials and address
+* initiator credentials and address
 * target endpoint
 * request path and action
 * request outcome
