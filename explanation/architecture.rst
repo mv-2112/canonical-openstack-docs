@@ -1,7 +1,7 @@
 Architecture
 ============
 
-This section provides an overview of the Canonical OpenStack architecture.
+This section provides an overview of the `Canonical OpenStack reference architecture <https://ubuntu.com/engage/canonical-openstack-reference-architecture>`_.
 
 Canonical OpenStack can be deployed as a single-node cloud or can span across
 multiple nodes to provide capacity and resilience in a multi-node
