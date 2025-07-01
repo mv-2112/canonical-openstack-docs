@@ -1,3 +1,6 @@
+Managing deployment manifests
+=============================
+
 This page shows how to manage deployment manifests. For an overview of
 manifests, see the :doc:`Deployment manifest </explanation/deployment-manifest>` page.
 
