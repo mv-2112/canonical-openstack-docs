@@ -1,3 +1,6 @@
+Using an existing Juju controller
+=================================
+
 Canonical OpenStack can use an existing Juju controller during bootstrap
 instead of deploying a Juju controller within the Canonical OpenStack
 deployment.
