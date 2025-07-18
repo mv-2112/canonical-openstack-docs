@@ -62,7 +62,7 @@ To enable Observability, run the following command:
 
 ::
 
-   sunbeam enable observability internal
+   sunbeam enable observability embedded
 
 .. _disabling-observability-1:
 
@@ -73,7 +73,7 @@ To disable Observability, run the following command:
 
 ::
 
-   sunbeam disable observability internal
+   sunbeam disable observability embedded
 
 Retrieve Grafana dashboard URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
