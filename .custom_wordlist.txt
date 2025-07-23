@@ -23,6 +23,7 @@ CSRs
 CTRL
 DHCP
 DNS
+Entra
 Failover
 Flavors
 FQDN
@@ -35,6 +36,8 @@ HTTP
 HTTPS
 Hostname
 ICMP
+IdP
+IdPs
 IPv
 IPs
 KVM
@@ -54,9 +57,12 @@ NATed
 NIC
 NOPASSWD
 Northd
+OIDC
+OpenID
 OpenFlow
 OpenStack
 OCI
+Okta
 OSD
 OSDs
 OSI
@@ -70,6 +76,7 @@ RabbitMQ
 RefStack
 RBAC
 RPC
+SAML
 SEV
 SHUTOFF
 SSD
@@ -110,6 +117,8 @@ href
 http
 https
 hw
+iam
+idp
 init
 initiator
 intra
@@ -127,6 +136,7 @@ mem
 middleware
 mons
 metallb
+microsoft
 misconfiguration
 mycloud
 myinstance
@@ -141,6 +151,9 @@ mysubnet
 myuser
 nameserver
 nameservers
+okta
+oauth
+openid
 openrc
 openssh
 openstack
@@ -149,6 +162,7 @@ ovs
 passwordless
 pcap
 physnet
+plugable
 proxied
 pyCADF
 qcow
