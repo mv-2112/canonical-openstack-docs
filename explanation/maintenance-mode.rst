@@ -29,15 +29,13 @@ By defining these states, Sunbeam ensures that operators can perform maintenance
 Enabling Maintenance Mode
 -------------------------
 
-Each node in Sunbeam can have more than one roles. When enabling maintenance mode, Sunbeam will
+Each node in Sunbeam can have more than one role. When enabling maintenance mode, Sunbeam will
 follow the "check, apply, and verify" pattern to ensure that all roles on the node reach
 maintenance state. The **check** step ensures that the node meets the prerequisites to enter
 maintenance state; the **apply** step runs the commands that put the node into maintenance state;
 the **verify** step ensures the commands successfully put the node into maintenance state. When all
 check, apply, and verify steps finished successfully, the node is considered in **Maintenance**
 state.
-
-The same logic applies to disabling the maintenance mode.
 
 The following section explains the steps for **enabling** maintenance mode for each role and some
 general preflight checks:

@@ -186,6 +186,7 @@ routable
 sandboxing
 scalable
 scalability
+schedulable
 sdb
 sev
 snapd
@@ -216,6 +217,5 @@ fedoraproject
 io
 jujucharms
 maas
-schedulable
 snapcraft
 snapcraftcontent
