@@ -280,7 +280,7 @@ Check the port status:
     | updated_at              | 2025-07-29T10:12:33Z                                                             |
     +-------------------------+----------------------------------------------------------------------------------+
 
-Verify the libvirt domain:
+Verify the Libvirt domain:
 
 ::
 

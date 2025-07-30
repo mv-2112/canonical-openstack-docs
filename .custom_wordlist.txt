@@ -15,7 +15,9 @@ Catalogue
 Ceilometer
 Ceph
 CirrOS
+ConnectX
 CoreOS
+Curtin
 CIDR
 CIDRs
 CSR
@@ -27,9 +29,12 @@ DNS
 Entra
 Failover
 Flavors
+FPGA
+FPGAs
 FQDN
 FQDNs
 Gbps
+Geneve
 GiB
 Github
 HOTs
@@ -50,6 +55,7 @@ LXD
 MAAS
 Masakari
 MDS
+Mellanox
 MetalLB
 MicroCeph
 MicroCluster
@@ -69,6 +75,9 @@ OSDs
 OSI
 OVN
 OVS
+PCI
+PF
+PFs
 PID
 PV
 PVCs
@@ -83,13 +92,17 @@ SEV
 SHUTOFF
 SSD
 SimpleStreams
+IOV
 TLS
 Terraform
 Traefik
 Uncordon
+VF
+VFs
 VMs
 VMDK
 VMware
+VXLAN
 VLAN
 amd
 apache
@@ -205,6 +218,8 @@ unroutable
 unschedulable
 untagged
 vlan
+vGPU
+vGPUs
 vm
 vSwitch
 yaml
@@ -219,3 +234,4 @@ jujucharms
 maas
 snapcraft
 snapcraftcontent
+switchdev
