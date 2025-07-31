@@ -97,6 +97,9 @@ Verify that the VFs were created successfully:
 
 Note that the VFs need to be recreated after every reboot.
 
+If hardware offloading is enabled, additional `representor functions`_ may be
+automatically created for each VF.
+
 6. Ensure that you're using ``snapd`` 2.71 or later.
 
 Manual mode
@@ -334,6 +337,7 @@ bridge:
 
 .. Links
 
+.. _representor functions: https://docs.kernel.org/networking/representors.html
 .. _Nova PCI whitelist: https://docs.openstack.org/nova/latest/admin/pci-passthrough.html
 .. _Neutron SR-IOV agent: https://docs.openstack.org/neutron/latest/admin/config-sriov.html#enable-neutron-sriov-nic-agent-compute
 .. _Nova device spec reference: https://docs.openstack.org/nova/latest/configuration/config.html#pci.device_spec

@@ -193,6 +193,7 @@ qcow
 rebalance
 rebalancing
 refstack
+representor
 rgw
 rh
 routable
