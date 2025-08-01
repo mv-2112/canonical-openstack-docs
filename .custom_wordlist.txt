@@ -20,6 +20,7 @@ CIDR
 CIDRs
 CSR
 CSRs
+Cordon
 CTRL
 DHCP
 DNS
@@ -70,6 +71,7 @@ OVN
 OVS
 PID
 PV
+PVCs
 QCOW
 QEMU
 RabbitMQ
@@ -84,6 +86,7 @@ SimpleStreams
 TLS
 Terraform
 Traefik
+Uncordon
 VMs
 VMDK
 VMware
@@ -102,8 +105,11 @@ clusterd
 config
 configs
 cron
+daemonset
+datastore
 dev
 dom
+dqlite
 eno
 failover
 flavor
@@ -123,6 +129,7 @@ init
 initiator
 intra
 juju
+kube
 kubectl
 kube-api
 filesystem
@@ -151,8 +158,11 @@ mysubnet
 myuser
 nameserver
 nameservers
+noout
+ok
 okta
 oauth
+opendev
 openid
 openrc
 openssh
@@ -163,9 +173,11 @@ passwordless
 pcap
 physnet
 plugable
+preflight
 proxied
 pyCADF
 qcow
+rebalance
 rebalancing
 refstack
 rgw
@@ -174,6 +186,7 @@ routable
 sandboxing
 scalable
 scalability
+schedulable
 sdb
 sev
 snapd
