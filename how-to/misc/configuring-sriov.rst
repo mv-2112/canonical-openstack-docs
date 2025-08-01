@@ -68,6 +68,14 @@ Verify that hardware offloading is enabled:
 
     echo '4' | sudo tee /sys/class/net/${ifname}/device/sriov_numvfs
 
+This setting can be added to the Netplan configuration in order to survive reboots:
+
+::
+
+    enp3s0f0np0:
+      virtual-function-count: 4
+      embedded-switch-mode: "switchdev"
+
 
 Verify that the VFs were created successfully:
 
@@ -94,8 +102,6 @@ Verify that the VFs were created successfully:
     pci@0000:04:00.0  enp4s0f0r2      network        Ethernet interface
     pci@0000:04:00.0  enp4s0f0r3      network        Ethernet interface
 
-
-Note that the VFs need to be recreated after every reboot.
 
 If hardware offloading is enabled, additional `representor functions`_ may be
 automatically created for each VF.
