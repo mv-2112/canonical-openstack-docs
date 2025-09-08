@@ -6,6 +6,7 @@ Miscellaneous
 
    adding-amd-sev-enabled-compute-node
    configuring-sriov
+   configuring-dpdk
    backup-and-restore-maas-deployment
    bootstrap-highly-available-juju-controller-on-top-of-a-lxd-cluster
    identity-provider-enablement
