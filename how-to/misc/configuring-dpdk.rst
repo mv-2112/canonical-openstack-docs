@@ -12,13 +12,13 @@ Prerequisites
 -------------
 
 Compatible network adapters and CPU architecture
-================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please consult the `DPDK supported hardware page`_ to ensure that your CPU
 architecture and network adapters are compatible with DPDK.
 
 Isolated CPU cores
-==================
+~~~~~~~~~~~~~~~~~~
 
 Canonical Openstack users can specify the desired number of CPU cores that will
 be allocated to DPDK. The cores will be distributed based on the NUMA location
@@ -34,7 +34,7 @@ isolated CPU cores and pay attention to the NUMA nodes:
 If hyperthreading is enabled, make sure to include the CPU siblings as well.
 
 VT-d / IO-MMU
-=============
+~~~~~~~~~~~~~
 
 IO virtualization (for example Intel VT-d or AMD-V) must be enabled in
 the system BIOS and then through kernel arguments, using the following:
@@ -44,7 +44,7 @@ the system BIOS and then through kernel arguments, using the following:
 	intel_iommu=on iommu=pt
 
 Huge pages
-==========
+~~~~~~~~~~
 
 This feature requires 1GB huge pages to be preconfigured. For example, the
 following kernel arguments may be used:
@@ -65,7 +65,7 @@ through ``vhost-user`` interfaces, as opposed to the standard tap devices.
 See the `Openstack DPDK documentation`_ for more details.
 
 Network configuration
-=====================
+~~~~~~~~~~~~~~~~~~~~~
 
 Physical network interfaces that leverage DPDK are expected to be connected to
 OVS bridges, either directly or through bonds.
@@ -102,7 +102,7 @@ configuration and move bond definitions to OVS.
 	                options: {dpdk-devargs="0000:07:00.0"}
 
 Snapd
-=====
+~~~~~
 
 ``snapd`` 2.72 is required, providing the necessary snap permissions.
 
@@ -137,7 +137,7 @@ command:
 
 ::
 
-	sunbeam configure sriov
+	sunbeam configure dpdk
 
 The user will need to specify which network interfaces are going to connected
 to the DPDK datapath and the amount of system resources to allocate.
