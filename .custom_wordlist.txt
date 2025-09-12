@@ -125,6 +125,7 @@ dev
 dom
 dqlite
 eno
+entityID
 entra
 failover
 flavor
@@ -221,6 +222,7 @@ unregister
 unroutable
 unschedulable
 untagged
+url
 vlan
 vGPU
 vGPUs

@@ -120,6 +120,7 @@ Canonical OpenStack currently supports the following IdP types:
 * `Okta (SAML2) <https://developer.okta.com/docs/guides/add-an-external-idp/saml2/main/>`_
 * `Entra ID (OIDC) <https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc#enable-id-tokens>`_
 * `Entra ID (SAML2) <https://learn.microsoft.com/en-us/entra/architecture/auth-saml>`_
+* Generic (SAML2 and OIDC)
 
 Each of these provider types require specific configurations in order to enable them and each have their own procedure for creating the client credentials needed to initiate the authentication workflow.
 You will have to consult the official documentation for each, in order to generate the required client credentials. The configuration formats that Canonical OpenStack requires are detailed below. The configuration
@@ -202,7 +203,7 @@ Okta config format (OIDC)
 There are three mandatory configuration parameters and one optional parameter:
 
 * `client-id` - mandatory
-* `client_secret` - mandatory
+* `client-secret` - mandatory
 * `okta-org` - mandatory
 * `label` - optional
 
@@ -267,6 +268,66 @@ Example config:
     app-id: app_id_goes_here
     microsoft-tenant: tenant-uuid-goes-here
     label: "Log in with Entra ID (SAML2)"
+
+Generic (OIDC)
+^^^^^^^^^^^^^^
+
+The generic provider allows you to configure any OIDC compatible provider.
+
+There are three mandatory parameters and one optional parameter:
+
+* `client-id` - mandatory
+* `client-secret` - mandatory
+* `issuer-url` - mandatory
+* `label` - optional
+
+Example config:
+
+::
+
+    client-id: client_id_obtained_from_your_console
+    client-secret: client_secret_associated_with_the_id
+    issuer-url: https://oidc.example.com
+    label: "Log in with My OpenID connect provider"
+
+A note about the `issuer-url`. This URL identifies the provider. It is also the URL from which we get the OpenID connect configuration.
+The issuer URL, must have the well-known openid configuration URL available. This URL can be constructed by appending
+`/.well-known/openid-configuration` to the issuer URL.
+
+Example:
+
+::
+
+    https://accounts.google.com/.well-known/openid-configuration
+
+
+In the above example, `https://accounts.google.com` is the `issuer-url`.
+
+For the generic OpenID connect there is no option to specify a custom CA certificate chain to validate the `issuer-url`. You will need to use
+a certificate issued by a CA that your deployment already trusts.
+
+Generic (SAML2)
+^^^^^^^^^^^^^^^
+
+Similar to the OIDC generic provider, the generic SAML2 provider allow you to configure any SAML2 compliant IDP, as long as you know the metadata URL.
+
+There is only one mandatory configuration parameter for the SAML2 provider and two optional parameters.
+
+
+* `metadata-url` - mandatory
+* `ca-chain` - optional
+* `label` - optional
+
+Example config:
+
+::
+
+    metadata-url: https://saml2.example.com/metadata
+    ca-chain: base64-encoded-ca-chain-goes-here
+    label: "Log in with My Custom SAML2 IDP"
+
+The metadata URL must contain a XML response that identifies the IDP. The XML must contain the remote `entityID`, as well as the signing x509 keys of the remote IDP.
+The value of the `entityID` property must be used when defining the IDP in Canonical OpenStack as the remote ID.
 
 
 Adding an external IdP
