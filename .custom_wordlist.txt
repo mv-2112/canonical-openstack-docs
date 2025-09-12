@@ -127,6 +127,8 @@ dev
 dom
 dqlite
 eno
+entityID
+entra
 failover
 flavor
 flavors
@@ -200,6 +202,7 @@ representor
 rgw
 rh
 routable
+saml
 sandboxing
 scalable
 scalability
@@ -221,12 +224,14 @@ unregister
 unroutable
 unschedulable
 untagged
+url
 vlan
 vGPU
 vGPUs
 vm
 vSwitch
 yaml
+yq
 # These are used for the proxy list. Need to find a better way to do this
 amazonaws
 charmhub
