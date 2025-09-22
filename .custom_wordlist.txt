@@ -26,6 +26,7 @@ Cordon
 CTRL
 DHCP
 DNS
+DPDK
 Entra
 Failover
 Flavors
@@ -55,6 +56,7 @@ LXD
 MAAS
 Masakari
 MDS
+MMU
 Mellanox
 MetalLB
 MicroCeph
@@ -62,6 +64,7 @@ MicroCluster
 Multipass
 NATed
 Netplan
+Numa
 NIC
 NOPASSWD
 Northd
@@ -122,9 +125,11 @@ config
 configs
 cron
 daemonset
+datapath
 datastore
 dev
 dom
+dpdk
 dqlite
 eno
 entityID
@@ -140,6 +145,7 @@ hostnames
 href
 http
 https
+hyperthreading
 hw
 iam
 idp
@@ -189,8 +195,11 @@ openstackclient
 ovs
 passwordless
 pcap
+pci
 physnet
 plugable
+preconfigure
+preconfigured
 preflight
 proxied
 pyCADF
@@ -225,6 +234,8 @@ unroutable
 unschedulable
 untagged
 url
+userspace
+vfio
 vlan
 vGPU
 vGPUs
