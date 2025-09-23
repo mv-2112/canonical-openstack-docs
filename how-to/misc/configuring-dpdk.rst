@@ -60,6 +60,8 @@ flavor extra specs:
 
 	openstack flavor set m1.large --property hw:mem_page_size=large
 
+Make sure that the flavor ram size is a multiple of the huge page size (1GB).
+
 Instances configured to use huge pages will be connected to the DPDK datapath
 through ``vhost-user`` interfaces, as opposed to the standard tap devices.
 See the `Openstack DPDK documentation`_ for more details.
