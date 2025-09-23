@@ -111,8 +111,8 @@ automatically created for each VF.
 Manual mode
 -----------
 
-During bootstrap, Canonical Openstack will determine if there are any
-SR-IOV capable network devices.
+Canonical Openstack will determine if there are any SR-IOV capable
+network devices.
 
 If so, the user will be asked to specify which SR-IOV devices should be
 exposed to Openstack tenants and the name of the corresponding Neutron
@@ -339,6 +339,27 @@ bridge:
             Port tapdcf0ee2d-f8
                 Interface tapdcf0ee2d-f8
         ovs_version: "3.5.0"
+
+Disabling SR-IOV
+----------------
+
+The same command may also be used to disable the SR-IOV functionality.
+Specify "n" for each interface that should no longer be used with SR-IOV.
+
+::
+
+    sunbeam configure sriov
+
+    Found the following SR-IOV capable devices:
+      [ ] Intel Corporation Ethernet Controller X550 (eno1) [physnet: None]
+      [X] Intel Corporation Ethernet Controller X550 (eno2) [physnet: physnet1]
+      [ ] Mellanox Technologies MT27520 Family [ConnectX-3 Pro] (enp94s0) [physnet: None]
+    Add network adapter to PCI whitelist? Intel Corporation Ethernet Controller X550 (eno1)  [y/n] (n): n
+    Add network adapter to PCI whitelist? Intel Corporation Ethernet Controller X550 (eno2)  [y/n] (y): n
+    Add network adapter to PCI whitelist? Mellanox Technologies MT27520 Family [ConnectX-3 Pro] (enp94s0)  [y/n] (n): n
+
+Existing instances will not be modified, consider removing VF attachments
+manually to avoid subsequent port binding failures.
 
 
 .. Links

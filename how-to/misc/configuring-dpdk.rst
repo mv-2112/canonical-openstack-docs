@@ -132,8 +132,7 @@ be connected to OVS bridges using Netplan:
 	      - eth1
 	      - eth2
 
-DPDK can be configured either during bootstrap or afterwards using the following
-command:
+DPDK can be configured using the following command:
 
 ::
 
@@ -242,6 +241,35 @@ ports:
 	            Interface vhu90ab19fb-57
 	                type: dpdkvhostuserclient
 	                options: {vhost-server-path="/var/snap/openstack-hypervisor/common/run/libvirt/vhu90ab19fb-57"}
+
+Disabling DPDK
+--------------
+
+The DPDK feature may be disabled using the following command. Simply specify
+"n" when prompted in order to disable DPDK.
+
+::
+
+	sunbeam configure dpdk
+
+	Enable OVS DPDK data path, handling packets in userspace. It provides improved performance compared to
+	the standard OVS kernel data path. DPDK capable network interfaces are required.
+	Enable and configure DPDK [y/n] (y): n
+
+By doing so, the OVS bridges will be set to use the standard system datapath
+instead of ``netdev`` (DPDK).
+
+Note that as part of the DPDK enablement, physical port configuration is moved
+from Netplan to OVS and the interfaces are persistently bound to the DPDK
+compatible driver (``vfio-pci`` by default) using ``driverctl``. Those steps
+are not reverted automatically, the user may have to manually redefine
+bonds and remove the driver overrides. Unbinding the ``vfio-pci`` driver may
+require a host reboot.
+
+At the same time, existing instances will continue to use ``vhost-user``
+interfaces. Either rebuild or migrate those instances to reconfigure the
+port attachments.
+
 
 .. Links
 
