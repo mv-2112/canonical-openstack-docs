@@ -242,6 +242,30 @@ ports:
 	                type: dpdkvhostuserclient
 	                options: {vhost-server-path="/var/snap/openstack-hypervisor/common/run/libvirt/vhu90ab19fb-57"}
 
+Disabling DPDK
+--------------
+
+The DPDK feature may be disabled using the following command:
+
+::
+
+	sunbeam configure dpdk
+
+By doing so, the OVS bridges will be set to use the standard system datapath
+instead of ``netdev`` (DPDK).
+
+Note that as part of the DPDK enablement, physical port configuration is moved
+from Netplan to OVS and the interfaces are persistently bound to the DPDK
+compatible driver (``vfio-pci`` by default) using ``driverctl``. Those steps
+are not reverted automatically, the user may have to manually redefine
+bonds and remove the driver overrides. Unbinding the ``vfio-pci`` driver may
+require a host reboot.
+
+At the same time, existing instances will continue to use ``vhost-user``
+interfaces. Either rebuild or migrate those instances to reconfigure the
+port attachments.
+
+
 .. Links
 
 .. _DPDK: https://www.dpdk.org

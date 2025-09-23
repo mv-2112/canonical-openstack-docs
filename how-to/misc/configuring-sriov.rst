@@ -340,6 +340,18 @@ bridge:
                 Interface tapdcf0ee2d-f8
         ovs_version: "3.5.0"
 
+Disabling SR-IOV
+----------------
+
+The same command may also be used to disable the SR-IOV functionality:
+
+::
+
+    sunbeam configure sriov
+
+Existing instances will not be modified, consider removing VF attachments
+manually to avoid subsequent port binding failures.
+
 
 .. Links
 
