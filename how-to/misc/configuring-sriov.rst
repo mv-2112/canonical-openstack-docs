@@ -111,8 +111,8 @@ automatically created for each VF.
 Manual mode
 -----------
 
-During bootstrap, Canonical Openstack will determine if there are any
-SR-IOV capable network devices.
+Canonical Openstack will determine if there are any SR-IOV capable
+network devices.
 
 If so, the user will be asked to specify which SR-IOV devices should be
 exposed to Openstack tenants and the name of the corresponding Neutron

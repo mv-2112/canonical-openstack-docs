@@ -132,8 +132,7 @@ be connected to OVS bridges using Netplan:
 	      - eth1
 	      - eth2
 
-DPDK can be configured either during bootstrap or afterwards using the following
-command:
+DPDK can be configured using the following command:
 
 ::
 
