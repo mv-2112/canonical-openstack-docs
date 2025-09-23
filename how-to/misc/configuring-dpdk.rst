@@ -245,11 +245,16 @@ ports:
 Disabling DPDK
 --------------
 
-The DPDK feature may be disabled using the following command:
+The DPDK feature may be disabled using the following command. Simply specify
+"n" when prompted in order to disable DPDK.
 
 ::
 
 	sunbeam configure dpdk
+
+	Enable OVS DPDK data path, handling packets in userspace. It provides improved performance compared to
+	the standard OVS kernel data path. DPDK capable network interfaces are required.
+	Enable and configure DPDK [y/n] (y): n
 
 By doing so, the OVS bridges will be set to use the standard system datapath
 instead of ``netdev`` (DPDK).
