@@ -113,6 +113,87 @@ manifest file will all its supported keys.
          https_proxy: <url>:<port>
          no_proxy: <host>,<host>,...
 
+       # Configure OVS DPDK datapath (userspace), improving network performance.
+       dpdk:
+         # If enabled, OVS bridges are configured to use the netdev (DPDK) datapath
+         # instead of the standard system datapath.
+         enabled: [true, false]
+         # The number of CPU cores to allocate for OVS control plane processing.
+         control_plane_cores: 1
+         # The number of CPU cores to allocate for OVS data plane processing.
+         dataplane_cores: 1
+         # The amount of hugepage memory (MB) to reserve for OVS DPDK.
+         memory: 1024
+         # The DPDK compatible driver that will be assigned to physical
+         # interfaces connected to the DPDK dapapath.
+         driver: vfio-pci
+         # A list of physical interfaces to use with DPDK for each node.
+         #
+         # The interfaces will be persistently bound to the configured DPDK
+         # compatible driver, no longer being visible to the host.
+         #
+         # OVS bridges containing those interfaces (or bonds) are expected to
+         # be defined through Netplan or MAAS. Canonical Openstack will move
+         # the corresponding Netplan configuration to OVS, using the resulting
+         # OVS DPDK physical ports.
+         #
+         # Example:
+         # ports:
+         #   r740-dc1-ceph.maas:
+         #     - eno2
+         #     - enp94s0
+         ports:
+           <host-fqdn>:
+             - <iface1>
+             - <iface2>
+
+       # This section defines PCI passthrough configuration, allowing SR-IOV
+       # VFs, GPUs and other PCI devices to be exposed to Openstack instances.
+       pci:
+         # A list of PCI filters specifying which devices to expose.
+         # The specs can contain exact PCI addresses, address wildcards,
+         # address regular expressions or vendor/product id tuples.
+         # SR-IOV interfaces may also contain a Neutron physical network,
+         # usually known as "physnet".
+         #
+         # See the Nova documentation for more details.
+         # https://docs.openstack.org/nova/latest/configuration/config.html#pci.device_spec
+         #
+         # Note that the following list applies to all compute nodes, use
+         # the "excluded_devices" field to define per-node exclusion lists.
+         #
+         # Example:
+         # device_specs:
+         #   - address: "0000:1b:00.0"
+         #     vendor_id: "8086"
+         #     product_id: "1563"
+         #     physical_network: "physnet1"
+         device_specs: []
+         # Per-node PCI device exclusion list, containing excluded PCI addresses.
+         #
+         # Example:
+         # excluded_devices:
+         #   r740-dc1-ceph.maas:
+         #     - "0000:19:00.0"
+         #     - "0000:19:00.1"
+         excluded_devices:
+           <host-fqdn>:
+             - <pci-addr1>
+             - <pci-addr2>
+         # A list of aliases that can be used to request PCI devices through
+         # Nova flavor extra specs.
+         #
+         # See the Nova documentation for more details.
+         # https://docs.openstack.org/nova/latest/configuration/config.html#pci.alias
+         #
+         # Example:
+         # aliases:
+         #   - vendor_id: "8086"
+         #     product_id: "1565"
+         #     device_type: type-VF
+         #     name: "intel-vf"
+         aliases: {}
+
        bootstrap:
          # Management networks shared by hosts
          management_cidr: <cidr>,<cidr>,...
