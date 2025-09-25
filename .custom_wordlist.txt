@@ -12,6 +12,7 @@ CADF
 CaaS
 Caracal
 Catalogue
+CAPI
 Ceilometer
 Ceph
 CirrOS
@@ -114,13 +115,16 @@ amd
 apache
 api
 args
+auth
 balancers
 balancer's
 backend
 br
 ceph
 cirros
+clusterctl
 clusterd
+coe
 config
 configs
 cron
@@ -128,6 +132,7 @@ daemonset
 datapath
 datastore
 dev
+distro
 dom
 dpdk
 dqlite
@@ -149,12 +154,15 @@ hyperthreading
 hw
 iam
 idp
+infrastructure
 init
 initiator
 intra
 juju
 kube
+kubeconfig
 kubectl
+kubernetes
 kube-api
 filesystem
 filesystems
@@ -192,6 +200,7 @@ openrc
 openssh
 openstack
 openstackclient
+os
 ovs
 passwordless
 pcap
@@ -241,6 +250,7 @@ vGPU
 vGPUs
 vm
 vSwitch
+webhook
 yaml
 yq
 # These are used for the proxy list. Need to find a better way to do this
