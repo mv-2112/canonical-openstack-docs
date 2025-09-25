@@ -7,6 +7,7 @@ ACL
 ACLs
 APIs
 Aodh
+Autoscaling
 Barbican
 CADF
 CaaS

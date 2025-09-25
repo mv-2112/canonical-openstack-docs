@@ -267,6 +267,21 @@ As a workaround, get the kubeconfig using clusterctl
 Replace PROJECT_ID and CLUSTER_STACK_ID from the output values in `openstack coe cluster show`.
 
 
+Enable Autoscaling
+~~~~~~~~~~~~~~~~~~
+
+To enable Autoscaling feature, the cluster template should have the following labels
+
+::
+
+   --labels auto_scaling_enabled=True
+   --labels min_node_count=3
+   --labels max_node_count=5
+
+.. note::
+   The value for --node-count in `openstack coe cluster create` command should be in the range [min_node_count ... max_node_count]
+
+
 Enable Keystone authentication and authorization webhook for Workload Kubernetes Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
