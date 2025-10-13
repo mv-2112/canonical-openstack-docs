@@ -253,7 +253,7 @@ vm
 vSwitch
 webhook
 yaml
-Subsequence
+NIC
 TCP
 yq
 # These are used for the proxy list. Need to find a better way to do this
