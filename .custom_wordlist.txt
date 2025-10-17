@@ -162,6 +162,7 @@ infrastructure
 init
 initiator
 intra
+isolCPUs
 juju
 kube
 kubeconfig
@@ -247,6 +248,7 @@ unregister
 unroutable
 unschedulable
 untagged
+unallocated
 url
 userspace
 vfio
@@ -265,10 +267,19 @@ amazonaws
 charmhub
 cloudflare
 coreos
+cpu
+cpus
+CPUs
+epa
 fedoraproject
 io
+isolcpus
 jujucharms
 maas
+orchestrator
+Orchestrator
 snapcraft
 snapcraftcontent
+deallocation
+sys
 switchdev
