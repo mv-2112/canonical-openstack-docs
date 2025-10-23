@@ -22,6 +22,7 @@ Optional Features
    rating
    resource-optimization
    secrets
+   shared-filesystem
    telemetry
    ubuntu-pro
    validation
